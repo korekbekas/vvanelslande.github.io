@@ -1,9 +1,9 @@
 ## vvctre - Nintendo 3DS emulator for Windows and Linux [![Mentioned in Awesome Software Patreons](https://awesome.re/mentioned-badge.svg)](https://github.com/uraimo/awesome-software-patreons)
 
-GitHub: https://github.com/vvanelslande/vvctre  
-Download: https://github.com/vvanelslande/vvctre/releases  
-Discord Server: https://discord.gg/hVxCyb5  
-Patreon: https://www.patreon.com/vvctre  
+GitHub: [https://github.com/vvanelslande/vvctre](https://github.com/vvanelslande/vvctre)  
+Download: [https://github.com/vvanelslande/vvctre/releases](https://github.com/vvanelslande/vvctre/releases)  
+Discord Server: [https://discord.gg/hVxCyb5](https://discord.gg/hVxCyb5)  
+Patreon: [https://www.patreon.com/vvctre](https://www.patreon.com/vvctre)  
 
 ## Requirements 
 - GPU that supports OpenGL 3.3
@@ -12,10 +12,10 @@ Patreon: https://www.patreon.com/vvctre
 
 ## Pages
 
-- [Dump](Dump.md)
-- [FAQ](FAQ.md)
-- [Hidden Features](Hidden-Features.md)
-- [Plugins](Plugins.md)
+- [Dump](https://vvanelslande.github.io/vvctre/Dump)
+- [FAQ](https://vvanelslande.github.io/vvctre/FAQ)
+- [Hidden Features](https://vvanelslande.github.io/vvctre/Hidden-Features)
+- [Plugins](https://vvanelslande.github.io/vvctre/Plugins)
 
 ## Stats
 
