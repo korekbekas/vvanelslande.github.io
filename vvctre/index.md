@@ -5,7 +5,7 @@
 [![PATREON](https://img.shields.io/badge/PATREON-brightgreen?style=for-the-badge)](https://www.patreon.com/vvctre)
 [![GITHUB](https://img.shields.io/badge/GITHUB-brightgreen?style=for-the-badge)](https://github.com/vvanelslande/vvctre)
 
-[![Mentioned in Awesome Software Patreons](https://awesome.re/mentioned-badge.svg)](https://github.com/uraimo/awesome-software-patreons)
+[![Mentioned in Awesome Software Patreons](https://awesome.re/mentioned-badge-flat.svg)](https://github.com/uraimo/awesome-software-patreons)
 
 ## Requirements 
 - GPU that supports OpenGL 3.3
