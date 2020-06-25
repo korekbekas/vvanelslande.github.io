@@ -1,3 +1,5 @@
+# Plugins
+
 ## Contents
 
 - [Things plugins can do](#free-doesnt-include-custom-default-settings-ones)
