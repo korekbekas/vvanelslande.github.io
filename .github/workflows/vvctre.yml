@@ -1,0 +1,14 @@
+name: vvctre
+
+on:
+  repository_dispatch:
+    types: [vvctre]
+
+jobs:
+  vvctre:
+    runs-on: ubuntu-18.04
+    steps:
+
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Update
