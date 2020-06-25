@@ -1,3 +1,5 @@
+## FAQ
+
 ##### Where's the save data, ext data, installed applications, installed updates, and installed DLCs?
 
 `user/sdmc/Nintendo 3DS/00000000000000000000000000000000/00000000000000000000000000000000`
