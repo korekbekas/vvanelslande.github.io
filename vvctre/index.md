@@ -1,9 +1,9 @@
 ## vvctre - Nintendo 3DS emulator for Windows and Linux
 
-[![DOWNLOAD](https://img.shields.io/badge/DOWNLOAD-23446c?style=for-the-badge)](https://github.com/vvanelslande/vvctre/releases)
-[![DISCORD SERVER](https://img.shields.io/badge/DISCORD%20SERVER-23446c?style=for-the-badge)](https://discord.gg/hVxCyb5)
-[![PATREON](https://img.shields.io/badge/PATREON-23446c?style=for-the-badge)](https://www.patreon.com/vvctre)
-[![GITHUB](https://img.shields.io/badge/GITHUB-23446c?style=for-the-badge)](https://github.com/vvanelslande/vvctre)
+[![DOWNLOAD](https://img.shields.io/badge/DOWNLOAD-brightgreen?style=for-the-badge)](https://github.com/vvanelslande/vvctre/releases)
+[![DISCORD SERVER](https://img.shields.io/badge/DISCORD%20SERVER-brightgreen?style=for-the-badge)](https://discord.gg/hVxCyb5)
+[![PATREON](https://img.shields.io/badge/PATREON-brightgreen?style=for-the-badge)](https://www.patreon.com/vvctre)
+[![GITHUB](https://img.shields.io/badge/GITHUB-brightgreen?style=for-the-badge)](https://github.com/vvanelslande/vvctre)
 
 ## Requirements 
 - GPU that supports OpenGL 3.3
@@ -19,6 +19,6 @@
 
 ## Stats
 
-![DOWNLOADS](https://img.shields.io/github/downloads/vvanelslande/vvctre/total?style=for-the-badge&color=23446c&labelColor=23446c)  
-![LATEST DOWNLOADS](https://img.shields.io/github/downloads/vvanelslande/vvctre/latest/total?style=for-the-badge&color=23446c&labelColor=23446c)  
-![DISCORD SERVER ONLINE](https://img.shields.io/discord/692523028046676048?label=DISCORD%20SERVER&style=for-the-badge&color=23446c&labelColor=23446c)
+![DOWNLOADS](https://img.shields.io/github/downloads/vvanelslande/vvctre/total?style=for-the-badge&color=brightgreen&labelColor=brightgreen)  
+![LATEST DOWNLOADS](https://img.shields.io/github/downloads/vvanelslande/vvctre/latest/total?style=for-the-badge&color=brightgreen&labelColor=brightgreen)  
+![DISCORD SERVER ONLINE](https://img.shields.io/discord/692523028046676048?label=DISCORD%20SERVER&style=for-the-badge&color=brightgreen&labelColor=brightgreen)
