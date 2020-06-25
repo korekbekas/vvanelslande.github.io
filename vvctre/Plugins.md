@@ -373,7 +373,7 @@ If the current item is hovered, sets the tooltip to `text`
 
 #### `void vvctre_gui_text_colored(float red, float green, float blue, float alpha, const char* text)`
 
-`ImGui::TextColored` wrapper
+Adds colored text
 
 #### `bool vvctre_gui_button(const char* label)`
 
