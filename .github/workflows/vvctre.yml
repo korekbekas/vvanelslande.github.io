@@ -17,4 +17,4 @@ jobs:
           mv vvctre/Home.md vvctre/index.md
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: vvctre
+          commit_message: ${{github.event.client_payload.commit_message}}
