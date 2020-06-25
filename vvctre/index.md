@@ -10,18 +10,17 @@ Nintendo 3DS emulator for Windows and Linux
 [Download](https://github.com/vvanelslande/vvctre/releases) |
 [Discord Server](https://discord.gg/hVxCyb5) |
 [Patreon](https://www.patreon.com/vvctre)  
-
-## Requirements 
-GPU with OpenGL 3.3 support  
-OS: 64-bit Windows >= 7 with [this](https://aka.ms/vs/16/release/vc_redist.x64.exe) or 64-bit Linux with SDL2 and libpng  
-For playing AAC audio on Windows N and KN, [this](https://support.microsoft.com/en-us/help/3145500/media-feature-pack-list-for-windows-n-editions)
-
-## Pages
-
+Pages:
 [Dump](https://vvanelslande.github.io/vvctre/Dump) |
 [FAQ](https://vvanelslande.github.io/vvctre/FAQ) |
 [Hidden Features](https://vvanelslande.github.io/vvctre/Hidden-Features) |
 [Plugins](https://vvanelslande.github.io/vvctre/Plugins)
+
+## Requirements 
+
+- GPU with OpenGL 3.3 support  
+- OS: 64-bit Windows >= 7 with [this](https://aka.ms/vs/16/release/vc_redist.x64.exe) or 64-bit Linux with SDL2 and libpng  
+- For playing AAC audio on Windows N and KN, [this](https://support.microsoft.com/en-us/help/3145500/media-feature-pack-list-for-windows-n-editions)
 
 ## Stats
 
