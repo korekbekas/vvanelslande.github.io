@@ -19,7 +19,7 @@
 
 ## Things plugins can do
 
-Plugins can do everything that can be done from the GUI and more (some things: change the theme, set registers, get registers, add overlays, and press the touchscreen when a button is pressed ([example](https://github.com/vvanelslande/vvctre-plugin-button2touch-example))).
+Everything that can be done from the GUI and more (some things: change the theme, set registers, get registers, add overlays, and press the touchscreen when a button is pressed ([example](https://github.com/vvanelslande/vvctre-plugin-button2touch-example))).
 
 ## Plugin list
 
