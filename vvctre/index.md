@@ -1,7 +1,5 @@
 ## vvctre
 
-<div align="center">
-
 ![vvctre.png](https://i.imgur.com/2VtlMGp.png)
 
 Nintendo 3DS emulator for Windows and Linux
@@ -30,5 +28,3 @@ For playing AAC audio on Windows N and KN, [this](https://support.microsoft.com/
 ![Downloads](https://img.shields.io/github/downloads/vvanelslande/vvctre/total?label=Downloads&color=brightgreen&labelColor=brightgreen)
 ![Latest Downloads](https://img.shields.io/github/downloads/vvanelslande/vvctre/latest/total?label=Latest%20Downloads&color=brightgreen&labelColor=brightgreen)
 ![Discord Server Online](https://img.shields.io/discord/692523028046676048?label=Discord%20Server&color=brightgreen&labelColor=brightgreen)
-
-</div>
