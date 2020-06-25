@@ -12,6 +12,7 @@ jobs:
       - run: git clone https://github.com/vvanelslande/vvctre.wiki.git
       - run: cp -r vvctre.wiki/* .
       - run: rm -rf vvctre.wiki/
+      - run: mv Home.md index.md
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: vvctre
