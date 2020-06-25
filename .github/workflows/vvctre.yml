@@ -9,10 +9,12 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
-      - run: git clone https://github.com/vvanelslande/vvctre.wiki.git
-      - run: cp -r vvctre.wiki/* .
-      - run: rm -rf vvctre.wiki/
-      - run: mv Home.md index.md
+      - run: |
+          rm -rf vvctre
+          git clone https://github.com/vvanelslande/vvctre.wiki.git vvctre
+          rm -rf vvctre/.git
+          cp -r vvctre_html/* vvctre/
+          mv vvctre/Home.md vvctre/index.md
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: vvctre
