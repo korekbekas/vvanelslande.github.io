@@ -3,6 +3,7 @@
 [![DOWNLOAD](https://img.shields.io/badge/DOWNLOAD-23446c?style=for-the-badge)](https://github.com/vvanelslande/vvctre/releases)
 [![DISCORD SERVER](https://img.shields.io/badge/DISCORD%20SERVER-23446c?style=for-the-badge)](https://discord.gg/hVxCyb5)
 [![PATREON](https://img.shields.io/badge/PATREON-23446c?style=for-the-badge)](https://www.patreon.com/vvctre)
+[![GITHUB](https://img.shields.io/badge/GITHUB-23446c?style=for-the-badge)](https://github.com/vvanelslande/vvctre)
 
 ## Requirements 
 - GPU that supports OpenGL 3.3
