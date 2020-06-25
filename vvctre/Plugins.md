@@ -24,7 +24,7 @@
 - Set registers
 - Get registers
 - Add overlays
-- Press the touchscreen when a button is pressed ([example](https://github.com/vvanelslande/vvctre-plugin-button2touch-example)).
+- Press the touchscreen when a button is pressed ([example](https://github.com/vvanelslande/vvctre-plugin-button2touch-example))
 
 ## Plugin list
 
