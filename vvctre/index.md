@@ -1,4 +1,4 @@
-## vvctre - Nintendo 3DS emulator for Windows and Linux
+## vvctre - Nintendo 3DS emulator for Windows and Linux  [![Mentioned in Awesome Software Patreons](https://awesome.re/mentioned-badge.svg)](https://github.com/uraimo/awesome-software-patreons)
 
 [GitHub](https://github.com/vvanelslande/vvctre) |
 [Download](https://github.com/vvanelslande/vvctre/releases) |
@@ -10,8 +10,7 @@ Pages:
 [Hidden Features](https://vvanelslande.github.io/vvctre/Hidden-Features) |
 [Plugins](https://vvanelslande.github.io/vvctre/Plugins)
 
-![vvctre.png](https://i.imgur.com/2VtlMGp.png)  
-[![Mentioned in Awesome Software Patreons](https://awesome.re/mentioned-badge.svg)](https://github.com/uraimo/awesome-software-patreons)
+![vvctre.png](https://i.imgur.com/2VtlMGp.png)
 
 ## Requirements 
 
