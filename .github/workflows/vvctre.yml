@@ -8,7 +8,10 @@ jobs:
   vvctre:
     runs-on: ubuntu-18.04
     steps:
-
+      - uses: actions/checkout@v2
+      - run: git clone https://github.com/vvanelslande/vvctre.wiki.git
+      - run: cp -r vvctre.wiki/* .
+      - run: rm -rf vvctre.wiki/
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Update
+          commit_message: vvctre
