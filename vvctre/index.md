@@ -2,7 +2,12 @@
 
 - Small and fast
 - Has C/C++ plugin system with 342 functions
-- Has priority boost setting, custom CPU ticks setting, medium layout, and AMD hack for Intel HD Graphics 4400 & 4600
+- Has priority boost setting
+- Has custom CPU ticks setting
+- Has medium layout
+- Has AMD hack for Intel HD Graphics 4400 & 4600
+- Has fixes
+- Can make HTTP requests
 - Compatible with Citra `nand`, `sdmc`, and `sysdata` folders
 - Compatible with Citra post processing shaders
 - Compatible with [Luma3DS game patches](https://github.com/LumaTeam/Luma3DS/wiki/Optional-features#config-menu-options) (no locale emulation)
