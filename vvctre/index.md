@@ -6,6 +6,7 @@
 - Has priority boost setting
 - Has custom CPU ticks setting
 - Has medium layout
+- Has custom layout settings in the GUI
 - Has AMD hack for Intel HD Graphics 4400 & 4600
 - Has fixes
 - Can make HTTP requests
