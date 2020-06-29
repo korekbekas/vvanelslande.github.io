@@ -1,4 +1,4 @@
-## vvctre Nintendo 3DS emulator
+## Dump
 
 Cartridges: [https://3ds.hacks.guide/godmode9-usage#dumping-a-game-cartridge](https://3ds.hacks.guide/godmode9-usage#dumping-a-game-cartridge)  
 Installed Titles: [https://3ds.hacks.guide/godmode9-usage#dumping-a-title](https://3ds.hacks.guide/godmode9-usage#dumping-a-title)  
