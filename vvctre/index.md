@@ -1,5 +1,6 @@
 ## vvctre Nintendo 3DS emulator [![GitHub](https://img.shields.io/badge/github-brightgreen)](https://github.com/vvanelslande/vvctre) [![Download](https://img.shields.io/badge/download-brightgreen)](https://github.com/vvanelslande/vvctre/releases) [![Discord](https://img.shields.io/discord/692523028046676048)](https://discord.gg/hVxCyb5) [![Patreon](https://img.shields.io/badge/patreon-vvctre-brightgreen)](https://www.patreon.com/vvctre) [![Mentioned in Awesome Software Patreons](https://awesome.re/mentioned-badge.svg)](https://github.com/uraimo/awesome-software-patreons)
 
+- Based on Citra
 - Small and fast
 - Portable
 - Has C/C++ plugin system with 342 functions
