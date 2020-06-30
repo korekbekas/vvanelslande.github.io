@@ -4,12 +4,12 @@
 - Small and fast
 - Portable
 - Has C/C++ plugin system with 342 functions
+- Has fixes
 - Has priority boost setting
 - Has custom CPU ticks setting
 - Has medium layout
 - Has custom layout settings in the GUI
 - Has AMD hack for Intel HD Graphics 4400 & 4600
-- Has fixes
 - Can make HTTP requests
 - Compatible with Citra `nand`, `sdmc`, and `sysdata` folders
 - Compatible with Citra post processing shaders
