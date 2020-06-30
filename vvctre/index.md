@@ -29,7 +29,7 @@
 
 ## Pages
 
-- [Dump](https://vvanelslande.github.io/vvctre/Dump)
-- [FAQ](https://vvanelslande.github.io/vvctre/FAQ)
-- [Hidden Features](https://vvanelslande.github.io/vvctre/Hidden-Features)
-- [Plugins](https://vvanelslande.github.io/vvctre/Plugins)
+- [Dump](Dump.md)
+- [FAQ](FAQ.md)
+- [Hidden Features](Hidden-Features.md)
+- [Plugins](Plugins.md)
