@@ -29,7 +29,7 @@
 
 ## Pages
 
-- [Dump](Dump.md)
-- [FAQ](FAQ.md)
-- [Hidden Features](Hidden-Features.md)
-- [Plugins](Plugins.md)
+- [Dump](Dump)
+- [FAQ](FAQ)
+- [Hidden Features](Hidden-Features)
+- [Plugins](Plugins)
