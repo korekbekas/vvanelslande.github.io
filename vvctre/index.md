@@ -20,11 +20,10 @@
 - GPU with OpenGL 3.3 support  
 - OS:
   - 64-bit Windows >= 7
-    - [Microsoft Visual C++ Redistributable for Visual Studio 2015, 2017 and 2019](https://aka.ms/vs/16/release/vc_redist.x64.exe)
+    - [Microsoft Visual C++ 2015-2019 Redistributable (x64)](https://aka.ms/vs/16/release/vc_redist.x64.exe)
     - For AAC on N and KN: [Media Feature Pack](https://support.microsoft.com/en-us/help/3145500/media-feature-pack-list-for-windows-n-editions)
   - 64-bit Linux
-    - SDL2
-    - libpng
+    - SDL2 and libpng
     - For dialogs: Zenity, Matedialog, Qarma, or KDialog
 
 ## Pages
