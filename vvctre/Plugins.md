@@ -55,6 +55,7 @@
 
 - [C - Window](https://github.com/vvanelslande/vvctre-c-plugin)
 - [C++ - Window](https://github.com/vvanelslande/vvctre-cpp-plugin)
+- [C++ - Tab](https://github.com/vvanelslande/vvctre-plugin-tab-example)
 - [C++ - Button To Touch](https://github.com/vvanelslande/vvctre-plugin-button2touch-example)
 
 ### Functions vvctre imports
