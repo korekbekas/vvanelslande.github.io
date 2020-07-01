@@ -4,6 +4,7 @@
 - Small and fast
 - Portable (only uses `user` folder in vvctre's folder)
 - Has C/C++ plugin system with 342 functions
+- Has HOME Menu support
 - Has fixes
 - Has priority boost setting
 - Has custom CPU ticks setting
