@@ -2,7 +2,7 @@
 
 - Based on Citra
 - Small and fast
-- Portable (uses `user` folder in vvctre's folder)
+- Portable (only uses `user` folder in vvctre's folder)
 - Has C/C++ plugin system with 342 functions
 - Has fixes
 - Has priority boost setting
