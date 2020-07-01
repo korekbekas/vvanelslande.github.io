@@ -1,7 +1,6 @@
 # Plugins
 
 ## Contents
-
 - [Things plugins can do](#free-doesnt-include-custom-default-settings-ones)
 - [Plugin list](#plugin-list)
   - [Free (doesn't include custom default settings ones)](#free-doesnt-include-custom-default-settings-ones)
@@ -20,7 +19,6 @@
     - [StereoRenderOption](#stereorenderoption)
 
 ## Things plugins can do
-
 - Everything that can be done from the GUI
 - Change the theme
 - Set registers
@@ -52,7 +50,6 @@
 ## Developer information
 
 ### Templates
-
 - [C - Window](https://github.com/vvanelslande/vvctre-c-plugin)
 - [C++ - Window](https://github.com/vvanelslande/vvctre-cpp-plugin)
 - [C++ - Tab](https://github.com/vvanelslande/vvctre-plugin-tab-example)
@@ -366,7 +363,8 @@ If the current item is hovered, sets the tooltip to `text`
 
 #### `bool vvctre_gui_is_item_deactivated_after_edit()`
 
-`ImGui::IsItemDeactivatedAfterEdit` wrapper
+`ImGui::IsItemDeactivatedAfterEdit` wrapper  
+Added in vvctre 34.9.0
 
 #### `void vvctre_gui_end_tooltip()`
 
