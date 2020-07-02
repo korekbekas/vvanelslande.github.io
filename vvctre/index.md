@@ -43,4 +43,4 @@ Download: [https://github.com/vvanelslande/vvctre/releases](https://github.com/v
 
 [![Patreon](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/vvctre)
 
-[![Discord](https://discordapp.com/api/guilds/692523028046676048/widget.png?style=banner1)](https://discord.gg/hVxCyb5)
+[![Discord](https://discordapp.com/api/guilds/692523028046676048/widget.png?style=banner4)](https://discord.gg/hVxCyb5)
