@@ -1,9 +1,12 @@
-## vvctre Nintendo 3DS emulator [![GitHub](https://img.shields.io/badge/github-brightgreen)](https://github.com/vvanelslande/vvctre) [![Download](https://img.shields.io/badge/download-brightgreen)](https://github.com/vvanelslande/vvctre/releases) [![Discord](https://img.shields.io/discord/692523028046676048)](https://discord.gg/hVxCyb5) [![Patreon](https://img.shields.io/badge/patreon-vvctre-brightgreen)](https://www.patreon.com/vvctre) [![Mentioned in Awesome Software Patreons](https://awesome.re/mentioned-badge.svg)](https://github.com/uraimo/awesome-software-patreons)
+## vvctre Nintendo 3DS emulator
+
+GitHub: [https://github.com/vvanelslande/vvctre](https://github.com/vvanelslande/vvctre)  
+Download: [https://github.com/vvanelslande/vvctre/releases](https://github.com/vvanelslande/vvctre/releases)
 
 - Based on Citra
 - Small and fast
 - Portable (only uses `user` folder in vvctre's folder)
-- Has C/C++ plugin system with 342 functions
+- Has C/C++ plugin system with 343 functions
 - Has HOME Menu support
 - Has fixes
 - Has priority boost setting
@@ -33,3 +36,11 @@
 - [FAQ](FAQ)
 - [Hidden Features](Hidden-Features)
 - [Plugins](Plugins)
+
+---
+
+[![Mentioned in Awesome Software Patreons](https://awesome.re/mentioned-badge.svg)](https://github.com/uraimo/awesome-software-patreons)
+
+[![Patreon](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/vvctre)
+
+[![Discord](https://discordapp.com/api/guilds/692523028046676048/widget.png?style=banner1)](https://discord.gg/hVxCyb5)
