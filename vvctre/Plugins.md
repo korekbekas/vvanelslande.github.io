@@ -361,7 +361,7 @@ If the current item is hovered, sets the tooltip to `text`
 
 `ImGui::IsItemHovered` wrapper
 
-#### `bool vvctre_gui_is_item_deactivated_after_edit()` ᴺᴱᵂ
+#### `bool vvctre_gui_is_item_deactivated_after_edit()`
 
 `ImGui::IsItemDeactivatedAfterEdit` wrapper
 
