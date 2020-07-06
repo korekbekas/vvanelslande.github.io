@@ -1524,13 +1524,13 @@ Logs `line` (Critical level)
 
 #### Layout
 
-| Value | Description  |
-|-------|--------------|
-| 0     | Default      |
-| 1     | SingleScreen |
-| 2     | LargeScreen  |
-| 3     | SideScreen   |
-| 4     | MediumScreen |
+| Value | Description   |
+|-------|---------------|
+| 0     | Default       |
+| 1     | Single Screen |
+| 2     | Large Screen  |
+| 3     | Side by Side  |
+| 4     | Medium Screen  |
 
 #### MicrophoneInputType
 
@@ -1566,8 +1566,8 @@ Logs `line` (Critical level)
 
 | Value | Description  |
 |-------|--------------|
-| 0     | CirclePad    |
-| 1     | CirclePadPro |
+| 0     | Circle Pad    |
+| 1     | Circle Pad Pro |
 
 #### Regions
 
