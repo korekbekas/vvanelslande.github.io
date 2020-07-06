@@ -1534,11 +1534,11 @@ Logs `line` (Critical level)
 
 #### MicrophoneInputType
 
-| Value | Description |
-|-------|-------------|
-| 0     | None        |
-| 1     | Real        |
-| 2     | Static      |
+| Value | Description  |
+|-------|--------------|
+| 0     | Disabled     |
+| 1     | Real Device  |
+| 2     | Static Noise |
 
 #### NativeButton
 
