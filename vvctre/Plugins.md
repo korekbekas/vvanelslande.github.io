@@ -17,6 +17,7 @@
     - [Regions](#regions)
     - [InitialClock](#initialclock)
     - [StereoRenderOption](#stereorenderoption)
+    - [CameraIndex](#cameraindex)
 
 ## Things plugins can do
 - Everything that can be done from the GUI
@@ -1597,3 +1598,11 @@ Logs `line` (Critical level)
 | 1     | SideBySide  |
 | 2     | Anaglyph    |
 | 3     | Interlaced  |
+
+#### CameraIndex
+
+| Value | Description |
+|-------|-------------|
+| 0     | Outer Right |
+| 1     | Inner       |
+| 2     | Outer Left  |
