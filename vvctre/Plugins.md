@@ -1574,13 +1574,13 @@ Logs `line` (Critical level)
 | Value | Description |
 |-------|-------------|
 | -1    | Auto-select |
-| 0     | JPN         |
+| 0     | Japan       |
 | 1     | USA         |
-| 2     | EUR         |
-| 3     | AUS         |
-| 4     | CHN         |
-| 5     | KOR         |
-| 6     | TWN         |
+| 2     | Europe      |
+| 3     | Australia   |
+| 4     | China       |
+| 5     | Korea       |
+| 6     | Taiwan      |
 
 #### InitialClock
 
