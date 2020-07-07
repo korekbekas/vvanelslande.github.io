@@ -1,10 +1,12 @@
 # Plugins
 
 ## Contents
+
 - [Things plugins can do](#free-doesnt-include-custom-default-settings-ones)
 - [Plugin list](#plugin-list)
   - [Free (doesn't include custom default settings ones)](#free-doesnt-include-custom-default-settings-ones)
   - [Patreon ($5)](#patreon-5)
+- [Request plugins](#request-plugins)
 - [Developer information](#developer-information)
   - [Templates](#templates)
   - [Functions vvctre imports](#functions-vvctre-imports)
@@ -20,6 +22,7 @@
     - [CameraIndex](#cameraindex)
 
 ## Things plugins can do
+
 - Everything that can be done from the GUI
 - Change the theme
 - Set registers
@@ -30,6 +33,7 @@
 ## Plugin list
 
 #### Free (doesn't include custom default settings ones)
+
 - [Auto load controls](https://github.com/vvanelslande/vvctre-plugin-auto-load-controls)
 - [Shortcuts](https://github.com/vvanelslande/vvctre-plugin-shortcuts-free)
 - [2DS switch](https://github.com/vvanelslande/vvctre-plugin-2ds-switch)
@@ -39,6 +43,7 @@
 - [Get touch screen X and Y](https://github.com/vvanelslande/vvctre-plugin-get-touch-screen-x-y)
 
 #### Patreon ($5)
+
 - Themes: Light and Dear ImGui Classic. Patrons can request more themes.
 - Shortcuts (can't be changed):
   - Load file: F1
@@ -48,9 +53,15 @@
   - Install CIA: F5
   - Hold to remove speed limit: Space
 
+## Request plugins
+
+- [Custom Default Settings](https://github.com/vvanelslande/vvctre/issues/new?assignees=&labels=Custom+Default+Settings+Plugin+Request&template=custom-default-settings-plugin-request.md&title=Custom+Default+Settings+Plugin+Request)
+- [Button To Touch](https://github.com/vvanelslande/vvctre/issues/new?assignees=&labels=Button+To+Touch+Plugin+Request&template=button-to-touch-plugin-request.md&title=Button+To+Touch+Plugin+Request)
+
 ## Developer information
 
 ### Templates
+
 - [C - Window](https://github.com/vvanelslande/vvctre-c-plugin)
 - [C++ - Window](https://github.com/vvanelslande/vvctre-cpp-plugin)
 - [C++ - Tab](https://github.com/vvanelslande/vvctre-plugin-tab-example)
