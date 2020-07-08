@@ -4,7 +4,7 @@
 
 - [Things plugins can do](#free-doesnt-include-custom-default-settings-ones)
 - [Plugin list](#plugin-list)
-  - [Free (doesn't include custom default settings ones)](#free-doesnt-include-custom-default-settings-ones)
+  - [Free](#free)
   - [Patreon ($5)](#patreon-5)
 - [Request plugins](#request-plugins)
 - [Developer information](#developer-information)
@@ -32,7 +32,7 @@
 
 ## Plugin list
 
-#### Free (doesn't include custom default settings ones)
+#### Free
 
 - [Auto load controls](https://github.com/vvanelslande/vvctre-plugin-auto-load-controls)
 - [Shortcuts](https://github.com/vvanelslande/vvctre-plugin-shortcuts-free)
