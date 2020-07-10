@@ -751,6 +751,10 @@ Range: 0.0 - 1.0
 
 Takes a screenshot
 
+#### `bool vvctre_screenshot_bottom_screen(void* plugin_manager, void* data, u32 width, u32 height)`
+
+Takes a screenshot of the bottom screen
+
 #### `bool vvctre_screenshot_default_layout(void* plugin_manager, void* data)`
 
 Takes a screenshot with the default layout
