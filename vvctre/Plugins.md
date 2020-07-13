@@ -34,13 +34,14 @@
 
 #### Free
 
-- [Auto load controls](https://github.com/vvanelslande/vvctre-plugin-auto-load-controls)
-- [Shortcuts](https://github.com/vvanelslande/vvctre-plugin-shortcuts-free)
-- [2DS switch](https://github.com/vvanelslande/vvctre-plugin-2ds-switch)
-- [MJPEG camera](https://github.com/vvanelslande/vvctre-mjpeg-camera)
-- [Quick settings](https://github.com/vvanelslande/vvctre-plugin-quick-settings)
-- [Log file](https://github.com/vvanelslande/vvctre-plugin-log-file)
-- [Get touch screen X and Y](https://github.com/vvanelslande/vvctre-plugin-get-touch-screen-x-y)
+- Auto load controls: [vvanelslande/vvctre-plugin-auto-load-controls](https://github.com/vvanelslande/vvctre-plugin-auto-load-controls)
+- Shortcuts: [vvanelslande/vvctre-plugin-shortcuts-free](https://github.com/vvanelslande/vvctre-plugin-shortcuts-free)
+- 2DS switch: [vvanelslande/vvctre-plugin-2ds-switch](https://github.com/vvanelslande/vvctre-plugin-2ds-switch)
+- MJPEG camera: [vvanelslande/vvctre-mjpeg-camera](https://github.com/vvanelslande/vvctre-mjpeg-camera)
+- Quick settings: [vvanelslande/vvctre-plugin-quick-settings](https://github.com/vvanelslande/vvctre-plugin-quick-settings)
+- Log file: [vvanelslande/vvctre-plugin-log-file](https://github.com/vvanelslande/vvctre-plugin-log-file)
+- Get touch screen X and Y: [vvanelslande/vvctre-plugin-get-touch-screen-x-y](https://github.com/vvanelslande/vvctre-plugin-get-touch-screen-x-y)
+- Pause shortcut (F8): [tbsp/vvctre-plugin-pause](https://github.com/tbsp/vvctre-plugin-pause)
 
 #### Patreon ($5)
 
