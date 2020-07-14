@@ -13,7 +13,7 @@ Download: [https://github.com/vvanelslande/vvctre/releases](https://github.com/v
 - Has custom CPU ticks setting
 - Has medium layout
 - Has custom layout settings in the GUI
-- Has AMD hack for Intel HD Graphics 4400 & 4600
+- Has hacks for Intel HD Graphics 4400, 4600, and 5500
 - Can make HTTP requests
 - Compatible with Citra `nand`, `sdmc`, and `sysdata` folders
 - Compatible with Citra post processing shaders
