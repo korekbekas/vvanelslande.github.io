@@ -650,7 +650,8 @@ Prepares to override the clock before recording movies
 
 #### `void vvctre_movie_play(const char* path)`
 
-Plays a movie
+Plays a movie  
+This doesn't have the hidden feature.
 
 #### `void vvctre_movie_record(const char* path)`
 
