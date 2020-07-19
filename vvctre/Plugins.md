@@ -96,7 +96,7 @@ Called before Initial Settings opens
 
 Optional  
 Called after Initial Settings's OK button is pressed  
-Called before loading the file if a file was dropped into `vvctre.exe` or `./vvctre <file>` was used
+Called before loading the file if a file was dropped into `vvctre.exe` or vvctre was started with `./vvctre <file>`
 
 #### `void BeforeLoading()`
 
