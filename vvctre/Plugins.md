@@ -1496,6 +1496,10 @@ Adds a information change callback
 
 Adds a state change callback
 
+#### `void vvctre_multiplayer_create_room(const char* ip, u16 port, u32 member_slots)`
+
+Creates a room
+
 #### `const char* vvctre_get_version()`
 
 Returns vvctre's version
