@@ -4,6 +4,10 @@
 
 No. Lots of plugins would stop working.
 
+##### Will you add more settings in Host Multiplayer Room?
+
+No.
+
 ##### Will you add button to touch screen mappings?
 
 No. Plugins can do that.  
