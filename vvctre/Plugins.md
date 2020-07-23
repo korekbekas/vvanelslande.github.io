@@ -41,6 +41,7 @@
 - Quick settings: [vvanelslande/vvctre-plugin-quick-settings](https://github.com/vvanelslande/vvctre-plugin-quick-settings)
 - Log file: [vvanelslande/vvctre-plugin-log-file](https://github.com/vvanelslande/vvctre-plugin-log-file)
 - Get touch screen X and Y: [vvanelslande/vvctre-plugin-get-touch-screen-x-y](https://github.com/vvanelslande/vvctre-plugin-get-touch-screen-x-y)
+- VNC server: [vvanelslande/vnc4vvctre](https://github.com/vvanelslande/vnc4vvctre)
 - Pause shortcut (F8): [tbsp/vvctre-plugin-pause](https://github.com/tbsp/vvctre-plugin-pause)
 
 #### Patreon ($5)
