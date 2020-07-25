@@ -831,14 +831,6 @@ Sets Start -> Use Virtual SD Card
 
 Returns Start -> Use Virtual SD Card
 
-#### `void vvctre_settings_set_start_in_fullscreen_mode(bool value)`
-
-Sets Start -> Start in Fullscreen Mode
-
-#### `bool vvctre_settings_get_start_in_fullscreen_mode()`
-
-Returns Start -> Start in Fullscreen Mode
-
 #### `void vvctre_settings_set_record_frame_times(bool value)`
 
 Sets Start -> Record Frame Times
