@@ -65,6 +65,15 @@ audio.device <value>
 audio.microphone_input_type <Disabled|Real Device|Static Noise>
 audio.microphone_device <value>
 
+Camera
+----------------------------------------------------------------------------------
+camera.inner_engine <value>
+camera.inner_parameter <value>
+camera.outer_left_engine <value>
+camera.outer_left_parameter <value>
+camera.outer_right_engine <value>
+camera.outer_right_parameter <value>
+
 Multiplayer
 ----------------------------------------------------------------------------------
 multiplayer.ip <value>
