@@ -20,19 +20,20 @@ general.cpu_clock_percentage <value>
 
 Graphics
 ----------------------------------------------------------------------------------
-graphics.resolution <number|Window Size>
-graphics.custom_textures enable
-graphics.preload_custom_textures enable
-graphics.dump_textures enable
-graphics.background_color <#RRGGBB>
-graphics.vsync enable
-graphics.linear_filtering disable
-graphics.post_processing_shader <value>
-graphics.texture_filter <none|Anime4K Ultrafast|Bicubic|ScaleForce|xBRZ freescale>
 graphics.hardware_renderer disable
 graphics.hardware_shader disable
 graphics.hardware_shader_accurate_multiplication enable
+graphics.shader_jit disable
+graphics.custom_textures enable
+graphics.preload_custom_textures enable
+graphics.dump_textures enable
+graphics.vsync enable
+graphics.linear_filtering disable
 graphics.sharper_distant_objects enable
+graphics.background_color <#RRGGBB>
+graphics.resolution <number|Window Size>
+graphics.post_processing_shader <value>
+graphics.texture_filter <none|Anime4K Ultrafast|Bicubic|ScaleForce|xBRZ freescale>
 
 Layout
 ----------------------------------------------------------------------------------
