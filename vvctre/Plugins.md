@@ -1601,10 +1601,10 @@ Logs `line` (Critical level)
 
 #### InitialClock
 
-| Value | Description |
-|-------|-------------|
-| 0     | SystemTime  |
-| 1     | FixedTime   |
+| Value | Description    |
+|-------|----------------|
+| 0     | System         |
+| 1     | Unix Timestamp |
 
 #### StereoRenderOption
 
