@@ -4,7 +4,7 @@ You can use:
 
 ```
 start.file <file>
-general.enable_custom_cpu_ticks
+general.enable_custom_cpu_ticks enable
 general.custom_cpu_ticks <value>
 general.cpu_clock_percentage <value>
 graphics.resolution <number|Window Size>
