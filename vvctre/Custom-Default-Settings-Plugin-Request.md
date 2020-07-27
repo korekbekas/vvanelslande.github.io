@@ -8,6 +8,8 @@ Start
 start.file <value>
 start.region <Auto-select|Japan|USA|Europe|Australia|China|Korea|Taiwan>
 start.log_filter <value>
+start.record_frame_times enable
+start.use_virtual_sd_card disable
 start.enable_gdb_stub <port>
 
 General
