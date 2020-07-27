@@ -5,7 +5,7 @@ You can use:
 ```
 Start
 ----------------------------------------------------------------------------------
-start.file <file>
+start.file <value>
 start.region <Auto-select|Japan|USA|Europe|Australia|China|Korea|Taiwan>
 start.log_filter <value>
 start.enable_gdb_stub <port>
