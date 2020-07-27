@@ -16,6 +16,7 @@ start.unix_timestamp <value>
 
 General
 ----------------------------------------------------------------------------------
+general.cpu_jit disable
 general.limit_speed disable
 general.speed_limit <value>
 general.enable_custom_cpu_ticks enable
