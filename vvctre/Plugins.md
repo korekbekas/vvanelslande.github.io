@@ -1425,67 +1425,67 @@ Returns Multiplayer -> Password
 
 Joins the room
 
-#### `void vvctre_multiplayer_leave(void* /* core, currently unused */)`
+#### `void vvctre_multiplayer_leave(void* core)`
 
 Leaves the room
 
-#### `u8 vvctre_multiplayer_get_state(void* /* core, currently unused */)`
+#### `u8 vvctre_multiplayer_get_state(void* core)`
 
 Return the state
 
-#### `void vvctre_multiplayer_send_message(void* /* core, currently unused */, const char* message)`
+#### `void vvctre_multiplayer_send_message(void* core, const char* message)`
 
 Sends a message
 
-#### `void vvctre_multiplayer_set_game(void* /* core, currently unused */, const char* name, u64 id)`
+#### `void vvctre_multiplayer_set_game(void* core, const char* name, u64 id)`
 
 Sets the game
 
-#### `u8 vvctre_multiplayer_get_member_count(void* /* core, currently unused */)`
+#### `u8 vvctre_multiplayer_get_member_count(void* core)`
 
 Returns the member count
 
-#### `const char* vvctre_multiplayer_get_member_nickname(void* /* core, currently unused */, std::size_t index)`
+#### `const char* vvctre_multiplayer_get_member_nickname(void* core, std::size_t index)`
 
 Returns a member's nickname
 
-#### `u64 vvctre_multiplayer_get_member_game_id(void* /* core, currently unused */, std::size_t index)`
+#### `u64 vvctre_multiplayer_get_member_game_id(void* core, std::size_t index)`
 
 Returns a member's game ID
 
-#### `const char* vvctre_multiplayer_get_member_game_name(void* /* core, currently unused */, std::size_t index)`
+#### `const char* vvctre_multiplayer_get_member_game_name(void* core, std::size_t index)`
 
 Returns a member's game name
 
-#### `const char* vvctre_multiplayer_get_room_name(void* /* core, currently unused */)`
+#### `const char* vvctre_multiplayer_get_room_name(void* core)`
 
 Returns the room's name
 
-#### `const char* vvctre_multiplayer_get_room_description(void* /* core, currently unused */)`
+#### `const char* vvctre_multiplayer_get_room_description(void* core)`
 
 Returns the room's description
 
-#### `u8 vvctre_multiplayer_get_room_member_slots(void* /* core, currently unused */)`
+#### `u8 vvctre_multiplayer_get_room_member_slots(void* core)`
 
 Returns the room's member slots
 
-#### `void vvctre_multiplayer_on_chat_message(void* /* core, currently unused */, void(*callback)(const char* nickname, const char* message))`
+#### `void vvctre_multiplayer_on_chat_message(void* core, void(*callback)(const char* nickname, const char* message))`
 
 Adds a chat message callback
 
-#### `void vvctre_multiplayer_on_status_message(void* /* core, currently unused */, void(*callback)(u8 type, const char* nickname))`
+#### `void vvctre_multiplayer_on_status_message(void* core, void(*callback)(u8 type, const char* nickname))`
 
 Adds a status message callback
 
-#### `void vvctre_multiplayer_on_error(void* /* core, currently unused */, void(*callback)(u8 error))`
+#### `void vvctre_multiplayer_on_error(void* core, void(*callback)(u8 error))`
 
 Adds a error callback
 
-#### `void vvctre_multiplayer_on_information_change(void* /* core, currently unused */, void(*callback)())`
+#### `void vvctre_multiplayer_on_information_change(void* core, void(*callback)())`
 
 Adds a information change callback
 
-#### `void vvctre_multiplayer_on_state_change(void* /* core, currently unused */, void(*callback)())`
+#### `void vvctre_multiplayer_on_state_change(void* core, void(*callback)())`
 
 Adds a state change callback
 
