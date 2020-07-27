@@ -57,7 +57,11 @@ layout.bottom_bottom <value>
 
 Audio
 ----------------------------------------------------------------------------------
+audio.dsp_lle enable
+audio.dsp_lle_multiple_threads enable
 audio.volume <value>
+audio.sink <value>
+audio.device <value>
 audio.microphone_input_type <Disabled|Real Device|Static Noise>
 audio.microphone_device <value>
 
