@@ -1,4 +1,4 @@
-## Custom Default Settings Plugin Request Bot
+## Custom Default Settings Plugin Request
 
 You can use:
 
