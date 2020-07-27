@@ -11,6 +11,8 @@ start.log_filter <value>
 start.record_frame_times enable
 start.use_virtual_sd_card disable
 start.enable_gdb_stub <port>
+start.initial_time <System|Unix Timestamp>
+start.unix_timestamp <value>
 
 General
 ----------------------------------------------------------------------------------
