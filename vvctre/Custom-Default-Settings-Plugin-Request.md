@@ -28,7 +28,7 @@ layout.bottom_right <value>
 layout.bottom_bottom <value>
 multiplayer.ip <value>
 multiplayer.port <value>
-multiplayer.nickname (.+)
+multiplayer.nickname <value>
 graphics.vsync enable
 graphics.linear_filtering disable
 graphics.post_processing_shader <value>
