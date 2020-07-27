@@ -38,4 +38,6 @@ start.region <Auto-select|Japan|USA|Europe|Australia|China|Korea|Taiwan>
 graphics.hardware_shader_accurate_multiplication enable
 audio.microphone_input_type <Disabled|Real Device|Static Noise>
 audio.microphone_device <value>
+general.limit_speed disable
+general.speed_limit <value>
 ```
