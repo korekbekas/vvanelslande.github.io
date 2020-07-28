@@ -10,9 +10,9 @@ start.region <Auto-select|Japan|USA|Europe|Australia|China|Korea|Taiwan>
 start.log_filter <value>
 start.record_frame_times enable
 start.use_virtual_sd_card disable
-start.enable_gdb_stub <port>
 start.initial_time <System|Unix Timestamp>
 start.unix_timestamp <value>
+start.gdb_stub enable <port>
 
 General
 ----------------------------------------------------------------------------------
@@ -67,11 +67,11 @@ audio.microphone_device <value>
 
 Camera
 ----------------------------------------------------------------------------------
-camera.inner_engine <value>
+camera.inner_engine <blank|image>
 camera.inner_parameter <value>
-camera.outer_left_engine <value>
+camera.outer_left_engine <blank|image>
 camera.outer_left_parameter <value>
-camera.outer_right_engine <value>
+camera.outer_right_engine <blank|image>
 camera.outer_right_parameter <value>
 
 Multiplayer
