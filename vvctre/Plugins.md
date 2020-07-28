@@ -1533,6 +1533,10 @@ Logs `line` (Error level)
 
 Logs `line` (Critical level)
 
+#### `void vvctre_swap_buffers()`
+
+Swaps buffers. This can only be used when emulation is running.
+
 ### Enums
 
 [Countries](https://www.3dbrew.org/wiki/Country_Code_List)  
