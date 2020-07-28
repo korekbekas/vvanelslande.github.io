@@ -6,7 +6,7 @@ Download: [https://github.com/vvanelslande/vvctre/releases](https://github.com/v
 - Based on Citra
 - Small and fast
 - Portable (only uses `user` folder in vvctre's folder)
-- Has C/C++ plugin system with 346 functions
+- Has C/C++ plugin system with 344 functions
 - Has HOME Menu support
 - Has fixes
 - Has priority boost setting
