@@ -361,6 +361,14 @@ Reloads the camera images
 
 `ImGui::Unindent` wrapper
 
+#### `void vvctre_gui_spacing()`
+
+`ImGui::Spacing` wrapper
+
+#### `void vvctre_gui_separator()`
+
+`ImGui::Separator` wrapper
+
 #### `void vvctre_gui_dummy(float width, float height)`
 
 `ImGui::Dummy` wrapper
