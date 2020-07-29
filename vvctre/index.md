@@ -1,7 +1,6 @@
 ## vvctre Nintendo 3DS emulator
 
-GitHub: [https://github.com/vvanelslande/vvctre](https://github.com/vvanelslande/vvctre)  
-Download: [https://github.com/vvanelslande/vvctre/releases](https://github.com/vvanelslande/vvctre/releases)
+[GitHub](https://github.com/vvanelslande/vvctre) | [Download](https://github.com/vvanelslande/vvctre/releases) | [Dump](Dump) | [FAQ](FAQ) | [Hidden Features](Hidden-Features) | [Plugins](Plugins)
 
 - Small
 - Fast
@@ -22,13 +21,6 @@ Download: [https://github.com/vvanelslande/vvctre/releases](https://github.com/v
   - 64-bit Linux
     - SDL2 and libpng
     - For dialogs: Zenity, Matedialog, Qarma, or KDialog
-
-## Pages
-
-- [Dump](Dump)
-- [FAQ](FAQ)
-- [Hidden Features](Hidden-Features)
-- [Plugins](Plugins)
 
 ---
 
