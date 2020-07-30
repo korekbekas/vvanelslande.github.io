@@ -1,4 +1,4 @@
-## vvctre Nintendo 3DS emulator
+## vvctre Nintendo 3DS emulator [![Discord](https://discord.com/api/guilds/692523028046676048/widget.png?style=shield)](https://discord.gg/hVxCyb5) [![Mentioned in Awesome Software Patreons](https://awesome.re/mentioned-badge.svg)](https://github.com/uraimo/awesome-software-patreons)
 
 [GitHub](https://github.com/vvanelslande/vvctre) | [Download](https://github.com/vvanelslande/vvctre/releases) | [Dump](Dump) | [FAQ](FAQ) | [Hidden Features](Hidden-Features) | [Plugins](Plugins)
 
@@ -32,8 +32,4 @@
 
 ---
 
-[![Mentioned in Awesome Software Patreons](https://awesome.re/mentioned-badge.svg)](https://github.com/uraimo/awesome-software-patreons)
-
 [![Patreon](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/vvctre)
-
-[![Discord](https://discord.com/api/guilds/692523028046676048/widget.png?style=banner4)](https://discord.gg/hVxCyb5)
