@@ -6,8 +6,9 @@
 - Fast
 - Has C/C++ plugin system with 344 functions
 - Has HOME Menu support
-- Compatible with Citra `nand`, `sdmc`, and `sysdata` folders
+- Compatible with Citra rooms
 - Compatible with Citra post processing shaders
+- Compatible with Citra `nand`, `sdmc`, and `sysdata` folders
 - Compatible with [Luma3DS game patches](https://github.com/LumaTeam/Luma3DS/wiki/Optional-features#config-menu-options) (no locale emulation)
 - [http:C](https://www.3dbrew.org/wiki/HTTP_Services#HTTP_service_.22http:C.22) service works
 
