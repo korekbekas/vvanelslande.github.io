@@ -1,10 +1,12 @@
-## vvctre Nintendo 3DS emulator [![Discord](https://discord.com/api/guilds/692523028046676048/widget.png?style=shield)](https://discord.gg/hVxCyb5) [![Mentioned in Awesome Software Patreons](https://awesome.re/mentioned-badge.svg)](https://github.com/uraimo/awesome-software-patreons)
+## vvctre Nintendo 3DS emulator [![Mentioned in Awesome Software Patreons](https://awesome.re/mentioned-badge.svg)](https://github.com/uraimo/awesome-software-patreons)
 
-[GitHub](https://github.com/vvanelslande/vvctre) &#124; [Download](https://github.com/vvanelslande/vvctre/releases) &#124; [Dump](Dump) &#124; [FAQ](FAQ) &#124; [Hidden Features](Hidden-Features) &#124; [Plugins](Plugins)  
+[GitHub](https://github.com/vvanelslande/vvctre) &#124; [Download](https://github.com/vvanelslande/vvctre/releases) &#124; [Discord Server](https://discord.gg/hVxCyb5) &#124; [Patreon](https://www.patreon.com/vvctre)  
+Pages: [Dump](Dump) &#124; [FAQ](FAQ) &#124; [Hidden Features](Hidden-Features) &#124; [Plugins](Plugins)  
 Request Plugins: [Custom Default Settings](https://github.com/vvanelslande/vvctre/issues/new?assignees=&labels=Custom+Default+Settings+Plugin+Request&template=custom-default-settings-plugin-request.md&title=Custom+Default+Settings+Plugin+Request) &#124; [Button To Touch](https://github.com/vvanelslande/vvctre/issues/new?assignees=&labels=Button+To+Touch+Plugin+Request&template=button-to-touch-plugin-request.md&title=Button+To+Touch+Plugin+Request) &#124; [Window Size](https://github.com/vvanelslande/vvctre/issues/new?assignees=&labels=Window+Size+Plugin+Request&template=window-size-plugin-request.md&title=Window+Size+Plugin+Request) &#124; [Window Position](https://github.com/vvanelslande/vvctre/issues/new?assignees=&labels=Window+Position+Plugin+Request&template=window-position-plugin-request.md&title=Window+Position+Plugin+Request)
 
 - Small
 - Fast
+- Has C/C++ plugin system with 344 functions
 - Has HOME Menu support
 - Compatible with Citra rooms
 - Compatible with Citra post processing shaders
@@ -21,7 +23,3 @@ Request Plugins: [Custom Default Settings](https://github.com/vvanelslande/vvctr
   - 64-bit Linux
     - SDL2 and libpng
     - For dialogs: Zenity, Matedialog, Qarma, or KDialog
-
----
-
-[![Patreon](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/vvctre)
