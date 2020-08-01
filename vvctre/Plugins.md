@@ -1436,7 +1436,8 @@ Return the state
 
 #### `void vvctre_multiplayer_send_message(void* core, const char* message)`
 
-Sends a message
+Sends a message  
+Can't be used in callbacks
 
 #### `void vvctre_multiplayer_set_game(void* core, const char* name, u64 id)`
 
