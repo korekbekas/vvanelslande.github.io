@@ -8,10 +8,10 @@ Request Plugins: [Custom Default Settings](https://github.com/vvanelslande/vvctr
 - Fast
 - Has C/C++ plugin system with 344 functions
 - Has HOME Menu support
-- Compatible with Citra rooms
-- Compatible with Citra post processing shaders
-- Compatible with Citra `nand`, `sdmc`, and `sysdata` folders
-- Compatible with [Luma3DS game patches](https://github.com/LumaTeam/Luma3DS/wiki/Optional-features#config-menu-options) (no locale emulation)
+- Can connect to Citra rooms
+- Supports Citra post processing shaders
+- Supports Citra `nand`, `sdmc`, and `sysdata` folders
+- Supports [Luma3DS game patches](https://github.com/LumaTeam/Luma3DS/wiki/Optional-features#config-menu-options) (no locale emulation)
 
 ## Requirements 
 
