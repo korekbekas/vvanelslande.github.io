@@ -131,5 +131,5 @@ lle.fs enable
 
 Hacks
 ----------------------------------------------------------------------------------
-hacks.priority_boost disable
+hacks.priority_boost enable
 ```
