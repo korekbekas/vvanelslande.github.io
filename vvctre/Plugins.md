@@ -2,11 +2,9 @@
 
 ## Contents
 
-- [Things plugins can do](#free-doesnt-include-custom-default-settings-ones)
 - [Plugin list](#plugin-list)
   - [Free](#free)
   - [Patreon ($5)](#patreon-5)
-- [Request plugins](#request-plugins)
 - [Developer information](#developer-information)
   - [Templates](#templates)
   - [Functions vvctre imports](#functions-vvctre-imports)
@@ -20,15 +18,6 @@
     - [InitialClock](#initialclock)
     - [StereoRenderOption](#stereorenderoption)
     - [CameraIndex](#cameraindex)
-
-## Things plugins can do
-
-- Everything that can be done from the GUI
-- Change the theme
-- Set registers
-- Get registers
-- Add overlays
-- Press the touchscreen when a button is pressed ([example](https://github.com/vvanelslande/vvctre-plugin-button2touch-example))
 
 ## Plugin list
 
@@ -1580,7 +1569,7 @@ Swaps buffers. This can only be used when emulation is running.
 | 10    | Start       |
 | 11    | Select      |
 | 12    | Debug       |
-| 13    | Gpio14      |
+| 13    | GPIO14      |
 | 15    | ZL          |
 | 16    | ZR          |
 | 17    | Home        |
@@ -1614,12 +1603,12 @@ Swaps buffers. This can only be used when emulation is running.
 
 #### StereoRenderOption
 
-| Value | Description |
-|-------|-------------|
-| 0     | Off         |
-| 1     | SideBySide  |
-| 2     | Anaglyph    |
-| 3     | Interlaced  |
+| Value | Description  |
+|-------|--------------|
+| 0     | Off          |
+| 1     | Side by Side |
+| 2     | Anaglyph     |
+| 3     | Interlaced   |
 
 #### CameraIndex
 
