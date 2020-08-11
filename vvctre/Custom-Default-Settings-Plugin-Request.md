@@ -1,6 +1,6 @@
 ## Custom Default Settings Plugin Request
 
-You can use:
+You can add lines (some need to be edited) from this to your issue:
 
 ```
 Start
