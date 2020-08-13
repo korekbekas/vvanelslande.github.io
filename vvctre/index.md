@@ -15,11 +15,14 @@ Request Plugins: [Custom Default Settings](https://github.com/vvanelslande/vvctr
 
 ## Requirements 
 
-- GPU with OpenGL 3.3 support  
-- OS:
-  - 64-bit Windows 7+
-    - [Microsoft Visual C++ 2015-2019 Redistributable (x64)](https://aka.ms/vs/16/release/vc_redist.x64.exe)
-    - For AAC on N and KN: [Media Feature Pack](https://support.microsoft.com/en-us/help/3145500/media-feature-pack-list-for-windows-n-editions)
-  - 64-bit Linux
-    - SDL2 and libpng
-    - For dialogs: Zenity, Matedialog, Qarma, or KDialog
+OpenGL: 3.3+  
+OS: 64-bit Windows 7+ or Linux
+
+If you use Windows:
+- [Microsoft Visual C++ 2015-2019 Redistributable (x64)](https://aka.ms/vs/16/release/vc_redist.x64.exe)
+- For AAC on N and KN: [Media Feature Pack](https://support.microsoft.com/en-us/help/3145500/media-feature-pack-list-for-windows-n-editions)
+
+If you use Linux:
+- SDL2
+- libpng
+- For dialogs: Zenity, Matedialog, Qarma, or KDialog
