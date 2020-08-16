@@ -3,8 +3,6 @@
 You can add lines (some need to be edited) from this to your issue:
 
 ```
-Start
-----------------------------------------------------------------------------------
 start.file <value>
 start.play_movie <value>
 start.record_movie <value>
@@ -16,8 +14,6 @@ start.use_virtual_sd_card disable
 start.record_frame_times enable
 start.gdb_stub enable <port>
 
-General
-----------------------------------------------------------------------------------
 general.cpu_jit disable
 general.limit_speed disable
 general.enable_custom_cpu_ticks enable
@@ -25,8 +21,6 @@ general.speed_limit <value>
 general.custom_cpu_ticks <value>
 general.cpu_clock_percentage <value>
 
-Audio
-----------------------------------------------------------------------------------
 audio.dsp_lle enable
 audio.dsp_lle_multiple_threads enable
 audio.volume <value>
@@ -35,8 +29,6 @@ audio.device <value>
 audio.microphone_input_type <Disabled|Real Device|Static Noise>
 audio.microphone_device <value>
 
-Camera
-----------------------------------------------------------------------------------
 camera.inner_engine <blank|image>
 camera.inner_parameter <value>
 camera.outer_left_engine <blank|image>
@@ -44,12 +36,8 @@ camera.outer_left_parameter <value>
 camera.outer_right_engine <blank|image>
 camera.outer_right_parameter <value>
 
-System
-----------------------------------------------------------------------------------
 system.play_coins <value>
 
-Graphics
-----------------------------------------------------------------------------------
 graphics.hardware_renderer disable
 graphics.hardware_shader disable
 graphics.hardware_shader_accurate_multiplication enable
@@ -67,8 +55,6 @@ graphics.texture_filter <none|Anime4K Ultrafast|Bicubic|ScaleForce|xBRZ freescal
 graphics.3d_mode <Off|Side by Side|Anaglyph|Interlaced>
 graphics.3d_factor <value>
 
-Layout
-----------------------------------------------------------------------------------
 layout.layout <Default|Single Screen|Large Screen|Side by Side|Medium Screen>
 layout.use_custom_layout enable
 layout.swap_screens enable
@@ -82,14 +68,10 @@ layout.bottom_top <value>
 layout.bottom_right <value>
 layout.bottom_bottom <value>
 
-Multiplayer
-----------------------------------------------------------------------------------
 multiplayer.ip <value>
 multiplayer.port <value>
 multiplayer.nickname <value>
 
-LLE Modules
-----------------------------------------------------------------------------------
 lle.spi enable
 lle.gpio enable
 lle.mp enable
@@ -129,7 +111,5 @@ lle.pm enable
 lle.soc enable
 lle.fs enable
 
-Hacks
-----------------------------------------------------------------------------------
 hacks.priority_boost disable
 ```
