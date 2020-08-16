@@ -24,7 +24,7 @@ general.cpu_clock_percentage <value>
 audio.dsp_lle enable
 audio.dsp_lle_multiple_threads enable
 audio.volume <value>
-audio.sink <value>
+audio.sink <cubeb|sdl2|null>
 audio.device <value>
 audio.microphone_input_type <Disabled|Real Device|Static Noise>
 audio.microphone_device <value>
