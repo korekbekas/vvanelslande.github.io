@@ -15,7 +15,7 @@
     Progress file:
     <input
       type="file"
-      onchange="onchange.call(this, event)"
+      onchange="unlockEverything.call(this, event)"
       style="display: none;"
     />
     <input
@@ -26,7 +26,7 @@
     License: <a href="javascript:license()">GPLv3</a>
 
     <script>
-      function onchange(event) {
+      function unlockEverything(event) {
         const file = event.target.files[0];
 
         if (!file) {
