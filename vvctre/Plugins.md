@@ -1600,7 +1600,7 @@ Returns a member's game name
 
 #### `void vvctre_multiplayer_get_member_mac_address(void* core, std::size_t index, u8* mac_address)`
 
-Returns a member's MAC address
+Copies a member's MAC address to `mac_address`
 
 #### `const char* vvctre_multiplayer_get_room_name(void* core)`
 
