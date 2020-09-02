@@ -86,12 +86,12 @@ Called before loading the file if a file was dropped into `vvctre.exe` or vvctre
 #### `void BeforeLoading()`
 
 Optional  
-Called before loading the file
+Called before loading the file (only the first time)
 
 #### `void EmulationStarting()`
 
 Optional  
-Called after loading the file
+Called after loading the file (only the first time)
 
 #### `void EmulatorClosing()`
 
