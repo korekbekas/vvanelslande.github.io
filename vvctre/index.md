@@ -6,7 +6,7 @@ Request Plugins: [Custom Default Settings](https://github.com/vvanelslande/vvctr
 
 - Small
 - Fast
-- Has C/C++ plugin system with 344 functions
+- Has C/C++ plugin system
 - Has HOME Menu support
 - Can connect to Citra rooms
 - Supports Citra post processing shaders
