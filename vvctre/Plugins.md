@@ -31,6 +31,7 @@
 - Log file: [vvanelslande/vvctre-plugin-log-file](https://github.com/vvanelslande/vvctre-plugin-log-file)
 - Get touch screen X and Y: [vvanelslande/vvctre-plugin-get-touch-screen-x-y](https://github.com/vvanelslande/vvctre-plugin-get-touch-screen-x-y)
 - VNC server: [vvanelslande/vnc4vvctre](https://github.com/vvanelslande/vnc4vvctre)
+- Always return true in the wlan_comm_id check: [vvanelslande/vvctre-plugin-always-return-true-in-the-wlan-comm-id-check](https://github.com/vvanelslande/vvctre-plugin-always-return-true-in-the-wlan-comm-id-check)
 - Pause shortcut (F8): [tbsp/vvctre-plugin-pause](https://github.com/tbsp/vvctre-plugin-pause)
 
 #### Patreon ($5)
@@ -133,6 +134,12 @@ Called after a screenshot is made
 
 Optional  
 Called when a line is added to the log
+
+#### `bool OverrideWlanCommIdCheck(u32 in_beacon, u32 requested)`
+
+Optional  
+Overrides the wlan_comm_id check  
+If this returns true, the beacon is added to RecvBeaconBroadcastData's buffer
 
 ### Functions plugins import
 
@@ -368,9 +375,71 @@ If the current item is hovered, sets the tooltip to `text`
 
 `ImGui::IsItemHovered` wrapper
 
+#### `bool vvctre_gui_is_item_focused()`
+
+`ImGui::IsItemFocused` wrapper
+
+#### `bool vvctre_gui_is_item_clicked(int button)`
+
+`ImGui::IsItemClicked` wrapper
+
+#### `bool vvctre_gui_is_item_visible()`
+
+`ImGui::IsItemVisible` wrapper
+
+#### `bool vvctre_gui_is_item_edited()`
+
+`ImGui::IsItemEdited` wrapper
+
+#### `bool vvctre_gui_is_item_activated()`
+
+`ImGui::IsItemActivated` wrapper
+
+#### `bool vvctre_gui_is_item_deactivated()`
+
+`ImGui::IsItemDeactivated` wrapper
+
 #### `bool vvctre_gui_is_item_deactivated_after_edit()`
 
 `ImGui::IsItemDeactivatedAfterEdit` wrapper
+
+#### `bool vvctre_gui_is_item_toggled_open()`
+
+`ImGui::IsItemToggledOpen` wrapper
+
+#### `bool vvctre_gui_is_any_item_hovered()`
+
+`ImGui::IsAnyItemHovered` wrapper
+
+#### `bool vvctre_gui_is_any_item_active()`
+
+`ImGui::IsAnyItemActive` wrapper
+
+#### `bool vvctre_gui_is_any_item_focused()`
+
+`ImGui::IsAnyItemFocused` wrapper
+
+#### `void vvctre_gui_get_item_rect_min(float out[2])`
+
+Calls `ImGui::GetItemRectMin`  
+Sets `out[0]` to `x`  
+Sets `out[1]` to `y`
+
+#### `void vvctre_gui_get_item_rect_max(float out[2])`
+
+Calls `ImGui::GetItemRectMax`  
+Sets `out[0]` to `x`  
+Sets `out[1]` to `y`
+
+#### `void vvctre_gui_get_item_rect_size(float out[2])`
+
+Calls `ImGui::GetItemRectSize`  
+Sets `out[0]` to `x`  
+Sets `out[1]` to `y`
+
+#### `void vvctre_gui_set_item_allow_overlap()`
+
+`ImGui::SetItemAllowOverlap` wrapper
 
 #### `void vvctre_gui_end_tooltip()`
 
@@ -404,11 +473,19 @@ Adds colored text
 
 `ImGui::RadioButton` wrapper
 
+#### `bool vvctre_gui_image_button(void* texture_id, float width, float height, float uv0[2], float uv1[2], int frame_padding, float background_color[4], float tint_color[4])`
+
+`ImGui::ImageButton` wrapper
+
 #### `bool vvctre_gui_checkbox(const char* label, bool* checked)`
 
 `ImGui::Checkbox` wrapper
 
 #### `bool vvctre_gui_begin(const char* name)`
+
+`ImGui::Begin` wrapper
+
+#### `bool vvctre_gui_begin_ex(const char* name, bool* open, int flags)`
 
 `ImGui::Begin` wrapper
 
@@ -576,9 +653,77 @@ Creates a overlay with the specified name and initial position
 
 `ImGui::SliderScalar` wrapper
 
+#### `void vvctre_gui_image(void* texture_id, float width, float height, float uv0[2], float uv1[2], float tint_color[4], float border_color[4])`
+
+`ImGui::Image` wrapper
+
 #### `void vvctre_gui_set_color(int index, float r, float g, float b, float a)`
 
 Sets a GUI color
+
+#### `void vvctre_gui_get_color(int index, float color_out[4])`
+
+Get a GUI color
+
+#### `void vvctre_gui_set_font(void* data, int data_size, float font_size)`
+
+Sets the GUI font
+
+#### `bool vvctre_gui_is_window_appearing()`
+
+`ImGui::IsWindowAppearing` wrapper
+
+#### `bool vvctre_gui_is_window_collapsed()`
+
+`ImGui::IsWindowCollapsed` wrapper
+
+#### `bool vvctre_gui_is_window_focused(int flags)`
+
+`ImGui::IsWindowFocused` wrapper
+
+#### `bool vvctre_gui_is_window_hovered(int flags)`
+
+`ImGui::IsWindowHovered` wrapper
+
+#### `void vvctre_gui_get_window_pos(float out[2])`
+
+Calls `ImGui::GetWindowPos`  
+Sets `out[0]` to `x`  
+Sets `out[1]` to `y`
+
+#### `void vvctre_gui_get_window_size(float out[2])`
+
+Calls `ImGui::GetWindowSize`  
+Sets `out[0]` to `x`  
+Sets `out[1]` to `y`
+
+#### `void vvctre_gui_set_next_window_pos(float x, float y, int condition, float pivot[2])`
+
+`ImGui::SetNextWindowPos` wrapper
+
+#### `void vvctre_gui_set_next_window_size(float width, float height, int condition)`
+
+`ImGui::SetNextWindowSize` wrapper
+
+#### `void vvctre_gui_set_next_window_size_constraints(float min[2], float max[2])`
+
+`ImGui::SetNextWindowSizeConstraints` wrapper
+
+#### `void vvctre_gui_set_next_window_content_size(float width, float height)`
+
+`ImGui::SetNextWindowContentSize` wrapper
+
+#### `void vvctre_gui_set_next_window_collapsed(bool collapsed, int condition)`
+
+`ImGui::SetNextWindowCollapsed` wrapper
+
+#### `void vvctre_gui_set_next_window_focus()`
+
+`ImGui::SetNextWindowFocus` wrapper
+
+#### `u64 vvctre_get_dear_imgui_version()`
+
+Returns `IMGUI_VERSION_NUM`
 
 #### `void vvctre_set_os_window_size(void* plugin_manager, int width, int height)`
 
@@ -1433,6 +1578,10 @@ Can't be used in callbacks
 
 Sets the game
 
+#### `const char* vvctre_multiplayer_get_nickname(void* core)`
+
+Returns your nickname
+
 #### `u8 vvctre_multiplayer_get_member_count(void* core)`
 
 Returns the member count
@@ -1448,6 +1597,10 @@ Returns a member's game ID
 #### `const char* vvctre_multiplayer_get_member_game_name(void* core, std::size_t index)`
 
 Returns a member's game name
+
+#### `void vvctre_multiplayer_get_member_mac_address(void* core, std::size_t index, u8* mac_address)`
+
+Returns a member's MAC address
 
 #### `const char* vvctre_multiplayer_get_room_name(void* core)`
 
@@ -1528,6 +1681,10 @@ Logs `line` (Critical level)
 #### `void vvctre_swap_buffers()`
 
 Swaps buffers. This can only be used when emulation is running.
+
+#### `void* vvctre_get_opengl_function(const char* name)`
+
+`SDL_GL_GetProcAddress` wrapper
 
 ### Enums
 
