@@ -371,7 +371,7 @@ If the current item is hovered, sets the tooltip to `text`
 
 `ImGui::BeginTooltip` wrapper
 
-#### `bool vvctre_gui_is_item_hovered(int flags)`
+#### `bool vvctre_gui_is_item_hovered(ImGuiHoveredFlags flags)`
 
 `ImGui::IsItemHovered` wrapper
 
@@ -461,7 +461,7 @@ Adds colored text
 
 `ImGui::SmallButton` wrapper
 
-#### `bool vvctre_gui_color_button(const char* tooltip, float red, float green, float blue, float alpha, int flags)`
+#### `bool vvctre_gui_color_button(const char* tooltip, float red, float green, float blue, float alpha, ImGuiColorEditFlags flags)`
 
 `ImGui::ColorButton` wrapper
 
@@ -485,7 +485,7 @@ Adds colored text
 
 `ImGui::Begin` wrapper
 
-#### `bool vvctre_gui_begin_ex(const char* name, bool* open, int flags)`
+#### `bool vvctre_gui_begin_ex(const char* name, bool* open, ImGuiWindowFlags flags)`
 
 `ImGui::Begin` wrapper
 
@@ -601,11 +601,11 @@ Creates a overlay with the specified name and initial position
 
 `ImGui::InputDouble` wrapper
 
-#### `bool vvctre_gui_color_edit(const char* label, float* color, int flags)`
+#### `bool vvctre_gui_color_edit(const char* label, float* color, ImGuiColorEditFlags flags)`
 
 `ImGui::ColorEdit4` wrapper
 
-#### `bool vvctre_gui_color_picker(const char* label, float* color, int flags)`
+#### `bool vvctre_gui_color_picker(const char* label, float* color, ImGuiColorEditFlags flags)`
 
 `ImGui::ColorPicker4` wrapper
 
@@ -677,11 +677,11 @@ Sets the GUI font
 
 `ImGui::IsWindowCollapsed` wrapper
 
-#### `bool vvctre_gui_is_window_focused(int flags)`
+#### `bool vvctre_gui_is_window_focused(ImGuiFocusedFlags flags)`
 
 `ImGui::IsWindowFocused` wrapper
 
-#### `bool vvctre_gui_is_window_hovered(int flags)`
+#### `bool vvctre_gui_is_window_hovered(ImGuiHoveredFlags flags)`
 
 `ImGui::IsWindowHovered` wrapper
 
