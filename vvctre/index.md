@@ -15,7 +15,7 @@ Request Plugins: [Custom Default Settings](https://github.com/vvanelslande/vvctr
 
 ## Requirements 
 
-OpenGL: 3.3+  
+OpenGL: 3.3+ (if your GPU doesn't support it, click [here](data:text/plain;charset=utf-8;base64,SWYgeW91IHVzZSBXaW5kb3dzOiBodHRwczovL2dpdGh1Yi5jb20vcGFsMTAwMC9tZXNhLWRpc3Qtd2luDQpJZiB5b3UgdXNlIExpbnV4OiBydW4gTElCR0xfQUxXQVlTX1NPRlRXQVJFPTEgLi92dmN0cmUNCg0KRW11bGF0aW9uIHdpbGwgYmUgc2xvd2Vy))  
 OS: 64-bit Windows 7+ or Linux
 
 If you use Windows:
