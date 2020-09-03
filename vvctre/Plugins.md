@@ -817,6 +817,132 @@ Sets `out[1]` to `y`
 
 `ImGui::SetNextWindowFocus` wrapper
 
+#### `void vvctre_gui_set_next_window_bg_alpha(float alpha)`
+
+`ImGui::SetNextWindowBgAlpha` wrapper
+
+#### `void vvctre_gui_set_window_pos(float x, float y, ImGuiCond condition)`
+
+`ImGui::SetWindowPos` wrapper
+
+#### `void vvctre_gui_set_window_size(float width, float height, ImGuiCond condition)`
+
+`ImGui::SetWindowSize` wrapper
+
+#### `void vvctre_gui_set_window_collapsed(bool collapsed, ImGuiCond condition)`
+
+`ImGui::SetWindowCollapsed` wrapper
+
+#### `void vvctre_gui_set_window_focus()`
+
+`ImGui::SetWindowFocus` wrapper
+
+#### `void vvctre_gui_set_window_font_scale(float scale)`
+
+`ImGui::SetWindowFontScale` wrapper
+
+#### `void vvctre_gui_set_window_pos_named(const char* name, float x, float y, ImGuiCond condition)`
+
+`ImGui::SetWindowPos` wrapper
+
+#### `void vvctre_gui_set_window_size_named(const char* name, float width, float height, ImGuiCond condition)`
+
+`ImGui::SetWindowSize` wrapper
+
+#### `void vvctre_gui_set_window_collapsed_named(const char* name, bool collapsed, ImGuiCond condition)`
+
+`ImGui::SetWindowCollapsed` wrapper
+
+#### `void vvctre_gui_set_window_focus_named(const char* name)`
+
+`ImGui::SetWindowFocus` wrapper
+
+#### `bool vvctre_gui_is_key_down(int key)`
+
+`ImGui::IsKeyDown` wrapper
+
+#### `bool vvctre_gui_is_key_pressed(int key, bool repeat)`
+
+`ImGui::IsKeyPressed` wrapper
+
+#### `bool vvctre_gui_is_key_released(int key)`
+
+`ImGui::IsKeyReleased` wrapper
+
+#### `int vvctre_gui_get_key_pressed_amount(int key, float repeat_delay, float rate)`
+
+`ImGui::GetKeyPressedAmount` wrapper
+
+#### `void vvctre_gui_capture_keyboard_from_app(bool want_capture_keyboard_value)`
+
+`ImGui::CaptureKeyboardFromApp` wrapper
+
+#### `bool vvctre_gui_is_mouse_down(ImGuiMouseButton button)`
+
+`ImGui::IsMouseDown` wrapper
+
+#### `bool vvctre_gui_is_mouse_clicked(ImGuiMouseButton button, bool repeat)`
+
+`ImGui::IsMouseClicked` wrapper
+
+#### `bool vvctre_gui_is_mouse_released(ImGuiMouseButton button)`
+
+`ImGui::IsMouseReleased` wrapper
+
+#### `bool vvctre_gui_is_mouse_double_clicked(ImGuiMouseButton button)`
+
+`ImGui::IsMouseDoubleClicked` wrapper
+
+#### `bool vvctre_gui_is_mouse_hovering_rect(const float min[2], const float max[2], bool clip)`
+
+`ImGui::IsMouseHoveringRect` wrapper
+
+#### `bool vvctre_gui_is_mouse_pos_valid(const float pos[2])`
+
+`ImGui::IsMousePosValid` wrapper
+
+#### `bool vvctre_gui_is_any_mouse_down()`
+
+`ImGui::IsAnyMouseDown` wrapper
+
+#### `void vvctre_gui_get_mouse_pos(float out[2])`
+
+Calls `ImGui::GetMousePos`  
+Sets `out[0]` to `x`  
+Sets `out[1]` to `y`
+
+#### `void vvctre_gui_get_mouse_pos_on_opening_current_popup(float out[2])`
+
+Calls `ImGui::GetMousePosOnOpeningCurrentPopup`  
+Sets `out[0]` to `x`  
+Sets `out[1]` to `y`
+
+#### `bool vvctre_gui_is_mouse_dragging(ImGuiMouseButton button, float lock_threshold)`
+
+`ImGui::IsMouseDragging` wrapper
+
+#### `void vvctre_gui_get_mouse_drag_delta(ImGuiMouseButton button, float lock_threshold, float out[2])`
+
+Calls `ImGui::GetMouseDragDelta`  
+Sets `out[0]` to `x`  
+Sets `out[1]` to `y`
+
+#### `void vvctre_gui_reset_mouse_drag_delta(ImGuiMouseButton button)`
+
+`ImGui::ResetMouseDragDelta` wrapper
+
+#### `ImGuiMouseCursor vvctre_gui_get_mouse_cursor()`
+
+`ImGui::GetMouseCursor` wrapper
+
+#### `void vvctre_gui_set_mouse_cursor(ImGuiMouseCursor cursor_type)`
+
+`ImGui::SetMouseCursor` wrapper
+
+#### `void vvctre_gui_capture_mouse_from_app(bool want_capture_mouse_value)`
+
+`ImGui::CaptureMouseFromApp` wrapper
+
 #### `u64 vvctre_get_dear_imgui_version()`
 
 Returns `IMGUI_VERSION_NUM`
