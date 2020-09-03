@@ -375,6 +375,46 @@ Sets `out[1]` to `y`
 
 `ImGui::GetWindowContentRegionWidth` wrapper
 
+#### `float vvctre_gui_get_scroll_x()`
+
+`ImGui::GetScrollX` wrapper
+
+#### `float vvctre_gui_get_scroll_y()`
+
+`ImGui::GetScrollY` wrapper
+
+#### `float vvctre_gui_get_scroll_max_x()`
+
+`ImGui::GetScrollMaxX` wrapper
+
+#### `float vvctre_gui_get_scroll_max_y()`
+
+`ImGui::GetScrollMaxY` wrapper
+
+#### `void vvctre_gui_set_scroll_x(float scroll_x)`
+
+`ImGui::SetScrollX` wrapper
+
+#### `void vvctre_gui_set_scroll_y(float scroll_y)`
+
+`ImGui::SetScrollY` wrapper
+
+#### `void vvctre_gui_set_scroll_here_x(float center_x_ratio)`
+
+`ImGui::SetScrollHereX` wrapper
+
+#### `void vvctre_gui_set_scroll_here_y(float center_y_ratio)`
+
+`ImGui::SetScrollHereY` wrapper
+
+#### `void vvctre_gui_set_scroll_from_pos_x(float local_x, float center_x_ratio)`
+
+`ImGui::SetScrollFromPosX` wrapper
+
+#### `void vvctre_gui_set_scroll_from_pos_y(float local_y, float center_y_ratio)`
+
+`ImGui::SetScrollFromPosY` wrapper
+
 #### `void vvctre_gui_same_line()`
 
 `ImGui::SameLine` wrapper
