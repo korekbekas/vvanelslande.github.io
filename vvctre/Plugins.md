@@ -673,6 +673,38 @@ Creates a overlay with the specified name and initial position
 
 `ImGui::Image` wrapper
 
+#### `void vvctre_gui_columns(int count, const char* id, bool border)`
+
+`ImGui::Columns` wrapper
+
+#### `void vvctre_gui_next_column()`
+
+`ImGui::GetNextColumn` wrapper
+
+#### `int vvctre_gui_get_column_index()`
+
+`ImGui::GetColumnIndex` wrapper
+
+#### `float vvctre_gui_get_column_width(int column_index)`
+
+`ImGui::GetColumnWidth` wrapper
+
+#### `void vvctre_gui_set_column_width(int column_index, float width)`
+
+`ImGui::SetColumnWidth` wrapper
+
+#### `float vvctre_gui_get_column_offset(int column_index)`
+
+`ImGui::GetColumnOffset` wrapper
+
+#### `void vvctre_gui_set_column_offset(int column_index, float offset_x)`
+
+`ImGui::SetColumnOffset` wrapper
+
+#### `int vvctre_gui_get_columns_count()`
+
+`ImGui::GetColumnsCount` wrapper
+
 #### `void vvctre_gui_set_color(int index, float r, float g, float b, float a)`
 
 Sets a GUI color
