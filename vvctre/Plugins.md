@@ -891,41 +891,121 @@ Creates a overlay with the specified name and initial position
 
 `ImGui::InputScalar` wrapper
 
+#### `bool vvctre_gui_u8_input_ex(const char* label, u8* value, const u8* step, const u8* step_fast, const char* format, ImGuiInputTextFlags flags)`
+
+`ImGui::InputScalar` wrapper
+
+#### `bool vvctre_gui_u8_inputs(const char* label, u8* values, int components, const u8* step, const u8* step_fast, const char* format, ImGuiInputTextFlags flags)`
+
+`ImGui::InputScalarN` wrapper
+
 #### `bool vvctre_gui_u16_input(const char* label, u16* value)`
 
 `ImGui::InputScalar` wrapper
+
+#### `bool vvctre_gui_u16_input_ex(const char* label, u16* value, const u16* step, const u16* step_fast, const char* format, ImGuiInputTextFlags flags)`
+
+`ImGui::InputScalar` wrapper
+
+#### `bool vvctre_gui_u16_inputs(const char* label, u16* values, int components, const u16* step, const u16* step_fast, const char* format, ImGuiInputTextFlags flags)`
+
+`ImGui::InputScalarN` wrapper
 
 #### `bool vvctre_gui_u32_input(const char* label, u32* value)`
 
 `ImGui::InputScalar` wrapper
 
+#### `bool vvctre_gui_u32_input_ex(const char* label, u32* value, const u32* step, const u32* step_fast, const char* format, ImGuiInputTextFlags flags)`
+
+`ImGui::InputScalar` wrapper
+
+#### `bool vvctre_gui_u32_inputs(const char* label, u32* values, int components, const u32* step, const u32* step_fast, const char* format, ImGuiInputTextFlags flags)`
+
+`ImGui::InputScalarN` wrapper
+
 #### `bool vvctre_gui_u64_input(const char* label, u64* value)`
 
 `ImGui::InputScalar` wrapper
+
+#### `bool vvctre_gui_u64_input_ex(const char* label, u64* value, const u64* step, const u64* step_fast, const char* format, ImGuiInputTextFlags flags)`
+
+`ImGui::InputScalar` wrapper
+
+#### `bool vvctre_gui_u64_inputs(const char* label, u64* values, int components, const u64* step, const u64* step_fast, const char* format, ImGuiInputTextFlags flags)`
+
+`ImGui::InputScalarN` wrapper
 
 #### `bool vvctre_gui_s8_input(const char* label, s8* value)`
 
 `ImGui::InputScalar` wrapper
 
+#### `bool vvctre_gui_s8_input_ex(const char* label, s8* value, const s8* step, const s8* step_fast, const char* format, ImGuiInputTextFlags flags)`
+
+`ImGui::InputScalar` wrapper
+
+#### `bool vvctre_gui_s8_inputs(const char* label, s8* values, int components, const s8* step, const s8* step_fast, const char* format, ImGuiInputTextFlags flags)`
+
+`ImGui::InputScalarN` wrapper
+
 #### `bool vvctre_gui_s16_input(const char* label, s16* value)`
 
 `ImGui::InputScalar` wrapper
+
+#### `bool vvctre_gui_s16_input_ex(const char* label, s16* value, const s16* step, const s16* step_fast, const char* format, ImGuiInputTextFlags flags)`
+
+`ImGui::InputScalar` wrapper
+
+#### `bool vvctre_gui_s16_inputs(const char* label, s16* values, int components, const s16* step, const s16* step_fast, const char* format, ImGuiInputTextFlags flags)`
+
+`ImGui::InputScalarN` wrapper
 
 #### `bool vvctre_gui_int_input(const char* label, int* value, int step, int step_fast)`
 
 `ImGui::InputInt` wrapper
 
+#### `bool vvctre_gui_int_input_ex(const char* label, int* value, const int* step, const int* step_fast, const char* format, ImGuiInputTextFlags flags)`
+
+`ImGui::InputScalar` wrapper
+
+#### `bool vvctre_gui_int_inputs(const char* label, int* values, int components, const int* step, const int* step_fast, const char* format, ImGuiInputTextFlags flags)`
+
+`ImGui::InputScalarN` wrapper
+
 #### `bool vvctre_gui_s64_input(const char* label, s64* value)`
 
 `ImGui::InputScalar` wrapper
+
+#### `bool vvctre_gui_s64_input_ex(const char* label, s64* value, const s64* step, const s64* step_fast, const char* format, ImGuiInputTextFlags flags)`
+
+`ImGui::InputScalar` wrapper
+
+#### `bool vvctre_gui_s64_inputs(const char* label, s64* values, int components, const s64* step, const s64* step_fast, const char* format, ImGuiInputTextFlags flags)`
+
+`ImGui::InputScalarN` wrapper
 
 #### `bool vvctre_gui_float_input(const char* label, float* value, float step, float step_fast)`
 
 `ImGui::InputFloat` wrapper
 
+#### `bool vvctre_gui_float_input_ex(const char* label, float* value, const float* step, const float* step_fast, const char* format, ImGuiInputTextFlags flags)`
+
+`ImGui::InputScalar` wrapper
+
+#### `bool vvctre_gui_float_inputs(const char* label, float* values, int components, const float* step, const float* step_fast, const char* format, ImGuiInputTextFlags flags)`
+
+`ImGui::InputScalarN` wrapper
+
 #### `bool vvctre_gui_double_input(const char* label, double* value, double step, double step_fast)`
 
 `ImGui::InputDouble` wrapper
+
+#### `bool vvctre_gui_double_input_ex(const char* label, double* value, const double* step, const double* step_fast, const char* format, ImGuiInputTextFlags flags)`
+
+`ImGui::InputScalar` wrapper
+
+#### `bool vvctre_gui_double_inputs(const char* label, double* values, int components, const double* step, const double* step_fast, const char* format, ImGuiInputTextFlags flags)`
+
+`ImGui::InputScalarN` wrapper
 
 #### `bool vvctre_gui_color_edit(const char* label, float* color, ImGuiColorEditFlags flags)`
 
@@ -951,41 +1031,121 @@ Creates a overlay with the specified name and initial position
 
 `ImGui::SliderScalar` wrapper
 
+#### `bool vvctre_gui_slider_u8_ex(const char* label, u8* value, const u8 minimum, const u8 maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::SliderScalar` wrapper
+
+#### `bool vvctre_gui_sliders_u8(const char* label, u8* values, int components, const u8 minimum, const u8 maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::SliderScalarN` wrapper
+
 #### `bool vvctre_gui_slider_u16(const char* label, u16* value, const u16 minimum, const u16 maximum, const char* format)`
 
 `ImGui::SliderScalar` wrapper
+
+#### `bool vvctre_gui_slider_u16_ex(const char* label, u16* value, const u16 minimum, const u16 maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::SliderScalar` wrapper
+
+#### `bool vvctre_gui_sliders_u16(const char* label, u16* values, int components, const u16 minimum, const u16 maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::SliderScalarN` wrapper
 
 #### `bool vvctre_gui_slider_u32(const char* label, u32* value, const u32 minimum, const u32 maximum, const char* format)`
 
 `ImGui::SliderScalar` wrapper
 
+#### `bool vvctre_gui_slider_u32_ex(const char* label, u32* value, const u32 minimum, const u32 maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::SliderScalar` wrapper
+
+#### `bool vvctre_gui_sliders_u32(const char* label, u32* values, int components, const u32 minimum, const u32 maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::SliderScalarN` wrapper
+
 #### `bool vvctre_gui_slider_u64(const char* label, u64* value, const u64 minimum, const u64 maximum, const char* format)`
 
 `ImGui::SliderScalar` wrapper
+
+#### `bool vvctre_gui_slider_u64_ex(const char* label, u64* value, const u64 minimum, const u64 maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::SliderScalar` wrapper
+
+#### `bool vvctre_gui_sliders_u64(const char* label, u64* values, int components, const u64 minimum, const u64 maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::SliderScalarN` wrapper
 
 #### `bool vvctre_gui_slider_s8(const char* label, s8* value, const s8 minimum, const s8 maximum, const char* format)`
 
 `ImGui::SliderScalar` wrapper
 
+#### `bool vvctre_gui_slider_s8_ex(const char* label, s8* value, const s8 minimum, const s8 maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::SliderScalar` wrapper
+
+#### `bool vvctre_gui_sliders_s8(const char* label, s8* values, int components, const s8 minimum, const s8 maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::SliderScalarN` wrapper
+
 #### `bool vvctre_gui_slider_s16(const char* label, s16* value, const s16 minimum, const s16 maximum, const char* format)`
 
 `ImGui::SliderScalar` wrapper
+
+#### `bool vvctre_gui_slider_s16_ex(const char* label, s16* value, const s16 minimum, const s16 maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::SliderScalar` wrapper
+
+#### `bool vvctre_gui_sliders_s16(const char* label, s16* values, int components, const s16 minimum, const s16 maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::SliderScalarN` wrapper
 
 #### `bool vvctre_gui_slider_s32(const char* label, s32* value, const s32 minimum, const s32 maximum, const char* format)`
 
 `ImGui::SliderScalar` wrapper
 
+#### `bool vvctre_gui_slider_s32_ex(const char* label, s32* value, const s32 minimum, const s32 maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::SliderScalar` wrapper
+
+#### `bool vvctre_gui_sliders_s32(const char* label, s32* values, int components, const s32 minimum, const s32 maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::SliderScalarN` wrapper
+
 #### `bool vvctre_gui_slider_s64(const char* label, s64* value, const s64 minimum, const s64 maximum, const char* format)`
 
 `ImGui::SliderScalar` wrapper
+
+#### `bool vvctre_gui_slider_s64_ex(const char* label, s32* value, const s32 minimum, const s32 maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::SliderScalar` wrapper
+
+#### `bool vvctre_gui_sliders_s64(const char* label, s64* values, int components, const s64 minimum, const s64 maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::SliderScalarN` wrapper
 
 #### `bool vvctre_gui_slider_float(const char* label, float* value, const float minimum, const float maximum, const char* format)`
 
 `ImGui::SliderScalar` wrapper
 
+#### `bool vvctre_gui_slider_float_ex(const char* label, float* value, const float minimum, const float maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::SliderScalar` wrapper
+
+#### `bool vvctre_gui_sliders_float(const char* label, float* values, int components, const float minimum, const float maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::SliderScalarN` wrapper
+
 #### `bool vvctre_gui_slider_double(const char* label, double* value, const double minimum, const double maximum, const char* format)`
 
 `ImGui::SliderScalar` wrapper
+
+#### `bool vvctre_gui_slider_double_ex(const char* label, float* value, const double minimum, const double maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::SliderScalar` wrapper
+
+#### `bool vvctre_gui_sliders_double(const char* label, double* values, int components, const double minimum, const double maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::SliderScalarN` wrapper
 
 #### `void vvctre_gui_image(void* texture_id, float width, float height, float uv0[2], float uv1[2], float tint_color[4], float border_color[4])`
 
