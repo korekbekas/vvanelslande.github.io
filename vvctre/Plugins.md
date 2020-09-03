@@ -93,6 +93,16 @@ Called before loading the file (only the first time)
 Optional  
 Called after loading the file (only the first time)
 
+#### `void BeforeLoadingAfterFirstTime()`
+
+Optional  
+Called before loading the file (after the first time)
+
+#### `void EmulationStartingAfterFirstTime()`
+
+Optional  
+Called after loading the file (after the first time)
+
 #### `void EmulatorClosing()`
 
 Optional  
@@ -140,6 +150,12 @@ Called when a line is added to the log
 Optional  
 Overrides the wlan_comm_id check  
 If this returns true, the beacon is added to RecvBeaconBroadcastData's buffer
+
+#### `void OverrideOnLoadFailed(u32 result)`
+
+Optional  
+Called when a file load error happens  
+If a plugin exports this, the file load error messages are disabled
 
 ### Functions plugins import
 
@@ -669,6 +685,10 @@ Get a GUI color
 
 Sets the GUI font
 
+#### `void* vvctre_gui_set_font_and_get_pointer(void* data, int data_size, float font_size)`
+
+Sets the GUI font and returns its pointer
+
 #### `bool vvctre_gui_is_window_appearing()`
 
 `ImGui::IsWindowAppearing` wrapper
@@ -1049,11 +1069,19 @@ Returns Audio -> Enable DSP LLE
 
 #### `void vvctre_settings_set_enable_dsp_lle_multithread(bool value)`
 
-Sets Audio -> Enable DSP LLE -> Use multiple threads
+Sets Audio -> DSP LLE -> Use Multiple Threads
 
 #### `bool vvctre_settings_get_enable_dsp_lle_multithread()`
 
-Returns Audio -> Enable DSP LLE -> Use multiple threads
+Returns Audio -> DSP LLE -> Use Multiple Threads
+
+#### `void vvctre_settings_set_enable_audio_stretching(bool value)`
+
+Sets Audio -> Enable Stretching
+
+#### `bool vvctre_settings_get_enable_audio_stretching()`
+
+Returns Audio -> Enable Stretching
 
 #### `void vvctre_settings_set_audio_volume(float value)`
 
@@ -1638,6 +1666,66 @@ Adds a state change callback
 
 Creates a room
 
+#### `void* vvctre_coretiming_register_event(void* core, const char* name, void (*callback)(std::uintptr_t user_data, int cycles_late))`
+
+[`RegisterEvent`](https://github.com/vvanelslande/vvctre/blob/36.13.0/src/core/core_timing.h#L150) wrapper
+
+#### `void vvctre_coretiming_remove_event(void* core, const void* event)`
+
+[`RemoveEvent`](https://github.com/vvanelslande/vvctre/blob/36.13.0/src/core/core_timing.h#L170) wrapper
+
+#### `void vvctre_coretiming_remove_normal_and_threadsafe_event(void* core, const void* event)`
+
+[`RemoveNormalAndThreadsafeEvent`](https://github.com/vvanelslande/vvctre/blob/36.13.0/src/core/core_timing.h#L171) wrapper
+
+#### `void vvctre_coretiming_schedule_event(void* core, s64 cycles_into_future, const void* event, std::uintptr_t user_data)`
+
+[`ScheduleEvent`](https://github.com/vvanelslande/vvctre/blob/36.13.0/src/core/core_timing.h#L157) wrapper
+
+#### `void vvctre_coretiming_schedule_event_threadsafe(void* core, s64 cycles_into_future, const void* event, std::uintptr_t user_data)`
+
+[`ScheduleEventThreadsafe`](https://github.com/vvanelslande/vvctre/blob/36.13.0/src/core/core_timing.h#L164) wrapper
+
+#### `void vvctre_coretiming_unschedule(void* core, const void* event, std::uintptr_t user_data)`
+
+[`UnscheduleEvent`](https://github.com/vvanelslande/vvctre/blob/36.13.0/src/core/core_timing.h#L167) wrapper
+
+#### `u64 vvctre_coretiming_get_ticks(void* core)`
+
+[`GetTicks`](https://github.com/vvanelslande/vvctre/blob/36.13.0/src/core/core_timing.h#L145) wrapper
+
+#### `u64 vvctre_coretiming_get_idle_ticks(void* core)`
+
+[`GetIdleTicks`](https://github.com/vvanelslande/vvctre/blob/36.13.0/src/core/core_timing.h#L146) wrapper
+
+#### `void vvctre_coretiming_add_ticks(void* core, u64 ticks)`
+
+[`AddTicks`](https://github.com/vvanelslande/vvctre/blob/36.13.0/src/core/core_timing.h#L147) wrapper
+
+#### `void vvctre_coretiming_advance(void* core)`
+
+[`Advance`](https://github.com/vvanelslande/vvctre/blob/36.13.0/src/core/core_timing.h#L180) wrapper
+
+#### `void vvctre_coretiming_move_events(void* core)`
+
+[`MoveEvents`](https://github.com/vvanelslande/vvctre/blob/36.13.0/src/core/core_timing.h#L181) wrapper
+
+#### `void vvctre_coretiming_idle(void* core)`
+
+[`Idle`](https://github.com/vvanelslande/vvctre/blob/36.13.0/src/core/core_timing.h#L184) wrapper
+
+#### `void vvctre_coretiming_force_exception_check(void* core, s64 cycles)`
+
+[`ForceExceptionCheck`](https://github.com/vvanelslande/vvctre/blob/36.13.0/src/core/core_timing.h#L186) wrapper
+
+#### `s64 vvctre_coretiming_get_global_time_us(void* core)`
+
+[`GetGlobalTimeUs`](https://github.com/vvanelslande/vvctre/blob/36.13.0/src/core/core_timing.h#L188) wrapper
+
+#### `s64 vvctre_coretiming_get_downcount(void* core)`
+
+[`GetDowncount`](https://github.com/vvanelslande/vvctre/blob/36.13.0/src/core/core_timing.h#L190) wrapper
+
 #### `const char* vvctre_get_version()`
 
 Returns vvctre's version
@@ -1685,6 +1773,30 @@ Swaps buffers. This can only be used when emulation is running.
 #### `void* vvctre_get_opengl_function(const char* name)`
 
 `SDL_GL_GetProcAddress` wrapper
+
+#### `float vvctre_get_fps()`
+
+Return FPS
+
+#### `float vvctre_get_frametime()`
+
+Return the frametime
+
+#### `int vvctre_get_frame_count()`
+
+Return the frame count
+
+#### `void vvctre_get_fatal_error(void* out)`
+
+Copies the [fatal error info](https://www.3dbrew.org/wiki/ERR:Throw#FatalErrInfo) to `out`
+
+#### `void vvctre_set_show_fatal_error_messages(void* plugin_manager, bool show)`
+
+Sets whether fatal error messages are shown 
+
+#### `bool vvctre_get_show_fatal_error_messages(void* plugin_manager)`
+
+Returns whether fatal error messages are shown
 
 ### Enums
 
