@@ -415,6 +415,22 @@ Sets `out[1]` to `y`
 
 `ImGui::SetScrollFromPosY` wrapper
 
+#### `void vvctre_gui_set_next_item_width(float item_width)`
+
+`ImGui::SetNextItemWidth` wrapper
+
+#### `float vvctre_gui_calc_item_width()`
+
+`ImGui::CalcItemWidth` wrapper
+
+#### `void vvctre_gui_push_text_wrap_pos(float wrap_local_pos_x)`
+
+`ImGui::PushTextWrapPos` wrapper
+
+#### `void vvctre_gui_pop_text_wrap_pos()`
+
+`ImGui::PopTextWrapPos` wrapper
+
 #### `void vvctre_gui_same_line()`
 
 `ImGui::SameLine` wrapper
