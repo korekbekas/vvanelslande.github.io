@@ -545,6 +545,46 @@ Sets `out[1]` to `y`
 
 `ImGui::SetCursorScreenPos` wrapper
 
+#### `void vvctre_gui_align_text_to_frame_padding()`
+
+`ImGui::AlignTextToFramePadding` wrapper
+
+#### `float vvctre_gui_get_text_line_height()`
+
+`ImGui::GetTextLineHeight` wrapper
+
+#### `float vvctre_gui_get_text_line_height_with_spacing()`
+
+`ImGui::GetTextLineHeightWithSpacing` wrapper
+
+#### `float vvctre_gui_get_frame_height()`
+
+`ImGui::GetFrameHeight` wrapper
+
+#### `float vvctre_gui_get_frame_height_with_spacing()`
+
+`ImGui::GetFrameHeightWithSpacing` wrapper
+
+#### `void vvctre_gui_push_id_string(const char* id)`
+
+`ImGui::PushID` wrapper
+
+#### `void vvctre_gui_push_id_string_with_begin_and_end(const char* begin, const char* end)`
+
+`ImGui::PushID` wrapper
+
+#### `void vvctre_gui_push_id_void(void* id)`
+
+`ImGui::PushID` wrapper
+
+#### `void vvctre_gui_push_id_int(int id)`
+
+`ImGui::PushID` wrapper
+
+#### `void vvctre_gui_pop_id()`
+
+`ImGui::PopID` wrapper
+
 #### `void vvctre_gui_spacing()`
 
 `ImGui::Spacing` wrapper
