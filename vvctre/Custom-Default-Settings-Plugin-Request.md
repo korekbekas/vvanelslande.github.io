@@ -23,6 +23,7 @@ general.cpu_clock_percentage <value>
 
 audio.dsp_lle enable
 audio.dsp_lle_multiple_threads enable
+audio.stretching disable
 audio.volume <value>
 audio.sink <cubeb|sdl2|null>
 audio.device <value>
