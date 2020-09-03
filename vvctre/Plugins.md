@@ -495,6 +495,14 @@ Sets `out[1]` to `y`
 
 `ImGui::Unindent` wrapper
 
+#### `void vvctre_gui_begin_group()`
+
+`ImGui::BeginGroup` wrapper
+
+#### `void vvctre_gui_end_group()`
+
+`ImGui::EndGroup` wrapper
+
 #### `void vvctre_gui_spacing()`
 
 `ImGui::Spacing` wrapper
