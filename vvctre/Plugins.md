@@ -1501,6 +1501,190 @@ Sets `out[1]` to `y`
 
 `ImGui::CaptureMouseFromApp` wrapper
 
+#### `void vvctre_gui_style_set_alpha(float value)`
+
+Sets alpha
+
+#### `void vvctre_gui_style_set_window_padding(float value[2])`
+
+Sets window padding
+
+#### `void vvctre_gui_style_set_window_rounding(float value)`
+
+Sets window rounding
+
+#### `void vvctre_gui_style_set_window_border_size(float value)`
+
+Sets window border size
+
+#### `void vvctre_gui_style_set_window_min_size(float value[2])`
+
+Sets window min size
+
+#### `void vvctre_gui_style_set_window_title_align(float value[2])`
+
+Sets window title align
+
+#### `void vvctre_gui_style_set_child_rounding(float value)`
+
+Sets child rounding
+
+#### `void vvctre_gui_style_set_child_border_size(float value)`
+
+Sets child border size
+
+#### `void vvctre_gui_style_set_popup_rounding(float value)`
+
+Sets popup rounding
+
+#### `void vvctre_gui_style_set_popup_border_size(float value)`
+
+Sets popup border size
+
+#### `void vvctre_gui_style_set_frame_padding(float value[2])`
+
+Sets frame padding
+
+#### `void vvctre_gui_style_set_frame_rounding(float value)`
+
+Sets frame rounding
+
+#### `void vvctre_gui_style_set_frame_border_size(float value)`
+
+Sets frame border size
+
+#### `void vvctre_gui_style_set_item_spacing(float value[2])`
+
+Sets item spacing
+
+#### `void vvctre_gui_style_set_item_inner_spacing(float value[2])`
+
+Sets item inner spacing
+
+#### `void vvctre_gui_style_set_indent_spacing(float value)`
+
+Sets indent spacing
+
+#### `void vvctre_gui_style_set_scrollbar_size(float value)`
+
+Sets scrollbar size
+
+#### `void vvctre_gui_style_set_scrollbar_rounding(float value)`
+
+Sets scrollbar rounding
+
+#### `void vvctre_gui_style_set_grab_min_size(float value)`
+
+Sets grab min size
+
+#### `void vvctre_gui_style_set_grab_rounding(float value)`
+
+Sets grab rounding
+
+#### `void vvctre_gui_style_set_tab_rounding(float value)`
+
+Sets tab rounding
+
+#### `void vvctre_gui_style_set_button_text_align(float value[2])`
+
+Sets button text align
+
+#### `void vvctre_gui_style_set_selectable_text_align(float value[2])`
+
+Sets selectable text align
+
+#### `float vvctre_gui_style_get_alpha()`
+
+Get alpha
+
+#### `void vvctre_gui_style_get_window_padding(float value[2])`
+
+Get window padding
+
+#### `float vvctre_gui_style_get_window_rounding()`
+
+Get window rounding
+
+#### `float vvctre_gui_style_get_window_border_size()`
+
+Get window border size
+
+#### `void vvctre_gui_style_get_window_min_size(float value[2])`
+
+Get window min size
+
+#### `void vvctre_gui_style_get_window_title_align(float value[2])`
+
+Get window title align
+
+#### `float vvctre_gui_style_get_child_rounding()`
+
+Get child rounding
+
+#### `float vvctre_gui_style_get_child_border_size()`
+
+Get child border size
+
+#### `float vvctre_gui_style_get_popup_rounding()`
+
+Get popup rounding
+
+#### `float vvctre_gui_style_get_popup_border_size()`
+
+Get popup border size
+
+#### `void vvctre_gui_style_get_frame_padding(float value[2])`
+
+Get frame padding
+
+#### `float vvctre_gui_style_get_frame_rounding()`
+
+Get frame rounding
+
+#### `float vvctre_gui_style_get_frame_border_size()`
+
+Get frame border size
+
+#### `void vvctre_gui_style_get_item_spacing(float value[2])`
+
+Get item spacing
+
+#### `void vvctre_gui_style_get_item_inner_spacing(float value[2])`
+
+Get item inner spacing
+
+#### `float vvctre_gui_style_get_indent_spacing()`
+
+Get indent spacing
+
+#### `float vvctre_gui_style_get_scrollbar_size()`
+
+Get scrollbar size
+
+#### `float vvctre_gui_style_get_scrollbar_rounding()`
+
+Get scrollbar rounding
+
+#### `float vvctre_gui_style_get_grab_min_size()`
+
+Get grab min size
+
+#### `float vvctre_gui_style_get_grab_rounding()`
+
+Get grab rounding
+
+#### `float vvctre_gui_style_get_tab_rounding()`
+
+Get tab rounding
+
+#### `void vvctre_gui_style_get_button_text_align(float value[2])`
+
+Get button text align
+
+#### `void vvctre_gui_style_get_selectable_text_align(float value[2])`
+
+Get selectable text align
+
 #### `u64 vvctre_get_dear_imgui_version()`
 
 Returns `IMGUI_VERSION_NUM`
