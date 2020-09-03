@@ -1191,6 +1191,86 @@ Creates a overlay with the specified name and initial position
 
 `ImGui::VSliderScalar` wrapper
 
+#### `bool vvctre_gui_drag_u8(const char* label, u8* value, float speed, const u8 minimum, const u8 maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::DragScalar` wrapper
+
+#### `bool vvctre_gui_drags_u8(const char* label, u8* values, int components, float speed, const u8 minimum, const u8 maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::DragScalarN` wrapper
+
+#### `bool vvctre_gui_drag_u16(const char* label, u16* value, float speed, const u16 minimum, const u16 maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::DragScalar` wrapper
+
+#### `bool vvctre_gui_drags_u16(const char* label, u16* values, int components, float speed, const u16 minimum, const u16 maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::DragScalarN` wrapper
+
+#### `bool vvctre_gui_drag_u32(const char* label, u32* value, float speed, const u32 minimum, const u32 maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::DragScalar` wrapper
+
+#### `bool vvctre_gui_drags_u32(const char* label, u32* values, int components, float speed, const u32 minimum, const u32 maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::DragScalarN` wrapper
+
+#### `bool vvctre_gui_drag_u64(const char* label, u32* value, float speed, const u32 minimum, const u32 maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::DragScalar` wrapper
+
+#### `bool vvctre_gui_drags_u64(const char* label, u64* values, int components, float speed, const u64 minimum, const u64 maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::DragScalarN` wrapper
+
+#### `bool vvctre_gui_drag_s8(const char* label, s8* value, float speed, const s8 minimum, const s8 maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::DragScalar` wrapper
+
+#### `bool vvctre_gui_drags_s8(const char* label, s8* values, int components, float speed, const s8 minimum, const s8 maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::DragScalarN` wrapper
+
+#### `bool vvctre_gui_drag_s16(const char* label, s16* value, float speed, const s16 minimum, const s16 maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::DragScalar` wrapper
+
+#### `bool vvctre_gui_drags_s16(const char* label, s16* values, int components, float speed, const s16 minimum, const s16 maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::DragScalarN` wrapper
+
+#### `bool vvctre_gui_drag_s32(const char* label, s32* value, float speed, const s32 minimum, const s32 maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::DragScalar` wrapper
+
+#### `bool vvctre_gui_drags_s32(const char* label, s32* values, int components, float speed, const s32 minimum, const s32 maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::DragScalarN` wrapper
+
+#### `bool vvctre_gui_drag_s64(const char* label, s64* value, float speed, const s64 minimum, const s64 maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::DragScalar` wrapper
+
+#### `bool vvctre_gui_drags_s64(const char* label, s64* values, int components, float speed, const s64 minimum, const s64 maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::DragScalarN` wrapper
+
+#### `bool vvctre_gui_drag_float(const char* label, float* value, float speed, const float minimum, const float maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::DragScalar` wrapper
+
+#### `bool vvctre_gui_drags_float(const char* label, float* values, int components, float speed, const float minimum, const float maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::DragScalarN` wrapper
+
+#### `bool vvctre_gui_drag_double(const char* label, double* value, float speed, const double minimum, const double maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::DragScalar` wrapper
+
+#### `bool vvctre_gui_drags_double(const char* label, double* values, int components, float speed, const double minimum, const double maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::DragScalarN` wrapper
+
 #### `void vvctre_gui_image(void* texture_id, float width, float height, float uv0[2], float uv1[2], float tint_color[4], float border_color[4])`
 
 `ImGui::Image` wrapper
