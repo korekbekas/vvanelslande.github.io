@@ -455,6 +455,26 @@ Sets `out[1]` to `y`
 
 `ImGui::PopFont` wrapper
 
+#### `void vvctre_gui_push_style_color(ImGuiCol idx, const float r, const float g, const float b, const float a)`
+
+`ImGui::PushStyleColor` wrapper
+
+#### `void vvctre_gui_pop_style_color(int count)`
+
+`ImGui::PopStyleColor` wrapper
+
+#### `void vvctre_gui_push_style_var_float(ImGuiStyleVar idx, float val)`
+
+`ImGui::PushStyleVar` wrapper
+
+#### `void vvctre_gui_push_style_var_2floats(ImGuiStyleVar idx, float val[2])`
+
+`ImGui::PushStyleVar` wrapper
+
+#### `void vvctre_gui_pop_style_var(int count)`
+
+`ImGui::PopStyleVar` wrapper
+
 #### `void vvctre_gui_same_line()`
 
 `ImGui::SameLine` wrapper
