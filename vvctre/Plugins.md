@@ -481,6 +481,10 @@ Adds colored text
 
 `ImGui::ColorButton` wrapper
 
+#### `bool vvctre_gui_color_button_ex(const char* tooltip, float red, float green, float blue, float alpha, ImGuiColorEditFlags flags, float width, float height)`
+
+`ImGui::ColorButton` wrapper
+
 #### `bool vvctre_gui_invisible_button(const char* id, float width, float height)`
 
 `ImGui::InvisibleButton` wrapper
@@ -657,7 +661,15 @@ Creates a overlay with the specified name and initial position
 
 `ImGui::ColorPicker4` wrapper
 
+#### `bool vvctre_gui_color_picker_ex(const char* label, float* color, ImGuiColorEditFlags flags, const float* ref_col)`
+
+`ImGui::ColorPicker4` wrapper
+
 #### `void vvctre_gui_progress_bar(float value, const char* overlay)`
+
+`ImGui::ProgressBar` wrapper
+
+## `void vvctre_gui_progress_bar_ex(float value, float width, float height, const char* overlay)`
 
 `ImGui::ProgressBar` wrapper
 
