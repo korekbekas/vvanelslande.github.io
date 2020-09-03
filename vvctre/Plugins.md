@@ -529,6 +529,22 @@ Creates a overlay with the specified name and initial position
 
 `ImGui::BeginTabItem` wrapper
 
+#### `bool vvctre_gui_begin_tab_ex(const char* label, bool* open, ImGuiTabItemFlags flags)`
+
+`ImGui::BeginTabItem` wrapper
+
+#### `bool vvctre_gui_begin_tab_bar(const char* id, ImGuiTabBarFlags flags)`
+
+`ImGui::BeginTabBar` wrapper
+
+#### `void vvctre_gui_end_tab_bar()`
+
+`ImGui::EndTabBar` wrapper
+
+#### `void vvctre_gui_set_tab_closed(const char* name)`
+
+`ImGui::SetTabItemClosed` wrapper
+
 #### `void vvctre_gui_end_tab()`
 
 `ImGui::EndTabItem` wrapper
@@ -540,6 +556,22 @@ Creates a overlay with the specified name and initial position
 #### `bool vvctre_gui_menu_item_with_check_mark(const char* label, bool* checked)`
 
 `ImGui::MenuItem` wrapper
+
+#### `void vvctre_gui_plot_lines(const char* label, const float* values, int values_count, int values_offset, const char* overlay_text, float scale_min, float scale_max, float graph_width, float graph_height, int stride)`
+
+`ImGui::PlotLines` wrapper
+
+#### `void vvctre_gui_plot_lines_getter(const char* label, float (*values_getter)(void* data, int idx), void* data, int values_count, int values_offset, const char* overlay_text, float scale_min, float scale_max, float graph_width, float graph_height)`
+
+`ImGui::PlotLines` wrapper
+
+#### `void vvctre_gui_plot_histogram(const char* label, const float* values, int values_count, int values_offset, const char* overlay_text, float scale_min, float scale_max, float graph_width, float graph_height, int stride)`
+
+`ImGui::PlotHistogram` wrapper
+
+#### `void vvctre_gui_plot_histogram_getter(const char* label, float (*values_getter)(void* data, int idx), void* data, int values_count, int values_offset, const char* overlay_text, float scale_min, float scale_max, float graph_width, float graph_height)`
+
+`ImGui::PlotHistogram` wrapper
 
 #### `bool vvctre_gui_begin_listbox(const char* label)`
 
