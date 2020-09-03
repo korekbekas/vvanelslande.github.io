@@ -503,6 +503,48 @@ Sets `out[1]` to `y`
 
 `ImGui::EndGroup` wrapper
 
+#### `void vvctre_gui_get_cursor_pos(float out[2])`
+
+Calls `ImGui::GetCursorPos`  
+Sets `out[0]` to `x`  
+Sets `out[1]` to `y`
+
+#### `float vvctre_gui_get_cursor_pos_x()`
+
+`ImGui::GetCursorPosX` wrapper
+
+#### `float vvctre_gui_get_cursor_pos_y() `
+
+`ImGui::GetCursorPosY` wrapper
+
+#### `void vvctre_gui_set_cursor_pos(float local_x, float local_y)`
+
+`ImGui::SetCursorPos` wrapper
+
+#### `void vvctre_gui_set_cursor_pos_x(float local_x)`
+
+`ImGui::SetCursorPosX` wrapper
+
+#### `void vvctre_gui_set_cursor_pos_y(float local_y)`
+
+`ImGui::SetCursorPosY` wrapper
+
+#### `void vvctre_gui_get_cursor_start_pos(float out[2])`
+
+Calls `ImGui::GetCursorStartPos`  
+Sets `out[0]` to `x`  
+Sets `out[1]` to `y`
+
+#### `void vvctre_gui_get_cursor_screen_pos(float out[2])`
+
+Calls `ImGui::GetCursorScreenPos`  
+Sets `out[0]` to `x`  
+Sets `out[1]` to `y`
+
+#### `void vvctre_gui_set_cursor_screen_pos(float x, float y)`
+
+`ImGui::SetCursorScreenPos` wrapper
+
 #### `void vvctre_gui_spacing()`
 
 `ImGui::Spacing` wrapper
