@@ -347,6 +347,34 @@ Reloads the camera images
 
 `ImGui::PopItemWidth` wrapper
 
+#### `void vvctre_gui_get_content_region_max(float out[2])`
+
+Calls `ImGui::GetContentRegionMax`  
+Sets `out[0]` to `x`  
+Sets `out[1]` to `y`
+
+#### `void vvctre_gui_get_content_region_avail(float out[2])`
+
+Calls `ImGui::GetContentRegionAvail`  
+Sets `out[0]` to `x`  
+Sets `out[1]` to `y`
+
+#### `void vvctre_gui_get_window_content_region_min(float out[2])`
+
+Calls `ImGui::GetWindowContentRegionMin`  
+Sets `out[0]` to `x`  
+Sets `out[1]` to `y`
+
+#### `vvctre_gui_get_window_content_region_max(float out[2])`
+
+Calls `ImGui::GetWindowContentRegionMax`  
+Sets `out[0]` to `x`  
+Sets `out[1]` to `y`
+
+#### `float vvctre_gui_get_window_content_region_width()`
+
+`ImGui::GetWindowContentRegionWidth` wrapper
+
 #### `void vvctre_gui_same_line()`
 
 `ImGui::SameLine` wrapper
