@@ -1147,6 +1147,50 @@ Creates a overlay with the specified name and initial position
 
 `ImGui::SliderScalarN` wrapper
 
+#### `bool vvctre_gui_slider_angle(const char* label, float* rad, float degrees_min, float degrees_max, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::SliderAngle` wrapper
+
+#### `bool vvctre_gui_vertical_slider_u8(const char* label, float width, float height, u8* value, const u8 minimum, const u8 maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::VSliderScalar` wrapper
+
+#### `bool vvctre_gui_vertical_slider_u16(const char* label, float width, float height, u16* value, const u16 minimum, const u16 maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::VSliderScalar` wrapper
+
+#### `bool vvctre_gui_vertical_slider_u32(const char* label, float width, float height, u32* value, const u32 minimum, const u32 maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::VSliderScalar` wrapper
+
+#### `bool vvctre_gui_vertical_slider_u64(const char* label, float width, float height, u64* value, const u64 minimum, const u64 maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::VSliderScalar` wrapper
+
+#### `bool vvctre_gui_vertical_slider_s8(const char* label, float width, float height, s8* value, const s8 minimum, const s8 maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::VSliderScalar` wrapper
+
+#### `bool vvctre_gui_vertical_slider_s16(const char* label, float width, float height, s16* value, const s16 minimum, const s16 maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::VSliderScalar` wrapper
+
+#### `bool vvctre_gui_vertical_slider_s32(const char* label, float width, float height, s32* value, const s32 minimum, const s32 maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::VSliderScalar` wrapper
+
+#### `bool vvctre_gui_vertical_slider_s64(const char* label, float width, float height, s64* value, const s64 minimum, const s64 maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::VSliderScalar` wrapper
+
+#### `bool vvctre_gui_vertical_slider_float(const char* label, float width, float height, float* value, const float minimum, const float maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::VSliderScalar` wrapper
+
+#### `bool vvctre_gui_vertical_slider_double(const char* label, float width, float height, double* value, const double minimum, const double maximum, const char* format, ImGuiSliderFlags flags)`
+
+`ImGui::VSliderScalar` wrapper
+
 #### `void vvctre_gui_image(void* texture_id, float width, float height, float uv0[2], float uv1[2], float tint_color[4], float border_color[4])`
 
 `ImGui::Image` wrapper
