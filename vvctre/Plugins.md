@@ -431,6 +431,30 @@ Sets `out[1]` to `y`
 
 `ImGui::PopTextWrapPos` wrapper
 
+#### `void vvctre_gui_push_allow_keyboard_focus(bool allow_keyboard_focus)`
+
+`ImGui::PushAllowKeyboardFocus` wrapper
+
+#### `void vvctre_gui_pop_allow_keyboard_focus()`
+
+`ImGui::PopAllowKeyboardFocus` wrapper
+
+#### `void vvctre_gui_push_button_repeat(bool repeat)`
+
+`ImGui::PushButtonRepeat` wrapper
+
+#### `void vvctre_gui_pop_button_repeat()`
+
+`ImGui::PopButtonRepeat` wrapper
+
+#### `void vvctre_gui_push_font(void* font)`
+
+`ImGui::PushFont` wrapper
+
+#### `void vvctre_gui_pop_font()`
+
+`ImGui::PopFont` wrapper
+
 #### `void vvctre_gui_same_line()`
 
 `ImGui::SameLine` wrapper
