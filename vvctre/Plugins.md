@@ -735,9 +735,65 @@ Creates a overlay with the specified name and initial position
 
 `ImGui::Begin` wrapper
 
+#### `bool vvctre_gui_begin_child(const char* id, float width, float height, bool border, ImGuiWindowFlags flags)`
+
+`ImGui::BeginChild` wrapper
+
+#### `bool vvctre_gui_begin_child_frame(const char* id, float width, float height, ImGuiWindowFlags flags)`
+
+`ImGui::BeginChildFrame` wrapper
+
+#### `bool vvctre_gui_begin_popup(const char* id, ImGuiWindowFlags flags)`
+
+`ImGui::BeginPopup` wrapper
+
+#### `bool vvctre_gui_begin_popup_modal(const char* name, bool* open, ImGuiWindowFlags flags)`
+
+`ImGui::BeginPopupModal` wrapper
+
+#### `bool vvctre_gui_begin_popup_context_item(const char* id, ImGuiPopupFlags flags)`
+
+`ImGui::BeginPopupContextItem` wrapper
+
+#### `bool vvctre_gui_begin_popup_context_window(const char* id, ImGuiPopupFlags flags)`
+
+`ImGui::BeginPopupContextWindow` wrapper
+
+#### `bool vvctre_gui_begin_popup_context_void(const char* id, ImGuiPopupFlags flags)`
+
+`ImGui::BeginPopupContextVoid` wrapper
+
 #### `void vvctre_gui_end()`
 
 `ImGui::End` wrapper
+
+#### `void vvctre_gui_end_child()`
+
+`ImGui::EndChild` wrapper
+
+#### `void vvctre_gui_end_child_frame()`
+
+`ImGui::EndChildFrame` wrapper
+
+#### `void vvctre_gui_end_popup()`
+
+`ImGui::EndPopup` wrapper
+
+#### `void vvctre_gui_open_popup(const char* id, ImGuiPopupFlags flags)`
+
+`ImGui::OpenPopup` wrapper
+
+#### `bool vvctre_gui_open_popup_context_item(const char* id, ImGuiPopupFlags flags)`
+
+`ImGui::OpenPopupContextItem` wrapper
+
+#### `void vvctre_gui_close_current_popup()`
+
+`ImGui::CloseCurrentPopup` wrapper
+
+#### `bool vvctre_gui_is_popup_open(const char* id, ImGuiPopupFlags flags)`
+
+`ImGui::IsPopupOpen` wrapper
 
 #### `bool vvctre_gui_begin_menu(const char* label)`
 
