@@ -289,7 +289,8 @@ Adds a callback to the IPC recorder
 
 #### `const char* vvctre_get_service_name_by_port_id(void* core, u32 port)`
 
-Converts a port ID to a name and returns it
+Converts a port ID to a name and returns it  
+This uses `strdup`
 
 #### `int vvctre_cheat_count(void* core)`
 
@@ -297,23 +298,28 @@ Returns the number of cheats for the current game
 
 #### `const char* vvctre_get_cheat(void* core, int index)`
 
-Returns a cheat
+Returns a cheat  
+This uses `strdup`
 
 #### `const char* vvctre_get_cheat_name(void* core, int index)`
 
-Returns the name of a cheat
+Returns the name of a cheat  
+This uses `strdup`
 
 #### `const char* vvctre_get_cheat_comments(void* core, int index)`
 
-Returns the comments of a cheat
+Returns the comments of a cheat  
+This uses `strdup`
 
 #### `const char* vvctre_get_cheat_type(void* core, int index)`
 
-Returns the type of a cheat
+Returns the type of a cheat  
+This uses `strdup`
 
 #### `const char* vvctre_get_cheat_code(void* core, int index)`
 
-Returns the code of a cheat
+Returns the code of a cheat  
+This uses `strdup`
 
 #### `void vvctre_set_cheat_enabled(void* core, int index, bool enabled)`
 
