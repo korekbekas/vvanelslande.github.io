@@ -1397,11 +1397,11 @@ Calls `ImGui::GetWindowSize`
 Sets `out[0]` to `x`  
 Sets `out[1]` to `y`
 
-#### `void vvctre_gui_set_next_window_pos(float x, float y, int condition, float pivot[2])`
+#### `void vvctre_gui_set_next_window_pos(float x, float y, ImGuiCond condition, float pivot[2])`
 
 `ImGui::SetNextWindowPos` wrapper
 
-#### `void vvctre_gui_set_next_window_size(float width, float height, int condition)`
+#### `void vvctre_gui_set_next_window_size(float width, float height, ImGuiCond condition)`
 
 `ImGui::SetNextWindowSize` wrapper
 
@@ -1413,7 +1413,7 @@ Sets `out[1]` to `y`
 
 `ImGui::SetNextWindowContentSize` wrapper
 
-#### `void vvctre_gui_set_next_window_collapsed(bool collapsed, int condition)`
+#### `void vvctre_gui_set_next_window_collapsed(bool collapsed, ImGuiCond condition)`
 
 `ImGui::SetNextWindowCollapsed` wrapper
 
