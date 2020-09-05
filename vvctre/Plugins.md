@@ -887,6 +887,18 @@ Creates a overlay with the specified name and initial position
 
 `ImGui::InputTextWithHint` wrapper
 
+#### `bool vvctre_gui_text_input_ex(const char* label, char* buffer, std::size_t buffer_size, ImGuiInputTextFlags flags)`
+
+`ImGui::InputText` wrapper
+
+#### `bool vvctre_gui_text_input_multiline_ex(const char* label, char* buffer, std::size_t buffer_size, float width, float height, ImGuiInputTextFlags flags)`
+
+`ImGui::InputTextMultiline` wrapper
+
+#### `bool vvctre_gui_text_input_with_hint_ex(const char* label, const char* hint, char* buffer, std::size_t buffer_size, ImGuiInputTextFlags flags)`
+
+`ImGui::InputTextWithHint` wrapper
+
 #### `bool vvctre_gui_u8_input(const char* label, u8* value)`
 
 `ImGui::InputScalar` wrapper
@@ -1306,6 +1318,34 @@ Creates a overlay with the specified name and initial position
 #### `int vvctre_gui_get_columns_count()`
 
 `ImGui::GetColumnsCount` wrapper
+
+#### `bool vvctre_gui_tree_node_string(const char* label, ImGuiTreeNodeFlags flags)`
+
+`ImGui::TreeNodeEx` wrapper
+
+#### `void vvctre_gui_tree_push_string(const char* id)`
+
+`ImGui::TreePush` wrapper
+
+#### `void vvctre_gui_tree_push_void(const void* id)`
+
+`ImGui::TreePush` wrapper
+
+#### `void vvctre_gui_tree_pop()`
+
+`ImGui::TreePop` wrapper
+
+#### `float vvctre_gui_get_tree_node_to_label_spacing()`
+
+`ImGui::GetTreeNodeToLabelSpacing` wrapper
+
+#### `bool vvctre_gui_collapsing_header(const char* label, ImGuiTreeNodeFlags flags)`
+
+`ImGui::CollapsingHeader` wrapper
+
+#### `void vvctre_gui_set_next_item_open(bool is_open)`
+
+`ImGui::SetNextItemOpen` wrapper
 
 #### `void vvctre_gui_set_color(int index, float r, float g, float b, float a)`
 
