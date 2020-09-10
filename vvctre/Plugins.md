@@ -379,7 +379,7 @@ Calls `ImGui::GetWindowContentRegionMin`
 Sets `out[0]` to `x`  
 Sets `out[1]` to `y`
 
-#### `vvctre_gui_get_window_content_region_max(float out[2])`
+#### `void vvctre_gui_get_window_content_region_max(float out[2])`
 
 Calls `ImGui::GetWindowContentRegionMax`  
 Sets `out[0]` to `x`  
