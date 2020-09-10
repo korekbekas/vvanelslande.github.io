@@ -341,6 +341,14 @@ Removes a cheat
 
 Updates a Gateway cheat
 
+#### `void vvctre_load_cheats_from_file(void* core)`
+
+Loads the cheats from the file
+
+#### `void vvctre_save_cheats_to_file(void* core)`
+
+Saves the cheats to the file
+
 #### `void vvctre_reload_camera_images(void* core)`
 
 Reloads the camera images
@@ -686,6 +694,10 @@ Sets `out[1]` to `y`
 `ImGui::EndTooltip` wrapper
 
 #### `void vvctre_gui_text(const char* text)`
+
+`ImGui::TextUnformatted` wrapper
+
+#### `void vvctre_gui_text_ex(const char* text, const char* end)`
 
 `ImGui::TextUnformatted` wrapper
 
