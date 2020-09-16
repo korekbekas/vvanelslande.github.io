@@ -169,7 +169,23 @@ Installs a CIA
 
 ##### `bool vvctre_load_amiibo(void* core, const char* path)`
 
-Loads a amiibo
+Loads a encrypted amiibo
+
+#### `void vvctre_load_amiibo_from_memory(void* core, const u8 data[540])`
+
+Loads a encrypted amiibo from memory
+
+##### `bool vvctre_load_amiibo_decrypted(void* core, const char* path)`
+
+Loads a decrypted amiibo
+
+#### `void vvctre_load_amiibo_from_memory_decrypted(void* core, const u8 data[540])`
+
+Loads a decrypted amiibo from memory
+
+#### `void vvctre_get_amiibo_data(void* core, u8 data[540])`
+
+Get the amiibo data (encrypted)
 
 ##### `void vvctre_remove_amiibo(void* core)`
 

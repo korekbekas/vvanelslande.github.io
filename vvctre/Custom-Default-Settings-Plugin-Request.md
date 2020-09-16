@@ -1,6 +1,6 @@
 ## Custom Default Settings Plugin Request
 
-You can add lines (some need to be edited) from this to your issue (don't add empty lines):
+You can add lines (some need to be edited) from this to your request (don't add empty lines):
 
 ```
 start.file <value>
