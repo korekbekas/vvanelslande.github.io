@@ -38,10 +38,9 @@ Example: `start.region USA`
 `start.log_filter <value>`  
 Example: `start.log_filter *:Critical`
 
-#### Set Initial Time
+#### Set Initial Time to Unix Timestamp
 
-`start.initial_time <System|Unix Timestamp>`  
-Example: `start.initial_time Unix Timestamp`
+`start.initial_time Unix Timestamp`
 
 #### Set Unix Timestamp
 
