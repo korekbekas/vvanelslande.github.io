@@ -17,7 +17,7 @@ Example: `start.record_movie file.vcm`
 
 ### Set Start -> Region
 
-`start.region <Auto-select|Japan|USA|Europe|Australia|China|Korea|Taiwan>`  
+`start.region <Japan|USA|Europe|Australia|China|Korea|Taiwan>`  
 Example: `start.region USA`
 
 ### Set Start -> Log Filter
@@ -202,12 +202,12 @@ Example: `graphics.post_processing_shader shader`
 
 ### Set Graphics -> Texture Filter
 
-`graphics.texture_filter <none|Anime4K Ultrafast|Bicubic|ScaleForce|xBRZ freescale>`  
+`graphics.texture_filter <Anime4K Ultrafast|Bicubic|ScaleForce|xBRZ freescale>`  
 Example: `graphics.texture_filter xBRZ freescale`
 
 ### Set Graphics -> 3D Mode
 
-`graphics.3d_mode <Off|Side by Side|Anaglyph|Interlaced>`  
+`graphics.3d_mode <Side by Side|Anaglyph|Interlaced>`  
 Example: `graphics.3d_mode Side by Side`
 
 ### Set Graphics -> 3D Factor
@@ -217,7 +217,7 @@ Example: `graphics.3d_factor 100`
 
 ### Set Layout -> Layout
 
-`layout.layout <Default|Single Screen|Large Screen|Side by Side|Medium Screen>`  
+`layout.layout <Single Screen|Large Screen|Side by Side|Medium Screen>`  
 Example: `layout.layout Medium Screen`
 
 ### Enable Layout -> Use Custom Layout
