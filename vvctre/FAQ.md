@@ -1,9 +1,5 @@
 ## FAQ
 
-##### Why does log.txt not exist?
-
-You don't have the log file plugin.
-
 ##### Where do I put plugins?
 
 The folder containing vvctre.
