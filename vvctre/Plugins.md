@@ -807,9 +807,9 @@ Creates a overlay with the specified name and initial position
 
 `ImGui::OpenPopup` wrapper
 
-#### `bool vvctre_gui_open_popup_context_item(const char* id, ImGuiPopupFlags flags)`
+#### `void vvctre_gui_open_popup_on_item_click(const char* id, ImGuiPopupFlags flags)`
 
-`ImGui::OpenPopupContextItem` wrapper
+`ImGui::OpenPopupOnItemClick` wrapper
 
 #### `void vvctre_gui_close_current_popup()`
 
