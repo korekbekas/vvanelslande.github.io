@@ -1589,6 +1589,10 @@ Sets window min size
 
 Sets window title align
 
+#### `void vvctre_gui_style_set_window_menu_button_position(ImGuiDir value)`
+
+Sets window menu button position
+
 #### `void vvctre_gui_style_set_child_rounding(float value)`
 
 Sets child rounding
@@ -1625,9 +1629,17 @@ Sets item spacing
 
 Sets item inner spacing
 
+#### `void vvctre_gui_style_set_touch_extra_padding(float value[2])`
+
+Sets touch extra padding
+
 #### `void vvctre_gui_style_set_indent_spacing(float value)`
 
 Sets indent spacing
+
+#### `void vvctre_gui_style_set_columns_min_spacing(float value)`
+
+Sets columns minimum spacing
 
 #### `void vvctre_gui_style_set_scrollbar_size(float value)`
 
@@ -1645,9 +1657,25 @@ Sets grab min size
 
 Sets grab rounding
 
+#### `void vvctre_gui_style_set_log_slider_deadzone(float value)`
+
+Sets `LogSliderDeadzone`
+
 #### `void vvctre_gui_style_set_tab_rounding(float value)`
 
 Sets tab rounding
+
+#### `void vvctre_gui_style_set_tab_border_size(float value)`
+
+Sets tab border size
+
+#### `void vvctre_gui_style_set_tab_min_width_for_close_button(float value)`
+
+Sets `TabMinWidthForCloseButton`
+
+#### `void vvctre_gui_style_set_color_button_position(ImGuiDir value)`
+
+Sets color button position
 
 #### `void vvctre_gui_style_set_button_text_align(float value[2])`
 
@@ -1656,6 +1684,38 @@ Sets button text align
 #### `void vvctre_gui_style_set_selectable_text_align(float value[2])`
 
 Sets selectable text align
+
+#### `void vvctre_gui_style_set_display_window_padding(float value[2])`
+
+Sets `DisplayWindowPadding`
+
+#### `void vvctre_gui_style_set_display_safe_area_padding(float value[2])`
+
+Sets `DisplaySafeAreaPadding`
+
+#### `void vvctre_gui_style_set_mouse_cursor_scale(float value)`
+
+Sets `MouseCursorScale`
+
+#### `void vvctre_gui_style_set_anti_aliased_lines(bool value)`
+
+Sets `AntiAliasedLines`
+
+#### `void vvctre_gui_style_set_anti_aliased_lines_use_tex(bool value)`
+
+Sets `AntiAliasedLinesUseTex`
+
+#### `void vvctre_gui_style_set_anti_aliased_fill(bool value)`
+
+Sets `AntiAliasedFill`
+
+#### `void vvctre_gui_style_set_curve_tessellation_tol(float value)`
+
+Sets `CurveTessellationTol`
+
+#### `void vvctre_gui_style_set_circle_segment_max_error(float value)`
+
+Sets `CircleSegmentMaxError`
 
 #### `float vvctre_gui_style_get_alpha()`
 
@@ -1680,6 +1740,10 @@ Get window min size
 #### `void vvctre_gui_style_get_window_title_align(float value[2])`
 
 Get window title align
+
+#### `ImGuiDir vvctre_gui_style_get_window_menu_button_position()`
+
+Get window menu button position
 
 #### `float vvctre_gui_style_get_child_rounding()`
 
@@ -1717,9 +1781,17 @@ Get item spacing
 
 Get item inner spacing
 
+#### `void vvctre_gui_style_get_touch_extra_padding(float value[2])`
+
+Get touch extra padding
+
 #### `float vvctre_gui_style_get_indent_spacing()`
 
 Get indent spacing
+
+#### `float vvctre_gui_style_get_columns_min_spacing()`
+
+Get `ColumnsMinSpacing`
 
 #### `float vvctre_gui_style_get_scrollbar_size()`
 
@@ -1737,9 +1809,25 @@ Get grab min size
 
 Get grab rounding
 
+#### `float vvctre_gui_style_get_log_slider_deadzone()`
+
+Get `LogSliderDeadzone`
+
 #### `float vvctre_gui_style_get_tab_rounding()`
 
 Get tab rounding
+
+#### `float vvctre_gui_style_get_tab_border_size()`
+
+Get tab border size
+
+#### `float vvctre_gui_style_get_tab_min_width_for_close_button()`
+
+Get `TabMinWidthForCloseButton`
+
+#### `ImGuiDir vvctre_gui_style_get_color_button_position()`
+
+Get color button position
 
 #### `void vvctre_gui_style_get_button_text_align(float value[2])`
 
@@ -1748,6 +1836,38 @@ Get button text align
 #### `void vvctre_gui_style_get_selectable_text_align(float value[2])`
 
 Get selectable text align
+
+#### `void vvctre_gui_style_get_display_window_padding(float value[2])`
+
+Get `DisplayWindowPadding`
+
+#### `void vvctre_gui_style_get_display_safe_area_padding(float value[2])`
+
+Get `DisplaySafeAreaPadding`
+
+#### `float vvctre_gui_style_get_mouse_cursor_scale()`
+
+Get `MouseCursorScale`
+
+#### `bool vvctre_gui_style_get_anti_aliased_lines()`
+
+Get `AntiAliasedLines`
+
+#### `bool vvctre_gui_style_get_anti_aliased_lines_use_tex()`
+
+Get `AntiAliasedLinesUseTex`
+
+#### `bool vvctre_gui_style_get_anti_aliased_fill()`
+
+Get `AntiAliasedFill`
+
+#### `float vvctre_gui_style_get_curve_tessellation_tol()`
+
+Get `CurveTessellationTol`
+
+#### `float vvctre_gui_style_get_circle_segment_max_error()`
+
+Get `CircleSegmentMaxError`
 
 #### `u64 vvctre_get_dear_imgui_version()`
 
