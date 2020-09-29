@@ -1059,7 +1059,7 @@ Creates a overlay with the specified name and initial position
 
 `ImGui::ProgressBar` wrapper
 
-## `void vvctre_gui_progress_bar_ex(float value, float width, float height, const char* overlay)`
+#### `void vvctre_gui_progress_bar_ex(float value, float width, float height, const char* overlay)`
 
 `ImGui::ProgressBar` wrapper
 
@@ -1583,7 +1583,7 @@ Sets window border size
 
 #### `void vvctre_gui_style_set_window_min_size(float value[2])`
 
-Sets window min size
+Sets window minimum size
 
 #### `void vvctre_gui_style_set_window_title_align(float value[2])`
 
@@ -1651,7 +1651,7 @@ Sets scrollbar rounding
 
 #### `void vvctre_gui_style_set_grab_min_size(float value)`
 
-Sets grab min size
+Sets grab minimum size
 
 #### `void vvctre_gui_style_set_grab_rounding(float value)`
 
@@ -1659,7 +1659,7 @@ Sets grab rounding
 
 #### `void vvctre_gui_style_set_log_slider_deadzone(float value)`
 
-Sets `LogSliderDeadzone`
+Sets the size in pixels of the dead-zone around zero on logarithmic sliders that cross zero
 
 #### `void vvctre_gui_style_set_tab_rounding(float value)`
 
@@ -1671,7 +1671,7 @@ Sets tab border size
 
 #### `void vvctre_gui_style_set_tab_min_width_for_close_button(float value)`
 
-Sets `TabMinWidthForCloseButton`
+Sets minimum width for close button to appears on an unselected tab when hovered
 
 #### `void vvctre_gui_style_set_color_button_position(ImGuiDir value)`
 
@@ -1687,35 +1687,35 @@ Sets selectable text align
 
 #### `void vvctre_gui_style_set_display_window_padding(float value[2])`
 
-Sets `DisplayWindowPadding`
+Sets [`DisplayWindowPadding`](https://github.com/ocornut/imgui/blob/master/imgui.h#L1486)
 
 #### `void vvctre_gui_style_set_display_safe_area_padding(float value[2])`
 
-Sets `DisplaySafeAreaPadding`
+Sets [`DisplaySafeAreaPadding`](https://github.com/ocornut/imgui/blob/master/imgui.h#L1487)
 
 #### `void vvctre_gui_style_set_mouse_cursor_scale(float value)`
 
-Sets `MouseCursorScale`
+Sets [`MouseCursorScale`](https://github.com/ocornut/imgui/blob/master/imgui.h#L1488)
 
 #### `void vvctre_gui_style_set_anti_aliased_lines(bool value)`
 
-Sets `AntiAliasedLines`
+Sets [`AntiAliasedLines`](https://github.com/ocornut/imgui/blob/master/imgui.h#L1489)
 
 #### `void vvctre_gui_style_set_anti_aliased_lines_use_tex(bool value)`
 
-Sets `AntiAliasedLinesUseTex`
+Sets [`AntiAliasedLinesUseTex`](https://github.com/ocornut/imgui/blob/master/imgui.h#L1490)
 
 #### `void vvctre_gui_style_set_anti_aliased_fill(bool value)`
 
-Sets `AntiAliasedFill`
+Sets [`AntiAliasedFill`](https://github.com/ocornut/imgui/blob/master/imgui.h#L1491)
 
 #### `void vvctre_gui_style_set_curve_tessellation_tol(float value)`
 
-Sets `CurveTessellationTol`
+Sets [`CurveTessellationTol`](https://github.com/ocornut/imgui/blob/master/imgui.h#L1492)
 
 #### `void vvctre_gui_style_set_circle_segment_max_error(float value)`
 
-Sets `CircleSegmentMaxError`
+Sets [`CircleSegmentMaxError`](https://github.com/ocornut/imgui/blob/master/imgui.h#L1493)
 
 #### `float vvctre_gui_style_get_alpha()`
 
@@ -1735,7 +1735,7 @@ Get window border size
 
 #### `void vvctre_gui_style_get_window_min_size(float value[2])`
 
-Get window min size
+Get window minimum size
 
 #### `void vvctre_gui_style_get_window_title_align(float value[2])`
 
@@ -1791,7 +1791,7 @@ Get indent spacing
 
 #### `float vvctre_gui_style_get_columns_min_spacing()`
 
-Get `ColumnsMinSpacing`
+Get columns minimum spacing
 
 #### `float vvctre_gui_style_get_scrollbar_size()`
 
@@ -1803,7 +1803,7 @@ Get scrollbar rounding
 
 #### `float vvctre_gui_style_get_grab_min_size()`
 
-Get grab min size
+Get grab minimum size
 
 #### `float vvctre_gui_style_get_grab_rounding()`
 
@@ -1811,7 +1811,7 @@ Get grab rounding
 
 #### `float vvctre_gui_style_get_log_slider_deadzone()`
 
-Get `LogSliderDeadzone`
+Get the size in pixels of the dead-zone around zero on logarithmic sliders that cross zero
 
 #### `float vvctre_gui_style_get_tab_rounding()`
 
@@ -1823,7 +1823,7 @@ Get tab border size
 
 #### `float vvctre_gui_style_get_tab_min_width_for_close_button()`
 
-Get `TabMinWidthForCloseButton`
+Get minimum width for close button to appears on an unselected tab when hovered
 
 #### `ImGuiDir vvctre_gui_style_get_color_button_position()`
 
@@ -1839,35 +1839,35 @@ Get selectable text align
 
 #### `void vvctre_gui_style_get_display_window_padding(float value[2])`
 
-Get `DisplayWindowPadding`
+Get [`DisplayWindowPadding`](https://github.com/ocornut/imgui/blob/master/imgui.h#L1486)
 
 #### `void vvctre_gui_style_get_display_safe_area_padding(float value[2])`
 
-Get `DisplaySafeAreaPadding`
+Get [`DisplaySafeAreaPadding`](https://github.com/ocornut/imgui/blob/master/imgui.h#L1487)
 
 #### `float vvctre_gui_style_get_mouse_cursor_scale()`
 
-Get `MouseCursorScale`
+Get [`MouseCursorScale`](https://github.com/ocornut/imgui/blob/master/imgui.h#L1488)
 
 #### `bool vvctre_gui_style_get_anti_aliased_lines()`
 
-Get `AntiAliasedLines`
+Get [`AntiAliasedLines`](https://github.com/ocornut/imgui/blob/master/imgui.h#L1489)
 
 #### `bool vvctre_gui_style_get_anti_aliased_lines_use_tex()`
 
-Get `AntiAliasedLinesUseTex`
+Get [`AntiAliasedLinesUseTex`](https://github.com/ocornut/imgui/blob/master/imgui.h#L1490)
 
 #### `bool vvctre_gui_style_get_anti_aliased_fill()`
 
-Get `AntiAliasedFill`
+Get [`AntiAliasedFill`](https://github.com/ocornut/imgui/blob/master/imgui.h#L1491)
 
 #### `float vvctre_gui_style_get_curve_tessellation_tol()`
 
-Get `CurveTessellationTol`
+Get [`CurveTessellationTol`](https://github.com/ocornut/imgui/blob/master/imgui.h#L1492)
 
 #### `float vvctre_gui_style_get_circle_segment_max_error()`
 
-Get `CircleSegmentMaxError`
+Get [`CircleSegmentMaxError`](https://github.com/ocornut/imgui/blob/master/imgui.h#L1493)
 
 #### `u64 vvctre_get_dear_imgui_version()`
 
