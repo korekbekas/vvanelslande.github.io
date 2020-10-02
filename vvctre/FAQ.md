@@ -4,9 +4,9 @@
 
 A Nintendo 3DS emulator for Windows and Linux.
 
-##### Where do I put plugins?
+##### How do I install plugins?
 
-The folder containing vvctre.
+Put the .dll or .so in vvctre's folder.
 
 ##### Will you add Android support?
 
