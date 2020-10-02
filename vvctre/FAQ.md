@@ -1,5 +1,9 @@
 ## FAQ
 
+##### What's vvctre?
+
+A Nintendo 3DS emulator for Windows and Linux.
+
 ##### Where do I put plugins?
 
 The folder containing vvctre.
