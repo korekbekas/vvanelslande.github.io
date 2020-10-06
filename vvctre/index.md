@@ -12,7 +12,6 @@ Request Plugins: [Custom Default Settings](https://github.com/vvanelslande/vvctr
 - Supports Citra post processing shaders
 - Supports Citra `nand`, `sdmc`, and `sysdata` folders
 - Supports [Luma3DS mods](https://github.com/LumaTeam/Luma3DS/wiki/Optional-features) and mods in the file's folder (filename.exefsdir, filename.exheader, and filename.romfs)
-- Supports BPS code and RomFS patches
 
 ## Requirements 
 
