@@ -15,7 +15,7 @@ Request Plugins: [Custom Default Settings](https://github.com/vvanelslande/vvctr
 
 ## Requirements 
 
-OpenGL: 3.3+ (if your GPU doesn't support it, click [here](Use-without-OpenGL-3.3))  
+OpenGL: 3.3+  
 OS: 64-bit Windows 7+ or Linux
 
 If you use Windows:
@@ -26,3 +26,7 @@ If you use Linux:
 - SDL2
 - libpng
 - For dialogs: Zenity, Matedialog, Qarma, or KDialog
+
+If your GPU doesn't support OpenGL 3.3, you can use:
+- Windows: [https://github.com/pal1000/mesa-dist-win](https://github.com/pal1000/mesa-dist-win)
+- Linux: This command: `export LIBGL_ALWAYS_SOFTWARE=1`
