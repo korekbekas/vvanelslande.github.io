@@ -6,7 +6,7 @@ Request Plugins: [Custom Default Settings](https://github.com/vvanelslande/vvctr
 
 - Faster than Citra
 - Doesn't have some issues Citra has
-- Supports Citra rooms, post processing shaders, and these folders: `nand`, `sdmc`, and `sysdata` folders
+- Supports Citra rooms, post processing shaders, `nand` folder, `sdmc` folder, and `sysdata` folder
 - Supports [Luma3DS mods](https://github.com/LumaTeam/Luma3DS/wiki/Optional-features) (`/` is `user/sdmc/`)
 - Supports mods in the file's folder (filename.exefsdir, filename.exheader, and filename.romfs)
 - Has C/C++ plugin system
