@@ -1,17 +1,15 @@
-## vvctre Nintendo 3DS emulator [![Mentioned in Awesome Software Patreons](https://awesome.re/mentioned-badge.svg)](https://github.com/uraimo/awesome-software-patreons)
+## vvctre [![Mentioned in Awesome Software Patreons](https://awesome.re/mentioned-badge.svg)](https://github.com/uraimo/awesome-software-patreons) ![Windows build size](https://img.shields.io/badge/Windows%20build%20size%20(38.2.0)-3.46%20MB-brightgreen) ![Linux build size](https://img.shields.io/badge/Linux%20build%20size%20(38.2.0)-4.33%20MB-brightgreen) ![Plugin functions](https://img.shields.io/badge/Plugin%20functions-682-brightgreen)
 
 [GitHub](https://github.com/vvanelslande/vvctre) &#124; [Download](https://github.com/vvanelslande/vvctre/releases) &#124; [Discord Server](https://discord.gg/hVxCyb5) &#124; [Patreon](https://www.patreon.com/vvctre)  
 Pages: [Dump](Dump) &#124; [FAQ](FAQ) &#124; [Hidden Features](Hidden-Features) &#124; [Plugins](Plugins)  
 Request Plugins: [Custom Default Settings](https://github.com/vvanelslande/vvctre/issues/new?assignees=&labels=Custom+Default+Settings+Plugin+Request&template=custom-default-settings-plugin-request.md&title=Custom+Default+Settings+Plugin+Request) &#124; [Button To Touch](https://github.com/vvanelslande/vvctre/issues/new?assignees=&labels=Button+To+Touch+Plugin+Request&template=button-to-touch-plugin-request.md&title=Button+To+Touch+Plugin+Request) &#124; [Window Size](https://github.com/vvanelslande/vvctre/issues/new?assignees=&labels=Window+Size+Plugin+Request&template=window-size-plugin-request.md&title=Window+Size+Plugin+Request) &#124; [Window Position](https://github.com/vvanelslande/vvctre/issues/new?assignees=&labels=Window+Position+Plugin+Request&template=window-position-plugin-request.md&title=Window+Position+Plugin+Request)
 
-- Small
-- Fast
-- Has C/C++ plugin system with 682 functions
-- Has HOME Menu support
-- Can connect to Citra rooms
-- Supports Citra post processing shaders
-- Supports Citra `nand`, `sdmc`, and `sysdata` folders
-- Supports [Luma3DS mods](https://github.com/LumaTeam/Luma3DS/wiki/Optional-features) and mods in the file's folder (filename.exefsdir, filename.exheader, and filename.romfs)
+- Faster than Citra
+- Doesn't have some issues Citra has
+- Supports Citra rooms, post processing shaders, and these folders: `nand`, `sdmc`, and `sysdata` folders
+- Supports [Luma3DS mods](https://github.com/LumaTeam/Luma3DS/wiki/Optional-features) (`/` is `user/sdmc/`)
+- Supports mods in the file's folder (filename.exefsdir, filename.exheader, and filename.romfs)
+- Has C/C++ plugin system
 
 ## Requirements 
 
