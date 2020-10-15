@@ -10,6 +10,7 @@
   - [Enums](#enums)
     - [Layout](#layout)
     - [MicrophoneInputType](#microphoneinputtype)
+    - [MicrophoneBackend](#microphonebackend)
     - [NativeButton](#nativebutton)
     - [NativeAnalog](#nativeanalog)
     - [Regions](#regions)
@@ -2235,21 +2236,29 @@ Sets Audio -> Device
 
 Returns Audio -> Device
 
-#### `void vvctre_settings_set_microphone_input_type(int value)`
+#### `void vvctre_settings_set_microphone_input_type(MicrophoneInputType value)`
 
-Sets Audio -> Microphone Input Type
+Sets Audio -> Microphone -> Source
 
-#### `int vvctre_settings_get_microphone_input_type()`
+#### `MicrophoneInputType vvctre_settings_get_microphone_input_type()`
 
-Returns Audio -> Microphone Input Type
+Returns Audio -> Microphone -> Source
 
 #### `void vvctre_settings_set_microphone_device(const char* value)`
 
-Sets Audio -> Microphone Device
+Sets Audio -> Microphone -> Device
 
 #### `const char* vvctre_settings_get_microphone_device()`
 
-Returns Audio -> Microphone Device
+Returns Audio -> Microphone -> Device
+
+#### `void vvctre_settings_set_microphone_real_device_backend(MicrophoneRealDeviceBackend value)`
+
+Sets Audio -> Microphone -> Backend
+
+#### `MicrophoneRealDeviceBackend vvctre_settings_get_microphone_real_device_backend()`
+
+Returns Audio -> Microphone -> Backend
 
 #### `void vvctre_settings_set_camera_engine(int index, const char* value)`
 
@@ -2949,6 +2958,15 @@ Returns whether fatal error messages are shown
 | 0     | Disabled     |
 | 1     | Real Device  |
 | 2     | Static Noise |
+
+#### MicrophoneRealDeviceBackend
+
+| Value | Description |
+|-------|-------------|
+| 0     | Auto        |
+| 1     | Cubeb       |
+| 2     | SDL2        |
+| 3     | Null        |
 
 #### NativeButton
 
