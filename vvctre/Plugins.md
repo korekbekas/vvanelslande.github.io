@@ -2961,6 +2961,8 @@ Returns whether fatal error messages are shown
 
 #### MicrophoneRealDeviceBackend
 
+Underlying type: u8
+
 | Value | Description |
 |-------|-------------|
 | 0     | Auto        |
