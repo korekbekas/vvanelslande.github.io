@@ -150,15 +150,15 @@ If a plugin exports this, the file load error messages are disabled
 
 ### Functions plugins import
 
-##### `void vvctre_load_file(void* core, const char* path)`
+#### `void vvctre_load_file(void* core, const char* path)`
 
 Loads a file
 
-##### `bool vvctre_install_cia(const char* path)`
+#### `bool vvctre_install_cia(const char* path)`
 
 Installs a CIA
 
-##### `bool vvctre_load_amiibo(void* core, const char* path)`
+#### `bool vvctre_load_amiibo(void* core, const char* path)`
 
 Loads a encrypted amiibo
 
@@ -166,7 +166,7 @@ Loads a encrypted amiibo
 
 Loads a encrypted amiibo from memory
 
-##### `bool vvctre_load_amiibo_decrypted(void* core, const char* path)`
+#### `bool vvctre_load_amiibo_decrypted(void* core, const char* path)`
 
 Loads a decrypted amiibo
 
@@ -178,19 +178,19 @@ Loads a decrypted amiibo from memory
 
 Get the amiibo data (encrypted)
 
-##### `void vvctre_remove_amiibo(void* core)`
+#### `void vvctre_remove_amiibo(void* core)`
 
 Removes the amiibo
 
-##### `u64 vvctre_get_program_id(void* core)`
+#### `u64 vvctre_get_program_id(void* core)`
 
 Returns the current process's ID
 
-##### `const char* vvctre_get_process_name(void* core)`
+#### `const char* vvctre_get_process_name(void* core)`
 
 Returns the current process's name
 
-##### `void vvctre_restart(void* core)`
+#### `void vvctre_restart(void* core)`
 
 Restarts emulation
 
@@ -202,63 +202,63 @@ Pause/unpause emulation
 
 Returns whether emulation is paused
 
-##### `bool vvctre_emulation_running(void* core)`
+#### `bool vvctre_emulation_running(void* core)`
 
 Returns whether emulation is running
 
-##### `u8 vvctre_read_u8(void* core, VAddr address)`
+#### `u8 vvctre_read_u8(void* core, VAddr address)`
 
 Reads memory
 
-##### `void vvctre_write_u8(void* core, VAddr address, u8 value)`
+#### `void vvctre_write_u8(void* core, VAddr address, u8 value)`
 
 Writes to memory
 
-##### `u16 vvctre_read_u16(void* core, VAddr address)`
+#### `u16 vvctre_read_u16(void* core, VAddr address)`
 
 Reads memory
 
-##### `void vvctre_write_u16(void* core, VAddr address, u16 value)`
+#### `void vvctre_write_u16(void* core, VAddr address, u16 value)`
 
 Writes to memory
 
-##### `u32 vvctre_read_u32(void* core, VAddr address)`
+#### `u32 vvctre_read_u32(void* core, VAddr address)`
 
 Reads memory
 
-##### `void vvctre_write_u32(void* core, VAddr address, u32 value)`
+#### `void vvctre_write_u32(void* core, VAddr address, u32 value)`
 
 Writes to memory
 
-##### `u64 vvctre_read_u64(void* core, VAddr address)`
+#### `u64 vvctre_read_u64(void* core, VAddr address)`
 
 Reads memory
 
-##### `void vvctre_write_u64(void* core, VAddr address, u64 value)`
+#### `void vvctre_write_u64(void* core, VAddr address, u64 value)`
 
 Writes to memory
 
-##### `void vvctre_invalidate_cache_range(void* core, u32 address, std::size_t length)`
+#### `void vvctre_invalidate_cache_range(void* core, u32 address, std::size_t length)`
 
 Invalidates CPU cache range
 
-##### `void vvctre_set_pc(void* core, u32 addr)`
+#### `void vvctre_set_pc(void* core, u32 addr)`
 
 Sets PC
 
-##### `u32 vvctre_get_pc(void* core)`
+#### `u32 vvctre_get_pc(void* core)`
 
 Returns PC
 
-##### `void vvctre_set_register(void* core, int index, u32 value)`
+#### `void vvctre_set_register(void* core, int index, u32 value)`
 
 Sets a register
 
-##### `u32 vvctre_get_register(void* core, int index)`
+#### `u32 vvctre_get_register(void* core, int index)`
 
 Returns a register
 
-##### `void vvctre_set_vfp_register(void* core, int index, u32 value)`
+#### `void vvctre_set_vfp_register(void* core, int index, u32 value)`
 
 Sets a VFP register
 
