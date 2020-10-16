@@ -194,11 +194,11 @@ Returns the current process's name
 
 Restarts emulation
 
-##### `void vvctre_set_paused(void* plugin_manager, bool paused)`
+#### `void vvctre_set_paused(void* plugin_manager, bool paused)`
 
 Pause/unpause emulation
 
-##### `bool vvctre_get_paused(void* plugin_manager)`
+#### `bool vvctre_get_paused(void* plugin_manager)`
 
 Returns whether emulation is paused
 
