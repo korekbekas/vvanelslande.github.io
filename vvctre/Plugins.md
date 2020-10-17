@@ -2497,19 +2497,19 @@ Returns Graphics -> Texture Filter
 
 #### `void vvctre_settings_set_render_3d(int value)`
 
-Sets Graphics -> 3D -> Mode
+Sets Graphics -> 3D Mode
 
 #### `int vvctre_settings_get_render_3d()`
 
-Return Graphics -> 3D -> Mode
+Return Graphics -> 3D Mode
 
 #### `void vvctre_settings_set_factor_3d(u8 value)`
 
-Set Graphics -> 3D -> %
+Set Graphics -> 3D Factor
 
 #### `u8 vvctre_settings_get_factor_3d()`
 
-Returns Graphics -> 3D -> %
+Returns Graphics -> 3D Factor
 
 #### `void vvctre_settings_set_button(int index, const char* params)`
 
@@ -3022,12 +3022,13 @@ Underlying type: u8
 
 #### StereoRenderOption
 
-| Value | Description  |
-|-------|--------------|
-| 0     | Off          |
-| 1     | Side by Side |
-| 2     | Anaglyph     |
-| 3     | Interlaced   |
+| Value | Description        |
+|-------|--------------------|
+| 0     | Off                |
+| 1     | Side by Side       |
+| 2     | Anaglyph           |
+| 3     | Interlaced         |
+| 4     | Reverse Interlaced |
 
 #### CameraIndex
 
