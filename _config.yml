@@ -31,7 +31,7 @@ footer:
       icon: "fab fa-fw fa-twitter"
       url: "https://twitter.com/valentinvvctre"
     - label: "Website License (GPLv3)"
-      icon: "fas fa-fw fa-link"
+      icon: "fas fa-fw fa-file-alt"
       url: "https://vvanelslande.github.io/license.txt"
 
 defaults:
