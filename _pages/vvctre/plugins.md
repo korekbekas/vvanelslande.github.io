@@ -6,7 +6,7 @@ redirect_from:
   - /vvctre/Plugins
 ---
 
-## Plugin list
+## Plugin lists
 
 - [GitHub](https://github.com/topics/vvctre-plugin)
 - [Patreon](https://www.patreon.com/vvctre/posts?filters%5Btag%5D=plugin)
