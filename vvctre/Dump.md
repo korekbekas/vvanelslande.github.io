@@ -1,4 +1,8 @@
-## Dump
+---
+permalink: /vvctre/dump/
+redirect_from:
+  - /vvctre/Dump
+---
 
 Cartridges: [https://3ds.hacks.guide/godmode9-usage#dumping-a-game-cartridge](https://3ds.hacks.guide/godmode9-usage#dumping-a-game-cartridge)  
 Installed Titles: [https://3ds.hacks.guide/godmode9-usage#dumping-a-title](https://3ds.hacks.guide/godmode9-usage#dumping-a-title)  
