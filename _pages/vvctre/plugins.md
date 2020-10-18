@@ -1,5 +1,5 @@
 ---
-title: "Plugins - vvctre - Valentin Vanelslande's Website"
+title: Plugins - vvctre
 permalink: /vvctre/plugins/
 redirect_from:
   - /vvctre/Plugins
