@@ -22,11 +22,12 @@ permalink: /save-editors/super-mario-maker-for-nintendo-3ds/
       type="file"
       onchange="unlockEverything.call(this, event)"
       style="display: none;"
+      id="fileInput"
     />
     <input
       type="button"
       value="Browse..."
-      onclick="document.querySelector('input').click();"
+      onclick="document.querySelector('#fileInput').click();"
     /><br />
 
     <script>
