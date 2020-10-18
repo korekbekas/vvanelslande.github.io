@@ -1,4 +1,8 @@
-first line
+---
+permalink: /about
+---
+
+ignore this
 
 [![Mentioned in Awesome Software Patreons](https://awesome.re/mentioned-badge.svg)](https://github.com/uraimo/awesome-software-patreons) ![Windows 7z size](https://img.shields.io/badge/Windows%207z%20size%20(38.3.0)-3.47%20MB-brightgreen) ![Linux 7z size](https://img.shields.io/badge/Linux%207z%20size%20(38.3.0)-4.33%20MB-brightgreen) ![Plugin functions](https://img.shields.io/badge/Plugin%20functions-683-brightgreen)
 
