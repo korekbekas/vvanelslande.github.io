@@ -1,4 +1,5 @@
 ---
+page.title: Requirements - vvctre
 permalink: /vvctre/requirements/
 redirect_from:
   - /
