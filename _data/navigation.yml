@@ -1,4 +1,4 @@
-navigation:
+sidebar:
   - title: vvctre
     children:
       - title: Requirements
