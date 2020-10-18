@@ -20,6 +20,7 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-redirect-from
+  - jekyll-titles-from-headings
 
 footer:
   links:
@@ -41,3 +42,4 @@ defaults:
       layout: single
       sidebar:
         nav: sidebar
+      strip_title: true
