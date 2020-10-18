@@ -1,0 +1,16 @@
+navigation:
+  - title: vvctre
+    children:
+      - title: FAQ
+        url: /vvctre/faq/
+      - title: Requirements
+        url: /vvctre/requirements/
+      - title: Plugins
+        url: /vvctre/plugins/
+      - title: Hidden Features
+        url: /vvctre/hidden-features/
+
+  - title: Save Editors
+    children:
+      - title: Super Mario Maker for Nintendo 3DS
+        url: /save-editors/super-mario-maker-for-nintendo-3ds/
