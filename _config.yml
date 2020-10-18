@@ -1,6 +1,5 @@
 title: "Valentin Vanelslande's Website"
-subtitle: null
-minimal_mistakes_skin: default
+minimal_mistakes_skin: dark
 
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
