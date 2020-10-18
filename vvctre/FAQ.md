@@ -1,4 +1,8 @@
-## FAQ
+---
+permalink: /vvctre/faq/
+redirect_from:
+  - /vvctre/FAQ
+---
 
 ##### What's vvctre?
 
