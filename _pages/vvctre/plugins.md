@@ -1,5 +1,5 @@
 ---
-title: Plugins - vvctre
+title: "Plugins - vvctre - Valentin Vanelslande's Website"
 permalink: /vvctre/plugins/
 toc: true
 redirect_from:
