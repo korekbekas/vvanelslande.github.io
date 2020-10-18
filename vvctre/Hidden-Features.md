@@ -1,4 +1,8 @@
-## Hidden Features
+---
+permalink: /vvctre/hidden-features/
+redirect_from:
+  - /vvctre/Hidden-Features
+---
 
 Open menu: Right click FPS  
 Open menu without pausing: Double left click FPS  
