@@ -1,5 +1,5 @@
 ---
-title: FAQ - vvctre
+title: "FAQ - vvctre - Valentin Vanelslande's Website"
 permalink: /vvctre/faq/
 redirect_from:
   - /vvctre/FAQ
