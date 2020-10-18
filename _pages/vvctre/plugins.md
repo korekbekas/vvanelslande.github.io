@@ -1,4 +1,8 @@
-# Plugins
+---
+permalink: /vvctre/plugins/
+redirect_from:
+  - /vvctre/Plugins
+---
 
 ## Contents
 
