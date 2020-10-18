@@ -1,5 +1,5 @@
 ---
-title: "Hidden Features - vvctre - Valentin Vanelslande's Website"
+title: Hidden Features - vvctre
 permalink: /vvctre/hidden-features/
 redirect_from:
   - /vvctre/Hidden-Features
