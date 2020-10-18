@@ -4,6 +4,8 @@ redirect_from:
   - /
 ---
 
+# Requirements
+
 OpenGL: 3.3+  
 OS: 64-bit Windows 7+ or Linux
 
