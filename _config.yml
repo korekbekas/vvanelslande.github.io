@@ -23,16 +23,6 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 
-author:
-  name: "Valentin Vanelslande"
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/vvanelslande"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/valentinvvctre"
-
 footer:
   links:
     - label: "GitHub"
