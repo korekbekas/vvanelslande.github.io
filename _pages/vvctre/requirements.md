@@ -1,7 +1,6 @@
 ---
+title: Requirements - vvctre
 permalink: /vvctre/requirements/
-name: Requirements - vvctre
-title: null
 redirect_from:
   - /
 ---
