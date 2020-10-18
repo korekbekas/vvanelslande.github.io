@@ -9,6 +9,8 @@ sidebar:
         url: /vvctre/plugins/
       - title: Hidden Features
         url: /vvctre/hidden-features/
+      - title: Read Before Making A Custom Default Settings Plugin Request
+        url: /vvctre/read-before-making-a-custom-default-settings-plugin-request/
 
   - title: Save Editors
     children:
