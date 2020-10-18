@@ -1,27 +1,10 @@
 ---
 title: Plugins - vvctre
 permalink: /vvctre/plugins/
+toc: true
 redirect_from:
   - /vvctre/Plugins
 ---
-
-## Contents
-
-- [Plugin list](#plugin-list)
-- [Developer information](#developer-information)
-  - [Templates](#templates)
-  - [Functions vvctre imports](#functions-vvctre-imports)
-  - [Functions plugins import](#functions-plugins-import)
-  - [Enums](#enums)
-    - [Layout](#layout)
-    - [MicrophoneInputType](#microphoneinputtype)
-    - [MicrophoneRealDeviceBackend](#microphonerealdevicebackend)
-    - [NativeButton](#nativebutton)
-    - [NativeAnalog](#nativeanalog)
-    - [Regions](#regions)
-    - [InitialClock](#initialclock)
-    - [StereoRenderOption](#stereorenderoption)
-    - [CameraIndex](#cameraindex)
 
 ## Plugin list
 
