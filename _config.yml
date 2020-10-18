@@ -48,8 +48,8 @@ footer:
       icon: "fab fa-fw fa-twitter"
       url: "https://twitter.com/valentinvvctre"
     - label: "License (GPLv3)"
-      icon: "fa-fw fa-link"
-      url: "license.txt"
+      icon: "fas fa-fw fa-link"
+      url: "https://vvanelslande.github.io/license.txt"
 
 defaults:
   # _posts
