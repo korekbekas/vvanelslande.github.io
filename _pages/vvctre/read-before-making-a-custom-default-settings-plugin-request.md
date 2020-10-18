@@ -1,5 +1,5 @@
 ---
-title: "Read Before Making A Custom Default Settings Plugin Request - vvctre - Valentin Vanelslande's Website"
+title: Read Before Making A Custom Default Settings Plugin Request - vvctre
 permalink: /vvctre/read-before-making-a-custom-default-settings-plugin-request/
 redirect_from:
   - /vvctre/Custom-Default-Settings-Plugin-Request
