@@ -1,5 +1,4 @@
 ---
-title: "Requirements - vvctre  - Valentin Vanelslande's Website"
 permalink: /vvctre/requirements/
 redirect_from:
   - /
