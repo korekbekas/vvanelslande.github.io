@@ -2,7 +2,7 @@
 permalink: /vvctre/
 ---
 
-## vvctre [![Mentioned in Awesome Software Patreons](https://awesome.re/mentioned-badge.svg)](https://github.com/uraimo/awesome-software-patreons) ![License](https://img.shields.io/badge/License-GPLv2%2b-brightgreen) ![Windows 7z size](https://img.shields.io/badge/Windows%207z%20size%20(38.3.0)-3.47%20MB-brightgreen) ![Linux 7z size](https://img.shields.io/badge/Linux%207z%20size%20(38.3.0)-4.33%20MB-brightgreen) ![Plugin functions](https://img.shields.io/badge/Plugin%20functions-683-brightgreen)
+[![Mentioned in Awesome Software Patreons](https://awesome.re/mentioned-badge.svg)](https://github.com/uraimo/awesome-software-patreons) ![License](https://img.shields.io/badge/License-GPLv2%2b-brightgreen) ![Windows 7z size](https://img.shields.io/badge/Windows%207z%20size%20(38.3.0)-3.47%20MB-brightgreen) ![Linux 7z size](https://img.shields.io/badge/Linux%207z%20size%20(38.3.0)-4.33%20MB-brightgreen) ![Plugin functions](https://img.shields.io/badge/Plugin%20functions-683-brightgreen)
 
 [GitHub](https://github.com/vvanelslande/vvctre) &#124; [Download](https://github.com/vvanelslande/vvctre/releases) &#124; [Discord Server](https://discord.gg/hVxCyb5) &#124; [Patreon](https://www.patreon.com/vvctre)  
 Pages: [Dump](Dump) &#124; [FAQ](FAQ) &#124; [Hidden Features](Hidden-Features) &#124; [Plugins](Plugins)  
@@ -15,7 +15,7 @@ Request Plugins: [Custom Default Settings](https://github.com/vvanelslande/vvctr
 - Supports mods in the file's folder (filename.exefsdir, filename.exheader, and filename.romfs)
 - Has C/C++ plugin system
 
-Requirements 
+### Requirements 
 
 OpenGL: 3.3+  
 OS: 64-bit Windows 7+ or Linux
