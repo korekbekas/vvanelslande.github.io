@@ -1,5 +1,7 @@
 ---
 permalink: /vvctre/read-before-making-a-custom-default-settings-plugin-request/
+redirect_from:
+  - /vvctre/Custom-Default-Settings-Plugin-Request
 ---
 
 | Tab         | Setting                                                                 | Examples                                                       |
