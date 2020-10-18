@@ -1,10 +1,10 @@
 navigation:
   - title: vvctre
     children:
-      - title: FAQ
-        url: /vvctre/faq/
       - title: Requirements
         url: /vvctre/requirements/
+      - title: FAQ
+        url: /vvctre/faq/
       - title: Plugins
         url: /vvctre/plugins/
       - title: Hidden Features
