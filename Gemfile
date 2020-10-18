@@ -13,5 +13,4 @@ group :jekyll_plugins do
   gem "jekyll-include-cache"
   gem "jekyll-algolia"
   gem "jekyll-redirect-from"
-  gem "jekyll-titles-from-headings"
 end
