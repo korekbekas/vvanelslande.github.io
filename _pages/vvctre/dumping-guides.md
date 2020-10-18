@@ -1,5 +1,5 @@
 ---
-title: "Dumping Guides - vvctre - Valentin Vanelslande's Website"
+title: Dumping Guides - vvctre
 permalink: /vvctre/dumping-guides/
 redirect_from:
   - /vvctre/Dump
