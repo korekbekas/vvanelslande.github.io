@@ -1,0 +1,75 @@
+---
+permalink: /save-editors/super-mario-maker-for-nintendo-3ds/
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Mario Maker for Nintendo 3DS Save Editor</title>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/file-saver/dist/FileSaver.min.js"></script>
+
+    You can only unlock everything currenly.
+
+    Progress file:
+    <input
+      type="file"
+      onchange="unlockEverything.call(this, event)"
+      style="display: none;"
+    />
+    <input
+      type="button"
+      value="Browse..."
+      onclick="document.querySelector('input').click();"
+    /><br />
+
+    <script>
+      function unlockEverything(event) {
+        const file = event.target.files[0];
+
+        if (!file) {
+          return;
+        }
+
+        file.arrayBuffer().then(arrayBuffer => {
+          const view = new DataView(arrayBuffer);
+
+          const CHECKSUM_OFFSET = 0;
+          const UNLOCKED_ITEMS_OFFSET = 0x4252;
+          const UNLOCKED_ITEMS_VALUE = 19;
+          const FILESIZE_PROGRESS = 0x8018;
+          const ADDIFF_PROGRESS = 0x8000;
+
+          view.setUint8(UNLOCKED_ITEMS_OFFSET, UNLOCKED_ITEMS_VALUE);
+
+          let i = FILESIZE_PROGRESS - 0x18;
+          let hash = 1;
+          let currentByte = 0x18;
+          i >>= 1;
+          while (i--) {
+            hash += view.getUint16(currentByte, true /* little endian */);
+            currentByte += 2;
+          }
+
+          view.setUint32(
+            CHECKSUM_OFFSET,
+            ADDIFF_PROGRESS + hash,
+            true /* little endian */
+          );
+
+          saveAs(
+            new Blob([new Uint8Array(arrayBuffer)], {
+              type: "application/octet-stream"
+            }),
+            "Progress"
+          );
+
+          this.value = "";
+        });
+      }
+    </script>
+  </body>
+</html>
