@@ -2485,30 +2485,32 @@ Sets System -> Birthday
 
 Get System -> Birthday
 
-#### `void vvctre_settings_set_system_language(void* cfg, int value)`
+#### `void vvctre_settings_set_system_language(void* cfg, Service::CFG::SystemLanguage value)`
 
 Sets System -> Language  
-Language list: [https://www.3dbrew.org/wiki/Config_Savegame#Languages](https://www.3dbrew.org/wiki/Config_Savegame#Languages)
+Language list: [https://www.3dbrew.org/wiki/Config_Savegame#Languages](https://www.3dbrew.org/wiki/Config_Savegame#Languages)  
+`value` underlying type: int
 
-#### `int vvctre_settings_get_system_language(void* cfg)`
+#### `Service::CFG::SystemLanguage vvctre_settings_get_system_language(void* cfg)`
 
 Returns System -> Language  
-Language list: [https://www.3dbrew.org/wiki/Config_Savegame#Languages](https://www.3dbrew.org/wiki/Config_Savegame#Languages)
+Language list: [https://www.3dbrew.org/wiki/Config_Savegame#Languages](https://www.3dbrew.org/wiki/Config_Savegame#Languages)  
+Return value underlying type: int
 
 #### `void vvctre_settings_set_sound_output_mode(void* cfg, Service::CFG::SoundOutputMode value)`
 
 Sets System -> Sound output mode
 
-Sound output mode list:
+Valid `value` values (underlying type: int):
 - Mono: 0
 - Stereo: 1
 - Surround: 2
 
-#### `int vvctre_settings_get_sound_output_mode(void* cfg)`
+#### `Service::CFG::SoundOutputMode vvctre_settings_get_sound_output_mode(void* cfg)`
 
 Returns System -> Sound output mode
 
-Sound output mode list:
+Return values (underlying type: int):
 - Mono: 0
 - Stereo: 1
 - Surround: 2
@@ -2546,6 +2548,14 @@ Valid `value` values:
 #### `u8 vvctre_settings_get_console_model(void* cfg)`
 
 Returns the console model
+
+Return values:
+- Nintendo 3DS: 0
+- Nintendo 3DS XL: 1
+- New Nintendo 3DS: 2,
+- Nintendo 2DS: 3,
+- New Nintendo 3DS XL: 4
+- New Nintendo 2DS XL: 5
 
 #### `void vvctre_settings_set_eula_version(void* cfg, u8 minor, u8 major)`
 
