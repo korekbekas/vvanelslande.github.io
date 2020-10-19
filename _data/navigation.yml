@@ -1,6 +1,16 @@
 sidebar:
   - title: vvctre
     children:
+      - title: Requirements
+        url: /vvctre/requirements/
+      - title: FAQ
+        url: /vvctre/faq/
+      - title: Plugins
+        url: /vvctre/plugins/
+      - title: Hidden Features
+        url: /vvctre/hidden-features/
+      - title: Read Before Making A Custom Default Settings Plugin Request
+        url: /vvctre/read-before-making-a-custom-default-settings-plugin-request/
       - title: GitHub
         url: https://github.com/vvanelslande/vvctre
       - title: Download
@@ -9,18 +19,6 @@ sidebar:
         url: https://discord.gg/hVxCyb5
       - title: Patreon
         url: https://www.patreon.com/vvctre
-      - title: Website
-        children:
-          - title: Requirements
-            url: /vvctre/requirements/
-          - title: FAQ
-            url: /vvctre/faq/
-          - title: Plugins
-            url: /vvctre/plugins/
-          - title: Hidden Features
-            url: /vvctre/hidden-features/
-          - title: Read Before Making A Custom Default Settings Plugin Request
-            url: /vvctre/read-before-making-a-custom-default-settings-plugin-request/
 
   - title: Save Editors
     children:
