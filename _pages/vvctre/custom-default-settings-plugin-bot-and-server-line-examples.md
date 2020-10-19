@@ -3,7 +3,7 @@ title: Custom Default Settings Plugin Bot And Server Line Examples - vvctre
 permalink: /vvctre/custom-default-settings-plugin-bot-and-server-line-examples/
 ---
 
-| Tab         | Setting                                                                 | Examples                                                               |
+| Tab         | Setting(s)                                                              | Example(s)                                                             |
 |-------------|-------------------------------------------------------------------------|------------------------------------------------------------------------|
 | Start       | File                                                                    | `start.file file.3ds`                                                  |
 | Start       | Play Movie                                                              | `start.play_movie file.vcm`                                            |
