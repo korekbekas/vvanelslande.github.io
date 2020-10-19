@@ -1,6 +1,6 @@
 ---
 title: Read Before Making A Custom Default Settings Plugin Request - vvctre
-permalink: /vvctre/read-before-making-a-custom-default-settings-plugin-request/
+permalink: /vvctre/custom-default-settings-examples/
 redirect_from:
   - /vvctre/Custom-Default-Settings-Plugin-Request
 ---
