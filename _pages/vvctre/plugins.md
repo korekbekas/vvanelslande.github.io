@@ -6,10 +6,150 @@ redirect_from:
   - /vvctre/Plugins
 ---
 
-## Plugin lists
+## Plugin list
 
-- [GitHub](https://github.com/topics/vvctre-plugin)
-- [Patreon](https://www.patreon.com/vvctre/posts?filters%5Btag%5D=plugin)
+### Free
+
+#### vvctre-plugin-quick-settings
+
+Adds a quick settings window
+
+Creator: [vvanelslande](https://github.com/vvanelslande)  
+[Source Code](https://github.com/vvanelslande/vvctre-plugin-quick-settings) | [Download Windows Build](https://github.com/vvanelslande/vvctre-plugin-quick-settings/releases/download/1.3.2/vvctre-plugin-quick-settings-1.3.2-Windows.7z) | [Download Linux Build](https://github.com/vvanelslande/vvctre-plugin-quick-settings/releases/download/1.3.2/vvctre-plugin-quick-settings-1.3.2-Linux.7z)
+
+#### vvctre-plugin-pause
+
+A pause button for vvctre (F8)
+
+Creator: [tbsp](https://github.com/tbsp)  
+[Source Code](https://github.com/tbsp/vvctre-plugin-pause) | [Download Windows Build](https://github.com/tbsp/vvctre-plugin-pause/releases/download/1.0.2/vvctre-plugin-pause-1.0.2-Windows.7z) | [Download Linux Build](https://github.com/tbsp/vvctre-plugin-pause/releases/download/1.0.2/vvctre-plugin-pause-1.0.2-Linux.7z)
+
+#### vvctre-plugin-default-window-size-and-position-file
+
+Loads window size and position from default-window-size-and-position.json when vvctre starts (size and position can be disabled)
+
+Creator: [vvanelslande](https://github.com/vvanelslande)  
+[Source Code](https://github.com/vvanelslande/vvctre-plugin-default-window-size-and-position-file) | [Download Windows Build](https://github.com/vvanelslande/vvctre-plugin-default-window-size-and-position-file/releases/download/1.0.0/vvctre-plugin-default-window-size-and-position-file-1.0.0-Windows.7z) | [Download Linux Build](https://github.com/vvanelslande/vvctre-plugin-default-window-size-and-position-file/releases/download/1.0.0/vvctre-plugin-default-window-size-and-position-file-1.0.0-Linux.7z)
+
+#### vvctre-plugin-disable-priority-boost
+
+Disables priority boost when vvctre starts
+
+Creator: [vvanelslande](https://github.com/vvanelslande)    
+[Source Code](https://github.com/vvanelslande/vvctre-plugin-disable-priority-boost) | [Download Windows Build](https://github.com/vvanelslande/vvctre-plugin-disable-priority-boost/releases/download/1.0.0/vvctre-plugin-disable-priority-boost-1.0.0-Windows.7z) | [Download Linux Build](https://github.com/vvanelslande/vvctre-plugin-disable-priority-boost/releases/download/1.0.0/vvctre-plugin-disable-priority-boost-1.0.0-Linux.7z)
+
+#### vvctre-plugin-default-start-paths-file
+
+Loads Start tab paths (file, play movie, and record movie) from default-start-paths.json when vvctre starts
+
+Creator: [vvanelslande](https://github.com/vvanelslande)  
+[Source Code](https://github.com/vvanelslande/vvctre-plugin-default-start-paths-file) | [Download Windows Build](https://github.com/vvanelslande/vvctre-plugin-default-start-paths-file/releases/download/1.0.0/vvctre-plugin-default-start-paths-file-1.0.0-Windows.7z) | [Download Linux Build](https://github.com/vvanelslande/vvctre-plugin-default-start-paths-file/releases/download/1.0.0/vvctre-plugin-default-start-paths-file-1.0.0-Linux.7z)
+
+#### vvctre-plugin-default-window-size-and-position-file
+
+Loads window size and position from default-window-size-and-position.json when vvctre starts (size and position can be disabled)
+
+Creator: [vvanelslande](https://github.com/vvanelslande)  
+[Source Code](https://github.com/vvanelslande/vvctre-plugin-default-window-size-and-position-file) | [Download Windows Build](https://github.com/vvanelslande/vvctre-plugin-default-window-size-and-position-file/releases/download/1.0.0/vvctre-plugin-default-window-size-and-position-file-1.0.0-Windows.7z) | [Download Linux Build](https://github.com/vvanelslande/vvctre-plugin-default-window-size-and-position-file/releases/download/1.0.0/vvctre-plugin-default-window-size-and-position-file-1.0.0-Linux.7z)
+  
+#### vvctre-plugin-2ds-switch
+
+Adds a 2DS switch
+
+Creator: [vvanelslande](https://github.com/vvanelslande)  
+[Source Code](https://github.com/vvanelslande/vvctre-plugin-2ds-switch) | [Download Windows Build](https://github.com/vvanelslande/vvctre-plugin-2ds-switch/releases/download/1.0.0/vvctre-plugin-2ds-switch-1.0.0-Windows.7z) | [Download Linux Build](https://github.com/vvanelslande/vvctre-plugin-2ds-switch/releases/download/1.0.0/vvctre-plugin-2ds-switch-1.0.0-Linux.7z)
+
+#### vvctre-plugin-auto-load-controls
+
+Loads controls.json when vvctre starts
+
+Creator: [vvanelslande](https://github.com/vvanelslande)    
+[Source Code](https://github.com/vvanelslande/vvctre-plugin-auto-load-controls) | [Download Windows Build](https://github.com/vvanelslande/vvctre-plugin-auto-load-controls/releases/download/1.0.2/vvctre-plugin-auto-load-controls-1.0.2-Windows.7z) | [Download Linux Build](https://github.com/vvanelslande/vvctre-plugin-auto-load-controls/releases/download/1.0.2/vvctre-plugin-auto-load-controls-1.0.2-Linux.7z)
+
+#### vvctre-plugin-log-file  
+
+Writes the logs to a file
+
+Creator: [vvanelslande](https://github.com/vvanelslande)  
+[Source Code](https://github.com/vvanelslande/vvctre-plugin-log-file) | [Download Windows Build](https://github.com/vvanelslande/vvctre-plugin-log-file/releases/download/2.0.0/vvctre-plugin-log-file-2.0.0-Windows.7z) | [Download Linux Build](https://github.com/vvanelslande/vvctre-plugin-log-file/releases/download/2.0.0/vvctre-plugin-log-file-2.0.0-Linux.7z)
+
+#### vvctre-plugin-cycle-custom-layouts  
+
+Adds disableable and changeable hotkey/button that cycles custom layouts, and optionally loads the first layout when vvctre starts and emulation starts for the first time. Layouts can have a window size and position.  
+
+Creator: [vvanelslande](https://github.com/vvanelslande)  
+[Source Code](https://github.com/vvanelslande/vvctre-plugin-cycle-custom-layouts) | [Download Windows Build](https://github.com/vvanelslande/vvctre-plugin-cycle-custom-layouts/releases/download/3.1.1/vvctre-plugin-cycle-custom-layouts-3.1.1-Windows.7z) | [Download Linux Build](https://github.com/vvanelslande/vvctre-plugin-cycle-custom-layouts/releases/download/3.1.1/vvctre-plugin-cycle-custom-layouts-3.1.1-Linux.7z)
+
+#### vnc4vvctre
+
+Adds a VNC server
+
+Creator: [vvanelslande](https://github.com/vvanelslande)  
+[Source Code](https://github.com/vvanelslande/vnc4vvctre) | [Download Windows Build](https://github.com/vvanelslande/vnc4vvctre/releases/download/1.3.1/vnc4vvctre-1.3.1-Windows.7z) | [Download Linux Build](https://github.com/vvanelslande/vnc4vvctre/releases/download/1.3.1/vnc4vvctre-1.3.1-Linux.7z)
+
+#### vvctre-plugin-button-to-touch-json
+
+Button to touch plugin that supports more than 1 button. You also don't need to wait if you use this. List of keyboard codes: https://www.libsdl.org/tmp/SDL/include/SDL_scancode.h. Default is ".".
+
+Creator: [vvanelslande](https://github.com/vvanelslande)  
+[Source Code](https://github.com/vvanelslande/vvctre-plugin-button-to-touch-json) | [Download Windows Build](https://github.com/vvanelslande/vvctre-plugin-button-to-touch-json/releases/download/1.0.0/vvctre-plugin-button-to-touch-json-1.0.0-Windows.7z) | [Download Linux Build](https://github.com/vvanelslande/vvctre-plugin-button-to-touch-json/releases/download/1.0.0/vvctre-plugin-button-to-touch-json-1.0.0-Linux.7z)
+
+#### vvctre-mjpeg-camera
+
+Server that returns JPEGs from a MJPEG stream and a vvctre plugin that changes the camera settings and reloads the camera images every frame
+
+Creator: [vvanelslande](https://github.com/vvanelslande)  
+[Source Code](https://github.com/vvanelslande/vvctre-mjpeg-camera) | [Download Windows Build](https://github.com/vvanelslande/vvctre-mjpeg-camera/releases/download/1.0.2/vvctre-mjpeg-camera-1.0.2-Windows.7z) | [Download Linux Build](https://github.com/vvanelslande/vvctre-mjpeg-camera/releases/download/1.0.2/vvctre-mjpeg-camera-1.0.2-Linux.7z)
+
+#### vvctre-plugin-default-enabled-lle-modules-file
+
+Enables LLE modules in default-enabled-lle-modules.txt when vvctre starts
+
+Creator: [vvanelslande](https://github.com/vvanelslande)  
+[Source Code](https://github.com/vvanelslande/vvctre-plugin-default-enabled-lle-modules-file) | [Download Windows Build](https://github.com/vvanelslande/vvctre-plugin-default-enabled-lle-modules-file/releases/download/1.0.1/vvctre-plugin-default-enabled-lle-modules-file-1.0.1-Windows.7z) | [Download Linux Build](https://github.com/vvanelslande/vvctre-plugin-default-enabled-lle-modules-file/releases/download/1.0.1/vvctre-plugin-default-enabled-lle-modules-file-1.0.1-Linux.7z)
+
+#### vvctre-plugin-get-touch-screen-x-y
+
+Shows touch screen X and Y
+
+Creator: [vvanelslande](https://github.com/vvanelslande)  
+[Source Code](https://github.com/vvanelslande/vvctre-plugin-get-touch-screen-x-y) | [Download Windows Build](https://github.com/vvanelslande/vvctre-plugin-get-touch-screen-x-y/releases/download/1.0.2/vvctre-plugin-get-touch-screen-x-y-1.0.2-Windows.7z) | [Download Linux Build](https://github.com/vvanelslande/vvctre-plugin-get-touch-screen-x-y/releases/download/1.0.2/vvctre-plugin-get-touch-screen-x-y-1.0.2-Linux.7z)
+
+#### vvctre-plugin-default-layout-settings-file
+
+Loads Layout, Swap Screens, and Upright Screens from default-layout-settings.json when vvctre starts. Doesn't load custom layout settings, window size, and window position.
+
+Creator: [vvanelslande](https://github.com/vvanelslande)  
+[Source Code](https://github.com/vvanelslande/vvctre-plugin-default-layout-settings-file) | [Download Windows Build](https://github.com/vvanelslande/vvctre-plugin-default-layout-settings-file/releases/download/1.0.0/vvctre-plugin-default-layout-settings-file-1.0.0-Windows.7z) | [Download Linux Build](https://github.com/vvanelslande/vvctre-plugin-default-layout-settings-file/releases/download/1.0.0/vvctre-plugin-default-layout-settings-file-1.0.0-Linux.7z)
+
+#### vvctre-plugin-free-hotkeys
+
+Adds some hotkeys (previously called vvctre-plugin-shortcuts-free)
+
+Creator: [vvanelslande](https://github.com/vvanelslande)  
+[Source Code](https://github.com/vvanelslande/vvctre-plugin-free-hotkeys) | [Download Windows Build](https://github.com/vvanelslande/vvctre-plugin-free-hotkeys/releases/download/1.4.1/vvctre-plugin-free-hotkeys-1.4.1-Windows.7z) | [Download Linux Build](https://github.com/vvanelslande/vvctre-plugin-free-hotkeys/releases/download/1.4.1/vvctre-plugin-free-hotkeys-1.4.1-Linux.7z)
+
+### Patreon ($5)
+
+#### Patreon hotkeys
+
+Download: [https://www.patreon.com/posts/patreon-hotkeys-42884191](https://www.patreon.com/posts/patreon-hotkeys-42884191)
+
+Hotkeys:
+- Load File (F1, Can't be changed)
+- Load Encrypted Amiibo (F2, Can't be changed)
+- Remove Amiibo (F3, Can't be changed)
+- Restart Emulation (F4, Can't be changed)
+- Install CIA (F5, Can't be changed)
+- Hold to remove speed limit (Space, Can't be changed)
+
+#### Light theme
+
+Download: [https://www.patreon.com/posts/light-theme-2-0-37869489](https://www.patreon.com/posts/light-theme-2-0-37869489)
+
+#### Dear ImGui classic theme
+
+Download: [https://www.patreon.com/posts/dear-imgui-theme-37870192](https://www.patreon.com/posts/dear-imgui-theme-37870192)
 
 ## Request plugins
 
