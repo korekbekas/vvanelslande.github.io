@@ -35,6 +35,6 @@ defaults:
       path: ""
       type: pages
     values:
-      layout: no-h1
+      layout: default
       sidebar:
         nav: sidebar
