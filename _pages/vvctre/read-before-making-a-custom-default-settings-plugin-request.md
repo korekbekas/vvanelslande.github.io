@@ -49,7 +49,7 @@ redirect_from:
 | Graphics    | Enable Linear Filtering                                                 | `graphics.linear_filtering disable`                                    |
 | Graphics    | Sharper Distant Objects                                                 | `graphics.sharper_distant_objects enable`                              |
 | Graphics    | Background Color                                                        | `graphics.background_color #001122`                                    |
-| Graphics    | Resolution                                                              | ```<br>graphics.resolution 2<br>graphics.resolution Window Size<br>``` |
+| Graphics    | Resolution                                                              | `graphics.resolution 2`<br>`graphics.resolution Window Size`           |
 | Graphics    | Post Processing Shader                                                  | `graphics.post_processing_shader shader`                               |
 | Graphics    | Texture Filter                                                          | `graphics.texture_filter xBRZ freescale`                               |
 | Graphics    | 3D Mode                                                                 | `graphics.3d_mode Side by Side`                                        |
