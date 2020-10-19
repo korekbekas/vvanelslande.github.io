@@ -24,3 +24,8 @@ No.
 ##### Will you add macOS support?
 
 No.
+
+##### What mods does vvctre support?
+
+- Luma3DS mods in `user/sdmc/luma/titles` (see https://github.com/LumaTeam/Luma3DS/wiki/Optional-features#config-menu-options)
+- Mods that are in the ROM's folder (filename.exefsdir/code.bin, filename.exefsdir/code.ips, filename.exefsdir/code.bps, filename.exheader, and filename.romfs)
