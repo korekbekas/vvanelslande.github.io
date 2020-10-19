@@ -89,7 +89,7 @@ Creator: [vvanelslande](https://github.com/vvanelslande)
 
 #### vvctre-plugin-button-to-touch-json
 
-Button to touch plugin that supports more than 1 button. You also don't need to wait if you use this. List of keyboard codes: [https://www.libsdl.org/tmp/SDL/include/SDL_scancode.h](https://www.libsdl.org/tmp/SDL/include/SDL_scancode.h). Default is ".".
+Button to touch plugin that supports more than 1 button. You also don't need to wait if you use this. Keyboard code list: [https://www.libsdl.org/tmp/SDL/include/SDL_scancode.h](https://www.libsdl.org/tmp/SDL/include/SDL_scancode.h). Default is ".".
 
 Creator: [vvanelslande](https://github.com/vvanelslande)  
 [Source Code](https://github.com/vvanelslande/vvctre-plugin-button-to-touch-json) | [Download Windows Build](https://github.com/vvanelslande/vvctre-plugin-button-to-touch-json/releases/download/1.0.0/vvctre-plugin-button-to-touch-json-1.0.0-Windows.7z) | [Download Linux Build](https://github.com/vvanelslande/vvctre-plugin-button-to-touch-json/releases/download/1.0.0/vvctre-plugin-button-to-touch-json-1.0.0-Linux.7z)
@@ -2321,43 +2321,63 @@ Returns Audio -> DSP LLE -> Use Multiple Threads
 
 #### `void vvctre_settings_set_enable_audio_stretching(bool value)`
 
-Sets Audio -> Enable Stretching
+Sets Audio -> Output -> Enable Stretching
 
 #### `bool vvctre_settings_get_enable_audio_stretching()`
 
-Returns Audio -> Enable Stretching
+Returns Audio -> Output -> Enable Stretching
 
 #### `void vvctre_settings_set_audio_volume(float value)`
 
-Sets Audio -> Volume
+Sets Audio -> Output -> Volume
 
 #### `float vvctre_settings_get_audio_volume()`
 
-Returns Audio -> Volume
+Returns Audio -> Output -> Volume
 
 #### `void vvctre_settings_set_audio_sink_id(const char* value)`
 
-Sets Audio -> Sink
+Sets Audio -> Output -> Sink
+
+Valid `value` values:
+- cubeb
+- sdl2
+- null
 
 #### `const char* vvctre_settings_get_audio_sink_id()`
 
-Returns Audio -> Sink
+Returns Audio -> Output -> Sink
+
+Return values:
+- cubeb
+- sdl2
+- null
 
 #### `void vvctre_settings_set_audio_device_id(const char* value)`
 
-Sets Audio -> Device
+Sets Audio -> Output -> Device
 
 #### `const char* vvctre_settings_get_audio_device_id()`
 
-Returns Audio -> Device
+Returns Audio -> Output -> Device
 
 #### `void vvctre_settings_set_microphone_input_type(MicrophoneInputType value)`
 
 Sets Audio -> Microphone -> Source
 
+Valid `value` values:
+- Disabled: 0
+- Real Device: 1
+- Static Noise: 2
+
 #### `MicrophoneInputType vvctre_settings_get_microphone_input_type()`
 
 Returns Audio -> Microphone -> Source
+
+Return values (underlying type: :
+- Disabled: 0
+- Real Device: 1
+- Static Noise: 2
 
 #### `void vvctre_settings_set_microphone_device(const char* value)`
 
@@ -2371,17 +2391,37 @@ Returns Audio -> Microphone -> Device
 
 Sets Audio -> Microphone -> Backend
 
+Valid `value` values (underlying type: u8):
+- Auto: 0
+- Cubeb: 1
+- SDL2: 2
+- Null: 3
+
 #### `MicrophoneRealDeviceBackend vvctre_settings_get_microphone_real_device_backend()`
 
 Returns Audio -> Microphone -> Backend
+
+Return values (underlying type: u8):
+- Auto: 0
+- Cubeb: 1
+- SDL2: 2
+- Null: 3
 
 #### `void vvctre_settings_set_camera_engine(int index, const char* value)`
 
 Sets a camera's engine
 
+Camera engine list:
+- blank
+- image
+
 #### `const char* vvctre_settings_get_camera_engine(int index)`
 
 Returns a camera's engine
+
+Camera engine list:
+- blank
+- image
 
 #### `void vvctre_settings_set_camera_parameter(int index, const char* value)`
 
@@ -2391,13 +2431,35 @@ Sets a camera's parameter
 
 Returns a camera's parameter
 
-#### `void vvctre_settings_set_camera_flip(int index, int value)`
+#### `void vvctre_settings_set_camera_flip(CameraIndex index, int value)`
 
 Set a camera's flip
 
-#### `int vvctre_settings_get_camera_flip(int index)`
+Valid `index` values (underlying type: int):
+- Outer Right: 0
+- Inner: 1
+- Outer Left: 2
+
+Valid `value` values:
+- None: 0
+- Horizontal: 1
+- Vertical: 2
+- Reverse: 3
+
+#### `int vvctre_settings_get_camera_flip(CameraIndex index)`
 
 Returns a camera's flip
+
+Valid `index` values (underlying type: int):
+- Outer Right: 0
+- Inner: 1
+- Outer Left: 2
+
+Return values:
+- None: 0
+- Horizontal: 1
+- Vertical: 2
+- Reverse: 3
 
 #### `void vvctre_set_play_coins(u16 value)`
 
@@ -2425,27 +2487,41 @@ Get System -> Birthday
 
 #### `void vvctre_settings_set_system_language(void* cfg, int value)`
 
-Sets System -> Language
+Sets System -> Language  
+Language list: [https://www.3dbrew.org/wiki/Config_Savegame#Languages](https://www.3dbrew.org/wiki/Config_Savegame#Languages)
 
 #### `int vvctre_settings_get_system_language(void* cfg)`
 
-Returns System -> Language
+Returns System -> Language  
+Language list: [https://www.3dbrew.org/wiki/Config_Savegame#Languages](https://www.3dbrew.org/wiki/Config_Savegame#Languages)
 
-#### `void vvctre_settings_set_sound_output_mode(void* cfg, int value)`
+#### `void vvctre_settings_set_sound_output_mode(void* cfg, Service::CFG::SoundOutputMode value)`
 
 Sets System -> Sound output mode
+
+Sound output mode list:
+- Mono: 0
+- Stereo: 1
+- Surround: 2
 
 #### `int vvctre_settings_get_sound_output_mode(void* cfg)`
 
 Returns System -> Sound output mode
 
+Sound output mode list:
+- Mono: 0
+- Stereo: 1
+- Surround: 2
+
 #### `void vvctre_settings_set_country(void* cfg, u8 value)`
 
-Sets System -> Country
+Sets System -> Country  
+Country list: [https://3dbrew.org/wiki/Country_Code_List](https://3dbrew.org/wiki/Country_Code_List)
 
 #### `u8 vvctre_settings_get_country(void* cfg)`
 
-Returns System -> Country
+Returns System -> Country  
+Country list: [https://3dbrew.org/wiki/Country_Code_List](https://3dbrew.org/wiki/Country_Code_List)
 
 #### `void vvctre_settings_set_console_id(void* cfg, u32 random_number, u64 console_id)`
 
@@ -2458,6 +2534,14 @@ Returns the console ID
 #### `void vvctre_settings_set_console_model(void* cfg, u8 value)`
 
 Sets the console model
+
+Valid `value` values:
+- Nintendo 3DS: 0
+- Nintendo 3DS XL: 1
+- New Nintendo 3DS: 2,
+- Nintendo 2DS: 3,
+- New Nintendo 3DS XL: 4
+- New Nintendo 2DS XL: 5
 
 #### `u8 vvctre_settings_get_console_model(void* cfg)`
 
@@ -2557,11 +2641,13 @@ Returns Graphics -> Sharper Distant Objects
 
 #### `void vvctre_settings_set_resolution(u16 value)`
 
-Sets Graphics -> Resolution
+Sets Graphics -> Resolution  
+0 = Window Size
 
 #### `u16 vvctre_settings_get_resolution()`
 
-Returns Graphics -> Resolution
+Returns Graphics -> Resolution  
+0 = Window Size
 
 #### `void vvctre_settings_set_background_color_red(float value)`
 
@@ -2605,17 +2691,45 @@ Returns Graphics -> Post Processing Shader
 
 Sets Graphics -> Texture Filter
 
+Valid `value` values:
+- none
+- Anime4K Ultrafast
+- Bicubic
+- ScaleForce
+- xBRZ freescale
+
 #### `const char* vvctre_settings_get_texture_filter()`
 
 Returns Graphics -> Texture Filter
 
-#### `void vvctre_settings_set_render_3d(int value)`
+Return values:
+- none
+- Anime4K Ultrafast
+- Bicubic
+- ScaleForce
+- xBRZ freescale
+
+#### `void vvctre_settings_set_render_3d(Settings::StereoRenderOption value)`
 
 Sets Graphics -> 3D Mode
 
-#### `int vvctre_settings_get_render_3d()`
+Valid `value` values (underlying type: int):
+- Off: 0
+- Side by Side: 1
+- Anaglyph: 2
+- Interlaced: 3
+- Reverse Interlaced: 4
+
+#### `Settings::StereoRenderOption vvctre_settings_get_render_3d()`
 
 Return Graphics -> 3D Mode
+
+Return values (underlying type: int):
+- Off: 0
+- Side by Side: 1
+- Anaglyph: 2
+- Interlaced: 3
+- Reverse Interlaced: 4
 
 #### `void vvctre_settings_set_factor_3d(u8 value)`
 
@@ -2681,13 +2795,27 @@ Sets Controls -> CemuhookUDP -> Pad
 
 Returns Controls -> CemuhookUDP -> Pad
 
-#### `void vvctre_settings_set_layout(int value)`
+#### `void vvctre_settings_set_layout(Settings::Layout value)`
 
 Sets Layout -> Layout
 
-#### `int vvctre_settings_get_layout()`
+Valid `value` values (underlying type: int):
+- Default: 0
+- Single Screen: 1
+- Large Screen: 2
+- Side by Side: 3
+- Medium Screen: 4
+
+#### `Settings::Layout vvctre_settings_get_layout()`
 
 Returns Layout -> Layout
+
+Return values (underlying type: int):
+- Default: 0
+- Single Screen: 1
+- Large Screen: 2
+- Side by Side: 3
+- Medium Screen: 4
 
 #### `void vvctre_settings_set_swap_screens(bool value)`
 
@@ -3049,105 +3177,3 @@ Sets whether fatal error messages are shown
 #### `bool vvctre_get_show_fatal_error_messages(void* plugin_manager)`
 
 Returns whether fatal error messages are shown
-
-### Enums
-
-[Countries](https://www.3dbrew.org/wiki/Country_Code_List)  
-[Models](https://www.3dbrew.org/wiki/Cfg:GetSystemModel)  
-[Languages](https://www.3dbrew.org/wiki/Config_Savegame#Languages)
-
-#### Layout
-
-| Value | Description   |
-|-------|---------------|
-| 0     | Default       |
-| 1     | Single Screen |
-| 2     | Large Screen  |
-| 3     | Side by Side  |
-| 4     | Medium Screen  |
-
-#### MicrophoneInputType
-
-| Value | Description  |
-|-------|--------------|
-| 0     | Disabled     |
-| 1     | Real Device  |
-| 2     | Static Noise |
-
-#### MicrophoneRealDeviceBackend
-
-Underlying type: u8
-
-| Value | Description |
-|-------|-------------|
-| 0     | Auto        |
-| 1     | Cubeb       |
-| 2     | SDL2        |
-| 3     | Null        |
-
-#### NativeButton
-
-| Value | Description |
-|-------|-------------|
-| 0     | A           |
-| 1     | B           |
-| 2     | X           |
-| 3     | Y           |
-| 4     | Up          |
-| 5     | Down        |
-| 6     | Left        |
-| 7     | Right       |
-| 8     | L           |
-| 9     | R           |
-| 10    | Start       |
-| 11    | Select      |
-| 12    | Debug       |
-| 13    | GPIO14      |
-| 15    | ZL          |
-| 16    | ZR          |
-| 17    | Home        |
-
-#### NativeAnalog
-
-| Value | Description  |
-|-------|--------------|
-| 0     | Circle Pad    |
-| 1     | Circle Pad Pro |
-
-#### Regions
-
-| Value | Description |
-|-------|-------------|
-| -1    | Auto-select |
-| 0     | Japan       |
-| 1     | USA         |
-| 2     | Europe      |
-| 3     | Australia   |
-| 4     | China       |
-| 5     | Korea       |
-| 6     | Taiwan      |
-
-#### InitialClock
-
-| Value | Description    |
-|-------|----------------|
-| 0     | System         |
-| 1     | Unix Timestamp |
-
-#### StereoRenderOption
-
-| Value | Description        |
-|-------|--------------------|
-| 0     | Off                |
-| 1     | Side by Side       |
-| 2     | Anaglyph           |
-| 3     | Interlaced         |
-| 4     | Reverse Interlaced |
-
-#### CameraIndex
-
-| Value | Description |
-|-------|-------------|
-| 0     | Outer Right |
-| 1     | Inner       |
-| 2     | Outer Left  |
