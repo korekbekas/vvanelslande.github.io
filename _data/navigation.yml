@@ -1,13 +1,13 @@
 sidebar:
   - title: vvctre
     children:
-      - title: GitHub
+      - title: GitHub <i class="fas fa-external-link-alt"></i>
         url: https://github.com/vvanelslande/vvctre
-      - title: Download
+      - title: Download <i class="fas fa-external-link-alt"></i>
         url: https://github.com/vvanelslande/vvctre/releases
-      - title: Discord Server
+      - title: Discord Server <i class="fas fa-external-link-alt"></i>
         url: https://discord.gg/hVxCyb5
-      - title: Patreon
+      - title: Patreon <i class="fas fa-external-link-alt"></i>
         url: https://www.patreon.com/vvctre
       - title: Requirements
         url: /vvctre/requirements/
