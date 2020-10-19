@@ -89,7 +89,7 @@ Creator: [vvanelslande](https://github.com/vvanelslande)
 
 #### vvctre-plugin-button-to-touch-json
 
-Button to touch plugin that supports more than 1 button. You also don't need to wait if you use this. List of keyboard codes: https://www.libsdl.org/tmp/SDL/include/SDL_scancode.h. Default is ".".
+Button to touch plugin that supports more than 1 button. You also don't need to wait if you use this. List of keyboard codes: [https://www.libsdl.org/tmp/SDL/include/SDL_scancode.h](https://www.libsdl.org/tmp/SDL/include/SDL_scancode.h). Default is ".".
 
 Creator: [vvanelslande](https://github.com/vvanelslande)  
 [Source Code](https://github.com/vvanelslande/vvctre-plugin-button-to-touch-json) | [Download Windows Build](https://github.com/vvanelslande/vvctre-plugin-button-to-touch-json/releases/download/1.0.0/vvctre-plugin-button-to-touch-json-1.0.0-Windows.7z) | [Download Linux Build](https://github.com/vvanelslande/vvctre-plugin-button-to-touch-json/releases/download/1.0.0/vvctre-plugin-button-to-touch-json-1.0.0-Linux.7z)
