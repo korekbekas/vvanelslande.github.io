@@ -10,16 +10,17 @@ sidebar:
       - title: Patreon
         url: https://www.patreon.com/vvctre
       - title: Website
-        - title: Requirements
-          url: /vvctre/requirements/
-        - title: FAQ
-          url: /vvctre/faq/
-        - title: Plugins
-          url: /vvctre/plugins/
-        - title: Hidden Features
-          url: /vvctre/hidden-features/
-        - title: Read Before Making A Custom Default Settings Plugin Request
-          url: /vvctre/read-before-making-a-custom-default-settings-plugin-request/
+        children:
+          - title: Requirements
+            url: /vvctre/requirements/
+          - title: FAQ
+            url: /vvctre/faq/
+          - title: Plugins
+            url: /vvctre/plugins/
+          - title: Hidden Features
+            url: /vvctre/hidden-features/
+          - title: Read Before Making A Custom Default Settings Plugin Request
+            url: /vvctre/read-before-making-a-custom-default-settings-plugin-request/
 
   - title: Save Editors
     children:
