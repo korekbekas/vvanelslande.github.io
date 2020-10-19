@@ -1,6 +1,7 @@
 ---
 title: FAQ - vvctre
 permalink: /vvctre/faq/
+toc: true
 redirect_from:
   - /vvctre/FAQ
 ---
