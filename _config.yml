@@ -23,7 +23,7 @@ footer:
       url: https://twitter.com/valentinvvctre
     - label: Website License (GPLv3)
       icon: fas fa-fw fa-file-alt
-      url: https://vvanelslande.github.io/license.txt
+      url: /license.txt
 
 defaults:
   - scope:
