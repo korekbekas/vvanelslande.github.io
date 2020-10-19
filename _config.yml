@@ -24,9 +24,6 @@ footer:
     - label: Website License (GPLv3)
       icon: fas fa-fw fa-file-alt
       url: /license.txt
-    - label: Website Source Code
-      icon: fas fa-fw fa-external-link-alt
-      url: https://github.com/vvanelslande/vvanelslande.github.io
 
 defaults:
   - scope:
