@@ -1,8 +1,6 @@
 ---
-title: Read Before Making A Custom Default Settings Plugin Request - vvctre
-permalink: /vvctre/custom-default-settings-examples/
-redirect_from:
-  - /vvctre/Custom-Default-Settings-Plugin-Request
+title: Custom Default Settings Bot And Server Line Examples - vvctre
+permalink: /vvctre/custom-default-settings-bot-and-server-line-examples/
 ---
 
 | Tab         | Setting                                                                 | Examples                                                               |
