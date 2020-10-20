@@ -15,7 +15,7 @@ redirect_from:
 Adds a quick settings window
 
 Creator: [vvanelslande](https://github.com/vvanelslande)  
-[Source Code](https://github.com/vvanelslande/vvctre-plugin-quick-settings) | [Download Windows Build](https://github.com/vvanelslande/vvctre-plugin-quick-settings/releases/download/1.3.2/vvctre-plugin-quick-settings-1.3.2-Windows.7z) | [Download Linux Build](https://github.com/vvanelslande/vvctre-plugin-quick-settings/releases/download/1.3.2/vvctre-plugin-quick-settings-1.3.2-Linux.7z)
+[Source Code](https://github.com/vvanelslande/vvctre-plugin-quick-settings) | [Download Windows Build](https://github.com/vvanelslande/vvctre-plugin-quick-settings/releases/download/1.4.0/vvctre-plugin-quick-settings-1.4.0-Windows.7z) | [Download Linux Build](https://github.com/vvanelslande/vvctre-plugin-quick-settings/releases/download/1.4.0/vvctre-plugin-quick-settings-1.4.0-Linux.7z)
 
 #### vvctre-plugin-pause
 
@@ -78,7 +78,7 @@ Creator: [vvanelslande](https://github.com/vvanelslande)
 Adds disableable and changeable hotkey/button that cycles custom layouts, and optionally loads the first layout when vvctre starts and emulation starts for the first time. Layouts can have a window size, window position, and a Upright Screens override.  
 
 Creator: [vvanelslande](https://github.com/vvanelslande)  
-[Source Code](https://github.com/vvanelslande/vvctre-plugin-cycle-custom-layouts) | [Download Windows Build](https://github.com/vvanelslande/vvctre-plugin-cycle-custom-layouts/releases/download/3.1.1/vvctre-plugin-cycle-custom-layouts-3.1.1-Windows.7z) | [Download Linux Build](https://github.com/vvanelslande/vvctre-plugin-cycle-custom-layouts/releases/download/3.1.1/vvctre-plugin-cycle-custom-layouts-3.1.1-Linux.7z)
+[Source Code](https://github.com/vvanelslande/vvctre-plugin-cycle-custom-layouts) | [Download Windows Build](https://github.com/vvanelslande/vvctre-plugin-cycle-custom-layouts/releases/download/3.2.1/vvctre-plugin-cycle-custom-layouts-3.2.1-Windows.7z) | [Download Linux Build](https://github.com/vvanelslande/vvctre-plugin-cycle-custom-layouts/releases/download/3.2.1/vvctre-plugin-cycle-custom-layouts-3.2.1-Linux.7z)
 
 #### vnc4vvctre
 
