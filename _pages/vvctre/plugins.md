@@ -15,7 +15,7 @@ redirect_from:
 Adds a quick settings window
 
 Creator: [vvanelslande](https://github.com/vvanelslande)  
-[Source Code](https://github.com/vvanelslande/vvctre-plugin-quick-settings) | [Download Windows Build](https://github.com/vvanelslande/vvctre-plugin-quick-settings/releases/download/1.4.0/vvctre-plugin-quick-settings-1.4.0-Windows.7z) | [Download Linux Build](https://github.com/vvanelslande/vvctre-plugin-quick-settings/releases/download/1.4.0/vvctre-plugin-quick-settings-1.4.0-Linux.7z)
+[Source Code](https://github.com/vvanelslande/vvctre-plugin-quick-settings) | [Download Windows Build](https://github.com/vvanelslande/vvctre-plugin-quick-settings/releases/download/1.4.1/vvctre-plugin-quick-settings-1.4.1-Windows.7z) | [Download Linux Build](https://github.com/vvanelslande/vvctre-plugin-quick-settings/releases/download/1.4.1/vvctre-plugin-quick-settings-1.4.1-Linux.7z)
 
 #### vvctre-plugin-pause
 
