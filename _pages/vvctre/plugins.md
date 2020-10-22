@@ -136,6 +136,13 @@ Makes all the settings in Quick Settings persistent. Only loads and saves settin
 Creator: [vvanelslande](https://github.com/vvanelslande)  
 [Source Code](https://github.com/vvanelslande/vvctre-plugin-make-settings-persistent) | [Download Windows Build](https://github.com/vvanelslande/vvctre-plugin-make-settings-persistent/releases/download/1.0.0/vvctre-plugin-make-settings-persistent-1.0.0-Windows.7z) | [Download Linux Build](https://github.com/vvanelslande/vvctre-plugin-make-settings-persistent/releases/download/1.0.0/vvctre-plugin-make-settings-persistent-1.0.0-Linux.7z)
 
+#### vvctre-plugin-default-multiplayer-settings-file
+
+Loads multiplayer settings from multiplayer-settings.json when vvctre starts (everything is optional) and joins the room when emulation is starting for the first time (it's disabled if default-multiplayer-settings.json doesn't have `join_room_when_emulation_is_starting_for_the_first_time`)
+
+Creator: [vvanelslande](https://github.com/vvanelslande)  
+[Source Code](https://github.com/vvanelslande/vvctre-plugin-default-multiplayer-settings-file) | [Download Windows Build](https://github.com/vvanelslande/vvctre-plugin-default-multiplayer-settings-file/releases/download/1.0.1/vvctre-plugin-default-multiplayer-settings-file-1.0.1-Windows.7z) | [Download Linux Build](https://github.com/vvanelslande/vvctre-plugin-default-multiplayer-settings-file/releases/download/1.0.1/vvctre-plugin-default-multiplayer-settings-file-1.0.1-Linux.7z)
+
 ### Patreon ($5)
 
 #### Patreon hotkeys
