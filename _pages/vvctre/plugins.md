@@ -129,12 +129,12 @@ Adds some hotkeys (previously called vvctre-plugin-shortcuts-free)
 Creator: [vvanelslande](https://github.com/vvanelslande)  
 [Source Code](https://github.com/vvanelslande/vvctre-plugin-free-hotkeys) | [Download Windows Build](https://github.com/vvanelslande/vvctre-plugin-free-hotkeys/releases/download/1.4.1/vvctre-plugin-free-hotkeys-1.4.1-Windows.7z) | [Download Linux Build](https://github.com/vvanelslande/vvctre-plugin-free-hotkeys/releases/download/1.4.1/vvctre-plugin-free-hotkeys-1.4.1-Linux.7z)
 
-#### vvctre-plugin-make-settings-persistent
+#### vvctre-plugin-make-all-settings-in-quick-settings-persistent
 
 Makes all the settings in Quick Settings persistent. Only loads and saves settings that are in settings.json.
 
 Creator: [vvanelslande](https://github.com/vvanelslande)  
-[Source Code](https://github.com/vvanelslande/vvctre-plugin-make-settings-persistent) | [Download Windows Build](https://github.com/vvanelslande/vvctre-plugin-make-settings-persistent/releases/download/1.0.0/vvctre-plugin-make-settings-persistent-1.0.0-Windows.7z) | [Download Linux Build](https://github.com/vvanelslande/vvctre-plugin-make-settings-persistent/releases/download/1.0.0/vvctre-plugin-make-settings-persistent-1.0.0-Linux.7z)
+[Source Code](https://github.com/vvanelslande/vvctre-plugin-make-all-settings-in-quick-settings-persistent) | [Download Windows Build](https://github.com/vvanelslande/vvctre-plugin-make-all-settings-in-quick-settings-persistent/releases/download/1.0.0/vvctre-plugin-make-all-settings-in-quick-settings-persistent-1.0.0-Windows.7z) | [Download Linux Build](https://github.com/vvanelslande/vvctre-plugin-make-settings-persistent/releases/download/1.0.0/vvctre-plugin-make-all-settings-in-quick-settings-persistent-1.0.0-Linux.7z)
 
 #### vvctre-plugin-default-multiplayer-settings-file
 
