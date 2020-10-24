@@ -1,5 +1,5 @@
 title: "Valentin Vanelslande's Website"
-minimal_mistakes_skin: default
+minimal_mistakes_skin: dark
 
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
@@ -16,13 +16,13 @@ plugins:
 footer:
   links:
     - label: GitHub
-      icon: fab fa-fw fa-github
+      icon: fab fa-github
       url: https://github.com/vvanelslande
     - label: Twitter
-      icon: fab fa-fw fa-twitter
+      icon: fab fa-twitter
       url: https://twitter.com/valentinvvctre
     - label: Website License (GPLv3)
-      icon: fas fa-fw fa-file-alt
+      icon: fas fa-file-alt
       url: /license.txt
 
 defaults:
