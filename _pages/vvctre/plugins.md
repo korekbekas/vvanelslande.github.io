@@ -24,13 +24,6 @@ A pause button for vvctre (F8)
 Creator: [tbsp](https://github.com/tbsp)  
 [Source Code](https://github.com/tbsp/vvctre-plugin-pause) | [Download Windows Build](https://github.com/tbsp/vvctre-plugin-pause/releases/download/1.0.2/vvctre-plugin-pause-1.0.2-Windows.7z) | [Download Linux Build](https://github.com/tbsp/vvctre-plugin-pause/releases/download/1.0.2/vvctre-plugin-pause-1.0.2-Linux.7z)
 
-#### vvctre-plugin-default-window-size-and-position-file
-
-Loads window size and position from default-window-size-and-position.json when vvctre starts (size and position can be disabled)
-
-Creator: [vvanelslande](https://github.com/vvanelslande)  
-[Source Code](https://github.com/vvanelslande/vvctre-plugin-default-window-size-and-position-file) | [Download Windows Build](https://github.com/vvanelslande/vvctre-plugin-default-window-size-and-position-file/releases/download/1.0.0/vvctre-plugin-default-window-size-and-position-file-1.0.0-Windows.7z) | [Download Linux Build](https://github.com/vvanelslande/vvctre-plugin-default-window-size-and-position-file/releases/download/1.0.0/vvctre-plugin-default-window-size-and-position-file-1.0.0-Linux.7z)
-
 #### vvctre-plugin-disable-priority-boost
 
 Disables priority boost when vvctre starts
@@ -66,14 +59,14 @@ Loads controls.json when vvctre starts
 Creator: [vvanelslande](https://github.com/vvanelslande)    
 [Source Code](https://github.com/vvanelslande/vvctre-plugin-auto-load-controls) | [Download Windows Build](https://github.com/vvanelslande/vvctre-plugin-auto-load-controls/releases/download/1.0.2/vvctre-plugin-auto-load-controls-1.0.2-Windows.7z) | [Download Linux Build](https://github.com/vvanelslande/vvctre-plugin-auto-load-controls/releases/download/1.0.2/vvctre-plugin-auto-load-controls-1.0.2-Linux.7z)
 
-#### vvctre-plugin-log-file  
+#### vvctre-plugin-log-file
 
 Writes the logs to a file
 
 Creator: [vvanelslande](https://github.com/vvanelslande)  
 [Source Code](https://github.com/vvanelslande/vvctre-plugin-log-file) | [Download Windows Build](https://github.com/vvanelslande/vvctre-plugin-log-file/releases/download/2.0.0/vvctre-plugin-log-file-2.0.0-Windows.7z) | [Download Linux Build](https://github.com/vvanelslande/vvctre-plugin-log-file/releases/download/2.0.0/vvctre-plugin-log-file-2.0.0-Linux.7z)
 
-#### vvctre-plugin-cycle-custom-layouts  
+#### vvctre-plugin-cycle-custom-layouts
 
 Adds disableable and changeable hotkey/button that cycles custom layouts, and optionally loads the first layout when vvctre starts and emulation starts for the first time. Layouts can have a window size, window position, and a Upright Screens override.  
 
@@ -142,6 +135,11 @@ Loads multiplayer settings from multiplayer-settings.json when vvctre starts (ev
 
 Creator: [vvanelslande](https://github.com/vvanelslande)  
 [Source Code](https://github.com/vvanelslande/vvctre-plugin-default-multiplayer-settings-file) | [Download Windows Build](https://github.com/vvanelslande/vvctre-plugin-default-multiplayer-settings-file/releases/download/1.0.1/vvctre-plugin-default-multiplayer-settings-file-1.0.1-Windows.7z) | [Download Linux Build](https://github.com/vvanelslande/vvctre-plugin-default-multiplayer-settings-file/releases/download/1.0.1/vvctre-plugin-default-multiplayer-settings-file-1.0.1-Linux.7z)
+
+#### https://github.com/vvanelslande/vvctre-plugin-always-return-true-in-the-wlan-comm-id-check
+
+Creator: [vvanelslande](https://github.com/vvanelslande)  
+[Source Code](https://github.com/vvanelslande/vvctre-plugin-always-return-true-in-the-wlan-comm-id-check) | [Download Windows Build](https://github.com/vvanelslande/vvctre-plugin-always-return-true-in-the-wlan-comm-id-check/releases/download/1.0.0/vvctre-plugin-always-return-true-in-the-wlan-comm-id-check-1.0.0-Windows.7z) | [Download Linux Build](https://github.com/vvanelslande/vvctre-plugin-always-return-true-in-the-wlan-comm-id-check/releases/download/1.0.0/vvctre-plugin-always-return-true-in-the-wlan-comm-id-check-1.0.0-Linux.7z)
 
 ### Patreon ($5)
 
