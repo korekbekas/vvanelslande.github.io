@@ -136,7 +136,7 @@ Loads multiplayer settings from multiplayer-settings.json when vvctre starts (ev
 Creator: [vvanelslande](https://github.com/vvanelslande)  
 [Source Code](https://github.com/vvanelslande/vvctre-plugin-default-multiplayer-settings-file) | [Download Windows Build](https://github.com/vvanelslande/vvctre-plugin-default-multiplayer-settings-file/releases/download/1.0.1/vvctre-plugin-default-multiplayer-settings-file-1.0.1-Windows.7z) | [Download Linux Build](https://github.com/vvanelslande/vvctre-plugin-default-multiplayer-settings-file/releases/download/1.0.1/vvctre-plugin-default-multiplayer-settings-file-1.0.1-Linux.7z)
 
-#### https://github.com/vvanelslande/vvctre-plugin-always-return-true-in-the-wlan-comm-id-check
+#### vvctre-plugin-always-return-true-in-the-wlan-comm-id-check
 
 Creator: [vvanelslande](https://github.com/vvanelslande)  
 [Source Code](https://github.com/vvanelslande/vvctre-plugin-always-return-true-in-the-wlan-comm-id-check) | [Download Windows Build](https://github.com/vvanelslande/vvctre-plugin-always-return-true-in-the-wlan-comm-id-check/releases/download/1.0.0/vvctre-plugin-always-return-true-in-the-wlan-comm-id-check-1.0.0-Windows.7z) | [Download Linux Build](https://github.com/vvanelslande/vvctre-plugin-always-return-true-in-the-wlan-comm-id-check/releases/download/1.0.0/vvctre-plugin-always-return-true-in-the-wlan-comm-id-check-1.0.0-Linux.7z)
