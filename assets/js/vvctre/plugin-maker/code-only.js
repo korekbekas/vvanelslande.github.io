@@ -2,30 +2,6 @@
 // Licensed under GPLv2 or any later version
 // Refer to the license.txt file included.
 
-const url = new URL(location.href)
-let token = ''
-
-if (url.searchParams.has('code')) {
-  fetch(
-    'https://vvctre-plugin-maker-oauth-server.falt.cf/oauth/github/get-access-token',
-    {
-      headers: {
-        'Content-Type': 'text/plain'
-      },
-      body: url.searchParams.get('code'),
-      method: 'POST'
-    }
-  )
-    .then(r => r.text())
-    .then(token_ => {
-      token = token_
-    })
-} else {
-  location.href =
-    'https://github.com/login/oauth/authorize?client_id=1df52b4366a6b5d52011&scope=public_repo,workflow'
-}
-
-let makingPlugin = false
 const type = document.querySelector('#type')
 
 type.addEventListener('change', () => {
@@ -82,15 +58,9 @@ type.addEventListener('change', () => {
 })
 
 document.querySelector('#makePlugin').addEventListener('click', async () => {
-  if (makingPlugin) {
-    return
-  }
-
-  document.body.style.cursor = 'wait'
-  makingPlugin = true
-
   let code = ''
   let cpp = false
+  let usesCommonTypes = false
 
   switch (type.options[type.selectedIndex].value) {
     case 'custom_default_settings': {
@@ -98,10 +68,6 @@ document.querySelector('#makePlugin').addEventListener('click', async () => {
       const types = []
       const calls = []
       const regexes = getCdsRegexes(names, types, calls)
-
-      const custom_default_settings_lines = document.querySelector(
-        '#custom_default_settings_lines'
-      )
 
       const validLines = custom_default_settings_lines.value
         .split('\n')
@@ -178,6 +144,8 @@ VVCTRE_PLUGIN_EXPORT void InitialSettingsOpening() {
 ${calls.map(call => `    ${call}`).join('\n')}
 }
 `
+
+      usesCommonTypes = true
 
       break
     }
@@ -397,107 +365,67 @@ VVCTRE_PLUGIN_EXPORT void Log(const char* line) {
   }
 
   if (code) {
-    const userResponse = await fetch('https://api.github.com/user', {
-      headers: {
-        Authorization: `token ${token}`
-      }
-    })
+    fetch('/license.txt')
+      .then(response => response.text())
+      .then(license => {
+        const zip = new JSZip()
+        zip.file(`plugin.${cpp ? 'cpp' : 'c'}`, code)
+        if (usesCommonTypes) {
+          zip.file(
+            'common_types.h',
+            `/**
+ * Copyright (C) 2005-2012 Gekko Emulator
+ *
+ * @file    common_types.h
+ * @author  ShizZy <shizzy247@gmail.com>
+ * @date    2012-02-11
+ * @brief   Common types used throughout the project
+ *
+ * @section LICENSE
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License as
+ * published by the Free Software Foundation; either version 2 of
+ * the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ * General Public License for more details at
+ * http://www.gnu.org/copyleft/gpl.html
+ *
+ * Official project repository can be found at:
+ * http://code.google.com/p/gekko-gc-emu/
+ */
 
-    const userJson = await userResponse.json()
+#pragma once
 
-    await fetch(
-      'https://api.github.com/repos/vvanelslande/vvctre-plugin-template-for-plugin-maker-and-server/generate',
-      {
-        headers: {
-          Accept: 'application/vnd.github.baptiste-preview+json',
-          Authorization: `token ${token}`,
-          'Content-Type': 'text/plain'
-        },
-        body: JSON.stringify({
-          owner: userJson.login,
-          name: document.querySelector('#repository_name').value
-        }),
-        method: 'POST'
-      }
-    )
+#include <stdbool.h>
+#include <stddef.h>
+#include <stdint.h>
 
-    await new Promise(resolve => {
-      setTimeout(async function f() {
-        try {
-          await fetch(
-            `https://api.github.com/repos/${userJson.login}/${
-              document.querySelector('#repository_name').value
-            }`,
-            {
-              headers: {
-                Authorization: `token ${token}`
-              }
-            }
+typedef uint8_t u8;   ///< 8-bit unsigned byte
+typedef uint16_t u16; ///< 16-bit unsigned short
+typedef uint32_t u32; ///< 32-bit unsigned word
+typedef uint64_t u64; ///< 64-bit unsigned int
+
+typedef int8_t s8;   ///< 8-bit signed byte
+typedef int16_t s16; ///< 16-bit signed short
+typedef int32_t s32; ///< 32-bit signed word
+typedef int64_t s64; ///< 64-bit signed int
+
+typedef float f32;  ///< 32-bit floating point
+typedef double f64; ///< 64-bit floating point
+
+typedef u32 VAddr; ///< Represents a pointer in the userspace virtual address space.
+typedef u32 PAddr; ///< Represents a pointer in the ARM11 physical address space.
+`
           )
-          resolve()
-        } catch {
-          setTimeout(f, 10000)
         }
-      }, 10000)
-    })
+        zip.file('license.txt', license)
 
-    await fetch(
-      `https://api.github.com/repos/${userJson.login}/${
-        document.querySelector('#repository_name').value
-      }/contents/plugin.${cpp ? 'cpp' : 'c'}`,
-      {
-        headers: {
-          Authorization: `token ${token}`,
-          'Content-Type': 'text/plain'
-        },
-        body: JSON.stringify({
-          content: btoa(code),
-          message: 'Add code',
-          branch: 'master'
-        }),
-        method: 'PUT'
-      }
-    )
-
-    await fetch(
-      `https://api.github.com/repos/${userJson.login}/${
-        document.querySelector('#repository_name').value
-      }/actions/workflows/build.yml/dispatches`,
-      {
-        headers: {
-          Authorization: `token ${token}`,
-          'Content-Type': 'text/plain'
-        },
-        body: JSON.stringify({
-          ref: 'master',
-          inputs: { code_file_name: `plugin.${cpp ? 'cpp' : 'c'}` }
-        }),
-        method: 'POST'
-      }
-    )
-
-    setTimeout(async function f() {
-      const response = await fetch(
-        `https://api.github.com/repos/${userJson.login}/${
-          document.querySelector('#repository_name').value
-        }/releases/latest`,
-        {
-          headers: {
-            Authorization: `token ${token}`
-          }
-        }
-      )
-
-      if (response.ok) {
-        const json = await response.json()
-        if (json.assets.length === 2) {
-          location.href = json.html_url
-        } else {
-          setTimeout(f, 5000)
-        }
-      } else {
-        setTimeout(f, 5000)
-      }
-    }, 60000)
+        zip.generateAsync({ type: 'blob' }).then(content => {
+          saveAs(content, 'plugin.zip')
+        })
+      })
   }
 })

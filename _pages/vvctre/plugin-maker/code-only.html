@@ -10,14 +10,6 @@ permalink: /vvctre/plugin-maker/code-and-builds-user-github-account/
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    Repository Name:<br />
-    <input
-      type="text"
-      id="repository_name"
-      value="vvctre-plugin"
-      style="color: black; background-color: white"
-    /><br />
-
     Type:<br />
     <select id="type" style="color: black; background-color: white">
       <option value="custom_default_settings">Custom Default Settings</option>
@@ -110,7 +102,17 @@ permalink: /vvctre/plugin-maker/code-and-builds-user-github-account/
     <br />
     <button id="makePlugin">Make Plugin</button>
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"
+      integrity="sha256-u/J1Urdrk3nCYFefpoeTMgI5viU1ujCDu2fXXoSJjhg="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jszip@3.5.0/dist/jszip.min.js"
+      integrity="sha256-cNXRgwrU74TQiTDsep3TqNE1ZOBPrOmYVYWi+fM8czw="
+      crossorigin="anonymous"
+    ></script>
     <script src="/assets/js/vvctre/plugin-maker/custom-default-settings-regexes.js"></script>
-    <script src="/assets/js/vvctre/plugin-maker/code-and-builds-user-github-account.js"></script>
+    <script src="/assets/js/vvctre/plugin-maker/code-only.js"></script>
   </body>
 </html>
