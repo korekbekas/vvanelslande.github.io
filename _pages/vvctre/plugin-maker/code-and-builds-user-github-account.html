@@ -151,7 +151,7 @@ ${calls.map(call => `    ${call}`).join('\n')}
 
             const userJson = await userResponse.json()
 
-            await fetch('https://api.github.com/repos/vvanelslande/vvctre-plugin-template-for-server/generate', {
+            await fetch('https://api.github.com/repos/vvanelslande/vvctre-plugin-template-for-plugin-maker-and-server/generate', {
               headers: {
                 Accept: 'application/vnd.github.baptiste-preview+json',
                 Authorization: `token ${url.searchParams.get('token')}`,
