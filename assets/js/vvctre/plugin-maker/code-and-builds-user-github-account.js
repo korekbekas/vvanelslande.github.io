@@ -18,6 +18,11 @@ if (url.searchParams.has('code')) {
   )
     .then(r => r.text())
     .then(token_ => {
+      if (!token_) {
+        location.href =
+          'https://github.com/login/oauth/authorize?client_id=1df52b4366a6b5d52011&scope=public_repo,workflow'
+        return
+      }
       token = token_
     })
 } else {
