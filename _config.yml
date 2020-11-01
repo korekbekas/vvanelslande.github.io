@@ -6,7 +6,6 @@ remote_theme: mmistakes/minimal-mistakes
 
 include:
   - _pages
-  - assets/js
 
 plugins:
   - jekyll-paginate
