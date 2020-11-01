@@ -2,32 +2,33 @@
 // Licensed under GPLv2 or any later version
 // Refer to the license.txt file included.
 
-const url = new URL(location.href)
-let token = ''
+if (sessionStorage.getItem('token') === null) {
+  const url = new URL(location.href)
 
-if (url.searchParams.has('code')) {
-  fetch(
-    'https://vvctre-plugin-maker-oauth-server.falt.cf/oauth/github/get-access-token',
-    {
-      headers: {
-        'Content-Type': 'text/plain'
-      },
-      body: url.searchParams.get('code'),
-      method: 'POST'
-    }
-  )
-    .then(r => r.text())
-    .then(token_ => {
-      if (!token_) {
-        location.href =
-          'https://github.com/login/oauth/authorize?client_id=1df52b4366a6b5d52011&scope=public_repo,workflow'
-        return
+  if (url.searchParams.has('code')) {
+    fetch(
+      'https://vvctre-plugin-maker-oauth-server.falt.cf/oauth/github/get-access-token',
+      {
+        headers: {
+          'Content-Type': 'text/plain'
+        },
+        body: url.searchParams.get('code'),
+        method: 'POST'
       }
-      token = token_
-    })
-} else {
-  location.href =
-    'https://github.com/login/oauth/authorize?client_id=1df52b4366a6b5d52011&scope=public_repo,workflow'
+    )
+      .then(r => r.text())
+      .then(token => {
+        if (!token) {
+          location.href =
+            'https://github.com/login/oauth/authorize?client_id=1df52b4366a6b5d52011&scope=public_repo,workflow'
+          return
+        }
+        sessionStorage.setItem('token', token)
+      })
+  } else {
+    location.href =
+      'https://github.com/login/oauth/authorize?client_id=1df52b4366a6b5d52011&scope=public_repo,workflow'
+  }
 }
 
 let makingPlugin = false
@@ -404,7 +405,7 @@ VVCTRE_PLUGIN_EXPORT void Log(const char* line) {
   if (code) {
     const userResponse = await fetch('https://api.github.com/user', {
       headers: {
-        Authorization: `token ${token}`
+        Authorization: `token ${sessionStorage.getItem('token')}`
       }
     })
 
@@ -415,7 +416,7 @@ VVCTRE_PLUGIN_EXPORT void Log(const char* line) {
       {
         headers: {
           Accept: 'application/vnd.github.baptiste-preview+json',
-          Authorization: `token ${token}`,
+          Authorization: `token ${sessionStorage.getItem('token')}`,
           'Content-Type': 'text/plain'
         },
         body: JSON.stringify({
@@ -435,7 +436,7 @@ VVCTRE_PLUGIN_EXPORT void Log(const char* line) {
             }`,
             {
               headers: {
-                Authorization: `token ${token}`
+                Authorization: `token ${sessionStorage.getItem('token')}`
               }
             }
           )
@@ -452,7 +453,7 @@ VVCTRE_PLUGIN_EXPORT void Log(const char* line) {
       }/contents/plugin.${cpp ? 'cpp' : 'c'}`,
       {
         headers: {
-          Authorization: `token ${token}`,
+          Authorization: `token ${sessionStorage.getItem('token')}`,
           'Content-Type': 'text/plain'
         },
         body: JSON.stringify({
@@ -470,7 +471,7 @@ VVCTRE_PLUGIN_EXPORT void Log(const char* line) {
       }/actions/workflows/build.yml/dispatches`,
       {
         headers: {
-          Authorization: `token ${token}`,
+          Authorization: `token ${sessionStorage.getItem('token')}`,
           'Content-Type': 'text/plain'
         },
         body: JSON.stringify({
@@ -488,7 +489,7 @@ VVCTRE_PLUGIN_EXPORT void Log(const char* line) {
         }/releases/latest`,
         {
           headers: {
-            Authorization: `token ${token}`
+            Authorization: `token ${sessionStorage.getItem('token')}`
           }
         }
       )
