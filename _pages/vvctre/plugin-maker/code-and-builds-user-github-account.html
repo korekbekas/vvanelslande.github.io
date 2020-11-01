@@ -53,7 +53,7 @@ permalink: /vvctre/plugin-maker/code-and-builds-user-github-account/
       const type = document.querySelector('#type')
       const custom_default_settings_lines = document.querySelector('#custom_default_settings_lines')
 
-      document.querySelector('#makePlugin').addEventListener('click', () => {
+      document.querySelector('#makePlugin').addEventListener('click', async () => {
         if (makingPlugin) {
           return
         }
