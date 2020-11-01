@@ -154,7 +154,7 @@ ${calls.map(call => `    ${call}`).join('\n')}
               }`,
               {
                 headers: {
-                  Authorization: `token ${token)}`
+                  Authorization: `token ${token}`
                 }
               }
             )
