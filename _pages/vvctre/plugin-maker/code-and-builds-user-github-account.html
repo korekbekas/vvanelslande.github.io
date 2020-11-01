@@ -10,7 +10,8 @@ permalink: /vvctre/plugin-maker/code-and-builds-user-github-account/
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    Repository Name: <input type="text" id="repository_name" value="vvctre-plugin" style="color: black; background-color: white;"></br>
+    Repository Name: 
+    <input type="text" id="repository_name" value="vvctre-plugin" style="color: black; background-color: white;"><br/>
 
     Type: 
     <select id="type" style="color: black; background-color: white;">
@@ -61,25 +62,7 @@ permalink: /vvctre/plugin-maker/code-and-builds-user-github-account/
         makingPlugin = true
 
         ;(async () => {
-          const userResponse = await fetch('https://api.github.com/user', {
-            headers: {
-              Authorization: `token ${url.searchParams.get('token')}`
-            }
-          })
-          const userJson = await userResponse.json()
-
-          await fetch('https://api.github.com/repos/vvanelslande/vvctre-plugin-template-for-discord-bot-and-server/generate', {
-            headers: {
-              Accept: 'application/vnd.github.baptiste-preview+json',
-              Authorization: `token ${url.searchParams.get('token')}`,
-              'Content-Type': 'text/plain',
-            },
-            body: JSON.stringify({
-              owner: userJson.login,
-              name: document.querySelector('#repository_name').value
-            }),
-            method: 'POST'
-          })
+          const valid = false
 
           if (type.options[type.selectedIndex].value === 'Custom Default Settings') {
             const names = []
@@ -154,6 +137,31 @@ VVCTRE_PLUGIN_EXPORT void InitialSettingsOpening() {
 ${calls.map(call => `    ${call}`).join('\n')}
 }
 `
+
+            valid = true
+          }
+
+          if (false) {
+            const userResponse = await fetch('https://api.github.com/user', {
+              headers: {
+                Authorization: `token ${url.searchParams.get('token')}`
+              }
+            })
+
+            const userJson = await userResponse.json()
+
+            await fetch('https://api.github.com/repos/vvanelslande/vvctre-plugin-template-for-discord-bot-and-server/generate', {
+              headers: {
+                Accept: 'application/vnd.github.baptiste-preview+json',
+                Authorization: `token ${url.searchParams.get('token')}`,
+                'Content-Type': 'text/plain',
+              },
+              body: JSON.stringify({
+                owner: userJson.login,
+                name: document.querySelector('#repository_name').value
+              }),
+              method: 'POST'
+            })
           }
 
           document.body.style.cursor = 'default'
