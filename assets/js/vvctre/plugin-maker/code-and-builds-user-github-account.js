@@ -378,8 +378,7 @@ VVCTRE_PLUGIN_EXPORT void PluginLoaded(void* core, void* plugin_manager,
                                        void* required_functions[]) {
     file.open("${document
       .querySelector('#log_file_file_path')
-      .slice(1, -1)
-      .replace(/\\/g, '\\\\')}", std::ofstream::trunc);
+      .value.replace(/\\/g, '\\\\')}", std::ofstream::trunc);
 }
 
 VVCTRE_PLUGIN_EXPORT void Log(const char* line) {
