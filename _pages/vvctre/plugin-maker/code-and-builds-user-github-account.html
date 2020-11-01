@@ -18,8 +18,12 @@ permalink: /vvctre/plugin-maker/code-and-builds-user-github-account/
     <input type="radio" id="lf" name="type"> Log File<br/><br/>
 
     <div id="cdsdiv">
+      Lines:<br>
       <textarea id="cdslines" style="background-color: white; color: black;"></textarea>
     </div>
+
+    <br/>
+    <button id="makePlugin">Make Plugin</button>
 
     <script src="https://cdn.jsdelivr.net/npm/file-saver/dist/FileSaver.min.js"></script>
 
@@ -38,6 +42,10 @@ permalink: /vvctre/plugin-maker/code-and-builds-user-github-account/
       } else if (!url.searchParams.has('token')) {
         location.href = 'https://github.com/login/oauth/authorize?client_id=1df52b4366a6b5d52011&scope=public_repo,workflow'
       }
+
+      document.querySelector('#makePlugin').addEventListener('click', () => {
+        document.body.style.cursor = 'wait'
+      })
     </script>
   </body>
 </html>
