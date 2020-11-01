@@ -1,4 +1,6 @@
 const url = new URL(location.href)
+let token = ''
+
 if (url.searchParams.has('code')) {
   fetch(
     'https://vvctre-plugin-maker-server.falt.cf/oauth/github/get-access-token',
@@ -11,10 +13,10 @@ if (url.searchParams.has('code')) {
     }
   )
     .then(r => r.text())
-    .then(token => {
-      location.href = `/vvctre/plugin-maker/code-and-builds-user-github-account/?token=${token}`
+    .then(token_ => {
+      token = token_
     })
-} else if (!url.searchParams.has('token')) {
+} else {
   location.href =
     'https://github.com/login/oauth/authorize?client_id=1df52b4366a6b5d52011&scope=public_repo,workflow'
 }
@@ -121,7 +123,7 @@ ${calls.map(call => `    ${call}`).join('\n')}
     if (code) {
       const userResponse = await fetch('https://api.github.com/user', {
         headers: {
-          Authorization: `token ${url.searchParams.get('token')}`
+          Authorization: `token ${token}`
         }
       })
 
@@ -132,7 +134,7 @@ ${calls.map(call => `    ${call}`).join('\n')}
         {
           headers: {
             Accept: 'application/vnd.github.baptiste-preview+json',
-            Authorization: `token ${url.searchParams.get('token')}`,
+            Authorization: `token ${token}`,
             'Content-Type': 'text/plain'
           },
           body: JSON.stringify({
@@ -152,7 +154,7 @@ ${calls.map(call => `    ${call}`).join('\n')}
               }`,
               {
                 headers: {
-                  Authorization: `token ${url.searchParams.get('token')}`
+                  Authorization: `token ${token)}`
                 }
               }
             )
@@ -169,7 +171,7 @@ ${calls.map(call => `    ${call}`).join('\n')}
         }/contents/plugin.c`,
         {
           headers: {
-            Authorization: `token ${url.searchParams.get('token')}`,
+            Authorization: `token ${token}`,
             'Content-Type': 'text/plain'
           },
           body: JSON.stringify({
@@ -187,7 +189,7 @@ ${calls.map(call => `    ${call}`).join('\n')}
         }/actions/workflows/build.yml/dispatches`,
         {
           headers: {
-            Authorization: `token ${url.searchParams.get('token')}`,
+            Authorization: `token ${token}`,
             'Content-Type': 'text/plain'
           },
           body: JSON.stringify({
@@ -205,7 +207,7 @@ ${calls.map(call => `    ${call}`).join('\n')}
           }/releases/latest`,
           {
             headers: {
-              Authorization: `token ${url.searchParams.get('token')}`
+              Authorization: `token ${token}`
             }
           }
         )
