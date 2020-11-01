@@ -61,7 +61,7 @@ permalink: /vvctre/plugin-maker/code-and-builds-user-github-account/
         document.body.style.cursor = 'wait'
         makingPlugin = true
 
-        const code = ''
+        let code = ''
 
         if (type.options[type.selectedIndex].value === 'custom_default_settings') {
           const names = []
@@ -91,7 +91,7 @@ permalink: /vvctre/plugin-maker/code-and-builds-user-github-account/
             }
           }
 
-          const code = `// Copyright 2020 Valentin Vanelslande
+          code = `// Copyright 2020 Valentin Vanelslande
 // Licensed under GPLv2 or any later version
 // Refer to the license.txt file included.
 #include "common_types.h"
@@ -166,8 +166,7 @@ ${calls.map(call => `    ${call}`).join('\n')}
                   await fetch(`https://api.github.com/repos/${userJson.login}/${document.querySelector('#repository_name').value}`, {
                     headers: {
                       Authorization: `token ${url.searchParams.get('token')}`
-                    },
-                    method: 'POST'
+                    }
                   })
                   resolve()
                 } catch {
