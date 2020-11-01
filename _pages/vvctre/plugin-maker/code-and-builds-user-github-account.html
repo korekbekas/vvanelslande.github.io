@@ -15,7 +15,7 @@ permalink: /vvctre/plugin-maker/code-and-builds-user-github-account/
     <script>
       const url = new URL(location.href)
       if (url.searchParams.has('code')) {
-        fetch('https://vvctre-plugin-maker-oauth-and-socket.io-server.falt.cf/oauth/github/get-access-token', {
+        fetch('https://vvctre-plugin-maker-server.falt.cf/oauth/github/get-access-token', {
           headers: {
             'Content-Type': 'text/plain'
           },
