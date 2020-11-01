@@ -23,8 +23,3 @@ sidebar:
         url: /vvctre/custom-default-settings-plugin-bot-and-server-line-examples/
       - title: Plugin Maker
         url: /vvctre/plugin-maker/
-
-  - title: Save Editors
-    children:
-      - title: Super Mario Maker for Nintendo 3DS
-        url: /save-editors/super-mario-maker-for-nintendo-3ds/

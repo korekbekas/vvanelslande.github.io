@@ -21,13 +21,13 @@ footer:
     - label: Twitter
       icon: fab fa-twitter
       url: https://twitter.com/valentinvvctre
-    - label: Website License (GPLv3)
+    - label: Website License (GPLv2+)
       icon: fas fa-file-alt
       url: /license.txt
 
 defaults:
   - scope:
-      path: ""
+      path: ''
       type: pages
     values:
       layout: single
