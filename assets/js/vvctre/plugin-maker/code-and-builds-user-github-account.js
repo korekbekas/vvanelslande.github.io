@@ -21,6 +21,7 @@ if (url.searchParams.has('code')) {
 
 let makingPlugin = false
 const type = document.querySelector('#type')
+
 const custom_default_settings_lines = document.querySelector(
   '#custom_default_settings_lines'
 )
@@ -66,12 +67,15 @@ document.querySelector('#makePlugin').addEventListener('click', async () => {
     code = `// Copyright 2020 Valentin Vanelslande
 // Licensed under GPLv2 or any later version
 // Refer to the license.txt file included.
+
 #include "common_types.h"
+
 #ifdef _WIN32
 #define VVCTRE_PLUGIN_EXPORT __declspec(dllexport)
 #else
 #define VVCTRE_PLUGIN_EXPORT
 #endif
+
 ${
   validLines.length === 1
     ? `static const char* required_function_name = "${names[0]}";`
@@ -79,6 +83,7 @@ ${
         .map(name => `    "${name}",`)
         .join('\n')}\n};`
 }
+
 ${names
   .filter(Boolean)
   .map(
@@ -86,9 +91,11 @@ ${names
       `typedef ${types[index][0]} (*${name}_t)(${types[index][1]});\nstatic ${name}_t ${name};`
   )
   .join('\n')}
+
 VVCTRE_PLUGIN_EXPORT int GetRequiredFunctionCount() {
     return ${names.length};
 }
+
 VVCTRE_PLUGIN_EXPORT const char** GetRequiredFunctionNames() {
     return ${
       validLines.length === 1
@@ -105,6 +112,7 @@ ${names
   )
   .join('\n')}
 }
+
 VVCTRE_PLUGIN_EXPORT void InitialSettingsOpening() {
 ${calls.map(call => `    ${call}`).join('\n')}
 }
@@ -204,9 +212,13 @@ ${calls.map(call => `    ${call}`).join('\n')}
 
         if (response.ok) {
           const json = await response.json()
-          location.href = json.html_url
+          if (json.assets.length === 2) {
+            location.href = json.html_url
+          } else {
+            setTimeout(f, 5000)
+          }
         } else {
-          setTimeout(f, 60000)
+          setTimeout(f, 5000)
         }
       }, 60000)
     }
