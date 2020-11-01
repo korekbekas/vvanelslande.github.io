@@ -2,7 +2,7 @@
 // Licensed under GPLv2 or any later version
 // Refer to the license.txt file included.
 
-function getRegexes(names, types, calls) {
+function getCdsRegexes(names, types, calls) {
   return [
     {
       regex: /^start.file (.+)$/m,
