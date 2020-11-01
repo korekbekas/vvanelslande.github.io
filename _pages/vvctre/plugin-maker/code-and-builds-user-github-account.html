@@ -61,8 +61,8 @@ permalink: /vvctre/plugin-maker/code-and-builds-user-github-account/
 
           const generateResponse = await fetch('https://api.github.com/repos/vvanelslande/vvctre-plugin-template-for-discord-bot-and-server/generate', {
             headers: {
-              'Content-Type': 'text/plain',
-              Accept: 'application/vnd.github.baptiste-preview+json'
+              Accept: 'application/vnd.github.baptiste-preview+json',
+              'Content-Type': 'text/plain'
             },
             body: JSON.stringify({
               owner: userJson.login,
