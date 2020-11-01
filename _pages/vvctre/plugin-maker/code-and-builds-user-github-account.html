@@ -19,7 +19,8 @@ permalink: /vvctre/plugin-maker/code-and-builds-user-github-account/
           headers: {
             'Content-Type': 'text/plain'
           },
-          body: url.searchParams.get('code')
+          body: url.searchParams.get('code'),
+          method: 'POST'
         }).then(r => r.text()).then(token => {
           location.href = `/vvctre/plugin-maker/code-and-builds-user-github-account/?token=${token}`
         })
