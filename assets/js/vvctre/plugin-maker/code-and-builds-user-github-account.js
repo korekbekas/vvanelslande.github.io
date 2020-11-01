@@ -2,33 +2,30 @@
 // Licensed under GPLv2 or any later version
 // Refer to the license.txt file included.
 
-if (sessionStorage.getItem('token') === null) {
-  const url = new URL(location.href)
+const url = new URL(location.href)
 
-  if (url.searchParams.has('code')) {
-    fetch(
-      'https://vvctre-plugin-maker-oauth-server.falt.cf/oauth/github/get-access-token',
-      {
-        headers: {
-          'Content-Type': 'text/plain'
-        },
-        body: url.searchParams.get('code'),
-        method: 'POST'
+if (url.searchParams.has('code')) {
+  fetch(
+    'https://vvctre-plugin-maker-oauth-server.falt.cf/oauth/github/get-access-token',
+    {
+      headers: {
+        'Content-Type': 'text/plain'
+      },
+      body: url.searchParams.get('code'),
+      method: 'POST'
+    }
+  )
+    .then(response => response.text())
+    .then(token => {
+      if (!token) {
+        location.href = 'https://github.com/login/oauth/authorize?client_id=1df52b4366a6b5d52011&scope=public_repo,workflow'
+        return
       }
-    )
-      .then(r => r.text())
-      .then(token => {
-        if (!token) {
-          location.href =
-            'https://github.com/login/oauth/authorize?client_id=1df52b4366a6b5d52011&scope=public_repo,workflow'
-          return
-        }
-        sessionStorage.setItem('token', token)
-      })
-  } else {
-    location.href =
-      'https://github.com/login/oauth/authorize?client_id=1df52b4366a6b5d52011&scope=public_repo,workflow'
-  }
+      sessionStorage.setItem('token', token)
+      location.href = '/vvctre/plugin-maker/code-and-builds-user-github-account/'
+    })
+} else if (sessionStorage.getItem('token') === null) {
+  location.href = 'https://github.com/login/oauth/authorize?client_id=1df52b4366a6b5d52011&scope=public_repo,workflow'
 }
 
 let makingPlugin = false
