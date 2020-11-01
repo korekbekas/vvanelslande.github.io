@@ -61,38 +61,37 @@ permalink: /vvctre/plugin-maker/code-and-builds-user-github-account/
         document.body.style.cursor = 'wait'
         makingPlugin = true
 
-        ;(async () => {
-          let valid = false
+        const code = ''
 
-          if (type.options[type.selectedIndex].value === 'custom_default_settings') {
-            const names = []
-            const types = []
-            const calls = []
-            const regexes = getCdsRegexes(names, types, calls)
+        if (type.options[type.selectedIndex].value === 'custom_default_settings') {
+          const names = []
+          const types = []
+          const calls = []
+          const regexes = getCdsRegexes(names, types, calls)
 
-            const validLines = custom_default_settings_lines.value
-              .split('\n')
-              .filter(line => regexes.some(regex => regex.regex.test(line)))
+          const validLines = custom_default_settings_lines.value
+            .split('\n')
+            .filter(line => regexes.some(regex => regex.regex.test(line)))
 
-            if (validLines.length === 0) {
-              alert('All the lines are invalid or the lines input is empty')
-              document.body.style.cursor = 'default'
-              makingPlugin = false
-              return
+          if (validLines.length === 0) {
+            alert('All the lines are invalid or the lines input is empty')
+            document.body.style.cursor = 'default'
+            makingPlugin = false
+            return
+          }
+
+          const validLinesJoined = validLines.join('\n')
+
+          custom_default_settings_lines.value = validLinesJoined
+
+          for (const regex of regexes) {
+            if (regex.regex.test(validLinesJoined)) {
+              const match = validLinesJoined.match(regex.regex)
+              regex.call(match)
             }
+          }
 
-            const validLinesJoined = validLines.join('\n')
-
-            custom_default_settings_lines.value = validLinesJoined
-
-            for (const regex of regexes) {
-              if (regex.regex.test(validLinesJoined)) {
-                const match = validLinesJoined.match(regex.regex)
-                regex.call(match)
-              }
-            }
-
-            const code = `// Copyright 2020 Valentin Vanelslande
+          const code = `// Copyright 2020 Valentin Vanelslande
 // Licensed under GPLv2 or any later version
 // Refer to the license.txt file included.
 #include "common_types.h"
@@ -139,10 +138,7 @@ ${calls.map(call => `    ${call}`).join('\n')}
 }
 `
 
-            valid = true
-          }
-
-          if (valid) {
+          if (code) {
             const userResponse = await fetch('https://api.github.com/user', {
               headers: {
                 Authorization: `token ${url.searchParams.get('token')}`
