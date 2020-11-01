@@ -10,16 +10,18 @@ permalink: /vvctre/plugin-maker/code-and-builds-user-github-account/
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    Type:<br/>
-    <input type="radio" id="cds" name="type" checked> Custom Default Settings<br/>
-    <input type="radio" id="btt" name="type"> Button To Touch<br/>
-    <input type="radio" id="ws" name="type"> Window Size<br/>
-    <input type="radio" id="wp" name="type"> Window Position<br/>
-    <input type="radio" id="lf" name="type"> Log File<br/><br/>
+    Repository Name: <input type="text" id="repository_name" value="vvctre-plugin"></br>
 
-    <div id="cdsdiv">
-      Lines:<br>
-      <textarea id="cdslines" style="background-color: white; color: black;"></textarea>
+    Type:<br/>
+    <input type="radio" id="custom_default_settings" name="type" checked> Custom Default Settings<br/>
+    <input type="radio" id="button_to_touch" name="type"> Button To Touch<br/>
+    <input type="radio" id="window_size" name="type"> Window Size<br/>
+    <input type="radio" id="window_position" name="type"> Window Position<br/>
+    <input type="radio" id="log_file" name="type"> Log File<br/><br/>
+
+    <div id="custom_default_settings_div">
+      Lines (see <a href="/vvctre/custom-default-settings-plugin-bot-and-server-line-examples/">Custom Default Settings Plugin Bot And Server Line Examples</a>):<br>
+      <textarea id="custom_default_settings_lines" style="background-color: white; color: black;"></textarea>
     </div>
 
     <br/>
@@ -43,8 +45,35 @@ permalink: /vvctre/plugin-maker/code-and-builds-user-github-account/
         location.href = 'https://github.com/login/oauth/authorize?client_id=1df52b4366a6b5d52011&scope=public_repo,workflow'
       }
 
+      let makingPlugin = false
+
       document.querySelector('#makePlugin').addEventListener('click', () => {
+        if (makingPlugin) {
+          return
+        }
+
         document.body.style.cursor = 'wait'
+        makingPlugin = true
+
+        ;(async () => {
+          const userResponse = await fetch('https://api.github.com/user')
+          const userJson = await userResponse.json()
+
+          const generateResponse = await fetch('https://api.github.com/repos/vvanelslande/vvctre-plugin-template-for-discord-bot-and-server/generate', {
+            headers: {
+              'Content-Type': 'text/plain',
+              Accept: 'application/vnd.github.baptiste-preview+json'
+            },
+            body: JSON.stringify({
+              owner: userJson.login,
+              name: document.querySelector('#repository_name').value
+            }),
+            method: 'POST'
+          })
+
+          document.body.style.cursor = 'default'
+          makingPlugin = false
+        })()
       })
     </script>
   </body>
