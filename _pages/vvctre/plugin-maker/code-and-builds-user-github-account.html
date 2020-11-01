@@ -72,7 +72,6 @@ permalink: /vvctre/plugin-maker/code-and-builds-user-github-account/
 
             const validLines = custom_default_settings_lines.value
               .split('\n')
-              .slice(1, -1)
               .filter(line => regexes.some(regex => regex.regex.test(line)))
 
             if (validLines.length === 0) {
