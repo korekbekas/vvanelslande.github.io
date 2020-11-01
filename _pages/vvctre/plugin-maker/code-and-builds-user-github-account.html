@@ -10,14 +10,16 @@ permalink: /vvctre/plugin-maker/code-and-builds-user-github-account/
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    Repository Name: <input type="text" id="repository_name" value="vvctre-plugin"></br>
+    Repository Name: <input type="text" id="repository_name" value="vvctre-plugin" style="color: black; background-color: white;"></br>
 
-    Type:<br/>
-    <input type="radio" id="custom_default_settings" name="type" checked> Custom Default Settings<br/>
-    <input type="radio" id="button_to_touch" name="type"> Button To Touch<br/>
-    <input type="radio" id="window_size" name="type"> Window Size<br/>
-    <input type="radio" id="window_position" name="type"> Window Position<br/>
-    <input type="radio" id="log_file" name="type"> Log File<br/><br/>
+    Type: 
+    <select id="type" style="color: black; background-color: white;">
+      <option value="custom_default_settings">Custom Default Settings</option>
+      <option value="button_to_touch">Button To Touch</option>
+      <option value="window_size">Window Size</option>
+      <option value="window_position">Window Position</option>
+      <option value="log_file">Log File</option>
+    </select><br/><br/>
 
     <div id="custom_default_settings_div">
       Lines (see <a href="/vvctre/custom-default-settings-plugin-bot-and-server-line-examples/">Custom Default Settings Plugin Bot And Server Line Examples</a>):<br>
@@ -28,6 +30,7 @@ permalink: /vvctre/plugin-maker/code-and-builds-user-github-account/
     <button id="makePlugin">Make Plugin</button>
 
     <script src="https://cdn.jsdelivr.net/npm/file-saver/dist/FileSaver.min.js"></script>
+    <script src="custom-default-settings-regexes.js"></script>
 
     <script>
       const url = new URL(location.href)
@@ -46,6 +49,8 @@ permalink: /vvctre/plugin-maker/code-and-builds-user-github-account/
       }
 
       let makingPlugin = false
+      const type = document.querySelector('#type')
+      const custom_default_settings_lines = document.querySelector('#custom_default_settings_lines')
 
       document.querySelector('#makePlugin').addEventListener('click', () => {
         if (makingPlugin) {
@@ -63,7 +68,7 @@ permalink: /vvctre/plugin-maker/code-and-builds-user-github-account/
           })
           const userJson = await userResponse.json()
 
-          const generateResponse = await fetch('https://api.github.com/repos/vvanelslande/vvctre-plugin-template-for-discord-bot-and-server/generate', {
+          await fetch('https://api.github.com/repos/vvanelslande/vvctre-plugin-template-for-discord-bot-and-server/generate', {
             headers: {
               Accept: 'application/vnd.github.baptiste-preview+json',
               Authorization: `token ${url.searchParams.get('token')}`,
@@ -75,6 +80,81 @@ permalink: /vvctre/plugin-maker/code-and-builds-user-github-account/
             }),
             method: 'POST'
           })
+
+          if (type.options[type.selectedIndex].value === 'Custom Default Settings') {
+            const names = []
+            const types = []
+            const calls = []
+            const regexes = getCdsRegexes(names, types, calls)
+
+            const validLines = custom_default_settings_lines.value
+              .split('\n')
+              .slice(1, -1)
+              .filter(line => regexes.some(regex => regex.regex.test(line)))
+
+            if (validLines.length === 0) {
+              alert('All the lines are invalid')
+              return
+            }
+
+            const validLinesJoined = validLines.join('\n')
+
+            custom_default_settings_lines.value = validLinesJoined
+
+            for (const regex of regexes) {
+              if (regex.regex.test(validLinesJoined)) {
+                const match = validLinesJoined.match(regex.regex)
+                regex.call(match)
+              }
+            }
+
+            const code = `// Copyright 2020 Valentin Vanelslande
+// Licensed under GPLv2 or any later version
+// Refer to the license.txt file included.
+#include "common_types.h"
+#ifdef _WIN32
+#define VVCTRE_PLUGIN_EXPORT __declspec(dllexport)
+#else
+#define VVCTRE_PLUGIN_EXPORT
+#endif
+${
+  validLines.length === 1
+    ? `static const char* required_function_name = "${names[0]}";`
+    : `static const char* required_function_names[] = {\n${names
+        .map(name => `    "${name}",`)
+        .join('\n')}\n};`
+}
+${names
+  .filter(Boolean)
+  .map(
+    (name, index) =>
+      `typedef ${types[index][0]} (*${name}_t)(${types[index][1]});\nstatic ${name}_t ${name};`
+  )
+  .join('\n')}
+VVCTRE_PLUGIN_EXPORT int GetRequiredFunctionCount() {
+    return ${names.length};
+}
+VVCTRE_PLUGIN_EXPORT const char** GetRequiredFunctionNames() {
+    return ${
+      validLines.length === 1
+        ? '&required_function_name'
+        : 'required_function_names'
+    };
+}
+    
+VVCTRE_PLUGIN_EXPORT void PluginLoaded(void* core, void* plugin_manager, void* required_functions[]) {
+${names
+  .filter(Boolean)
+  .map(
+    (name, index) => `    ${name} = (${name}_t)required_functions[${index}];`
+  )
+  .join('\n')}
+}
+VVCTRE_PLUGIN_EXPORT void InitialSettingsOpening() {
+${calls.map(call => `    ${call}`).join('\n')}
+}
+`
+          }
 
           document.body.style.cursor = 'default'
           makingPlugin = false
