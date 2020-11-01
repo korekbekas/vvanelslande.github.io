@@ -21,6 +21,8 @@ sidebar:
         url: /vvctre/dumping-guides/
       - title: Custom Default Settings Plugin Bot And Server Line Examples
         url: /vvctre/custom-default-settings-plugin-bot-and-server-line-examples/
+      - title: Plugin Maker
+        url: /vvctre/plugin-maker/
 
   - title: Save Editors
     children:
