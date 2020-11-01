@@ -386,6 +386,8 @@ VVCTRE_PLUGIN_EXPORT void Log(const char* line) {
 }
 `
 
+      cpp = true
+
       break
     }
   }
