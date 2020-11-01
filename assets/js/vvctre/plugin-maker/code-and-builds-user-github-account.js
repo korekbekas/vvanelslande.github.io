@@ -3,7 +3,7 @@ let token = ''
 
 if (url.searchParams.has('code')) {
   fetch(
-    'https://vvctre-plugin-maker-server.falt.cf/oauth/github/get-access-token',
+    'https://vvctre-plugin-maker-oauth-server.falt.cf/oauth/github/get-access-token',
     {
       headers: {
         'Content-Type': 'text/plain'
