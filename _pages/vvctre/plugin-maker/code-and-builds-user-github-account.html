@@ -11,11 +11,15 @@ permalink: /vvctre/plugin-maker/code-and-builds-user-github-account/
   </head>
   <body>
     Type:<br/>
-    <input type="radio" id="cds" name="type"> Custom Default Settings
-    <input type="radio" id="btt" name="type"> Button To Touch
-    <input type="radio" id="ws" name="type"> Window Size
-    <input type="radio" id="wp" name="type"> Window Position
-    <input type="radio" id="lf" name="type"> Log File
+    <input type="radio" id="cds" name="type" checked> Custom Default Settings<br/>
+    <input type="radio" id="btt" name="type"> Button To Touch<br/>
+    <input type="radio" id="ws" name="type"> Window Size<br/>
+    <input type="radio" id="wp" name="type"> Window Position<br/>
+    <input type="radio" id="lf" name="type"> Log File<br/>
+
+    <div id="cdsdiv">
+      <textarea id="cdslines"></textarea>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/file-saver/dist/FileSaver.min.js"></script>
 
