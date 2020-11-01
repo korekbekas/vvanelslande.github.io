@@ -18,14 +18,14 @@ permalink: /vvctre/plugin-maker/code-and-builds-user-github-account/
       style="color: black; background-color: white"
     /><br />
 
-    Type (only Custom Default Settings works currently):<br />
+    Type:<br />
     <select id="type" style="color: black; background-color: white">
       <option value="custom_default_settings">Custom Default Settings</option>
       <option value="button_to_touch">Button To Touch</option>
       <option value="window_size">Window Size</option>
       <option value="window_position">Window Position</option>
       <option value="log_file">Log File</option></select
-    ><br/
+    ><br />
 
     <div id="custom_default_settings_div">
       Lines (see
@@ -37,6 +37,74 @@ permalink: /vvctre/plugin-maker/code-and-builds-user-github-account/
         id="custom_default_settings_lines"
         style="background-color: white; color: black"
       ></textarea>
+    </div>
+
+    <div id="button_to_touch_div" style="display: none">
+      X:<br />
+      <input
+        type="text"
+        id="button_to_touch_x"
+        value="6"
+        style="color: black; background-color: white"
+      /><br />
+      Y:<br />
+      <input
+        type="text"
+        id="button_to_touch_y"
+        value="6"
+        style="color: black; background-color: white"
+      /><br />
+      Params:<br />
+      <input
+        type="text"
+        id="button_to_touch_params"
+        value="engine:keyboard,code:6"
+        style="color: black; background-color: white"
+      /><br />
+    </div>
+
+    <div id="window_size_div" style="display: none">
+      Width:<br />
+      <input
+        type="text"
+        id="window_size_width"
+        value="400"
+        style="color: black; background-color: white"
+      /><br />
+      Height:<br />
+      <input
+        type="text"
+        id="window_size_height"
+        value="480"
+        style="color: black; background-color: white"
+      /><br />
+    </div>
+
+    <div id="window_position_div" style="display: none">
+      X:<br />
+      <input
+        type="text"
+        id="window_position_x"
+        value="0"
+        style="color: black; background-color: white"
+      /><br />
+      Y:<br />
+      <input
+        type="text"
+        id="window_position_y"
+        value="0"
+        style="color: black; background-color: white"
+      /><br />
+    </div>
+
+    <div id="log_file_div" style="display: none">
+      File path:<br />
+      <input
+        type="text"
+        id="log_file_file_path"
+        value="log.txt"
+        style="color: black; background-color: white"
+      /><br />
     </div>
 
     <br />
