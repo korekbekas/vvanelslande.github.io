@@ -1,0 +1,31 @@
+---
+title: Plugin Maker - vvctre
+permalink: /vvctre/plugin-maker/code-and-builds-user-github-account/
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/file-saver/dist/FileSaver.min.js"></script>
+
+    <script>
+      const url = new URL(location.href)
+      if (url.searchParams.has('code')) {
+        fetch('https://vvctre-plugin-maker-oauth-and-socket.io-server.falt.cf/oauth/github/get-access-token', {
+          headers: {
+            'Content-Type': 'text/plain'
+          },
+          body: url.searchParams.get('code')
+        }).then(r => r.text()).then(token => {
+          location.href = `/vvctre/plugin-maker/code-and-builds-user-github-account/?token=${token}`
+        })
+      } else if (!url.searchParams.has('token')) {
+        location.href = 'https://github.com/login/oauth/authorize?client_id=1df52b4366a6b5d52011&scope=public_repo,workflow'
+      }
+    </script>
+  </body>
+</html>
