@@ -1,3 +1,7 @@
+// Copyright 2020 Valentin Vanelslande
+// Licensed under GPLv2 or any later version
+// Refer to the license.txt file included.
+
 const url = new URL(location.href)
 let token = ''
 
