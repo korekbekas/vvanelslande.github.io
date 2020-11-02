@@ -104,7 +104,7 @@ document.querySelector('#makePlugin').addEventListener('click', async () => {
 #endif
 
 ${
-  validLines.length === 1
+  names.length === 1
     ? `static const char* required_function_name = "${names[0]}";`
     : `static const char* required_function_names[] = {\n${names
         .map(name => `    "${name}",`)
@@ -125,9 +125,7 @@ VVCTRE_PLUGIN_EXPORT int GetRequiredFunctionCount() {
 
 VVCTRE_PLUGIN_EXPORT const char** GetRequiredFunctionNames() {
     return ${
-      validLines.length === 1
-        ? '&required_function_name'
-        : 'required_function_names'
+      names.length === 1 ? '&required_function_name' : 'required_function_names'
     };
 }
       
