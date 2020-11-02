@@ -426,6 +426,8 @@ VVCTRE_PLUGIN_EXPORT void Log(const char* line) {
 
     if (!generateResponse.ok) {
       alert(`A repository called ${document.querySelector('#repository_name').value} already exists`)
+      document.body.style.cursor = 'default'
+      makingPlugin = false
       return
     }
 
