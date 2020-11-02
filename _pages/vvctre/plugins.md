@@ -9,7 +9,7 @@ redirect_from:
 ## Plugin makers
 
 Code + builds:
-- You can use [this](/vvctre/plugin-maker/code-only/code-and-builds-user-github-account/) if you have a GitHub account
+- You can use [this](/vvctre/plugin-maker/code-and-builds-user-github-account/) if you have a GitHub account
 - You can use the bot in my Discord server
 
 Code only:
