@@ -1,6 +1,6 @@
 ---
-title: Custom Default Settings Plugin Bot And Server Line Examples - vvctre
-permalink: /vvctre/custom-default-settings-plugin-bot-and-server-line-examples/
+title: Custom Default Settings Plugin Bot And Plugin Maker Line Examples - vvctre
+permalink: /vvctre/custom-default-settings-plugin-bot-and-plugin-maker-line-examples/
 ---
 
 | Tab         | Setting(s)                                                              | Example(s)                                                         |
