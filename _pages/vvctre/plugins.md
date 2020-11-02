@@ -6,6 +6,16 @@ redirect_from:
   - /vvctre/Plugins
 ---
 
+## Plugin makers
+
+Code + builds:
+- You can use [this](/vvctre/plugin-maker/code-only/code-and-builds-user-github-account/) if you have a GitHub account
+- You can use the bot in my Discord server
+
+Code only:
+- [GUI](/vvctre/plugin-maker/code-only/)
+- [CLI](https://github.com/vvanelslande/vvctre-cli-code-only-plugin-maker)
+
 ## Plugin list
 
 ### Free
