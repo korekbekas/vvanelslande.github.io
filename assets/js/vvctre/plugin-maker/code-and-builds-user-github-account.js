@@ -409,7 +409,7 @@ VVCTRE_PLUGIN_EXPORT void Log(const char* line) {
     const userJson = await userResponse.json()
 
     await fetch(
-      'https://api.github.com/repos/vvanelslande/vvctre-plugin-template-for-plugin-maker-and-server/generate',
+      'https://api.github.com/repos/vvanelslande/vvctre-plugin-template-for-plugin-maker/generate',
       {
         headers: {
           Accept: 'application/vnd.github.baptiste-preview+json',
