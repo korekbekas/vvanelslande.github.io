@@ -2,11 +2,13 @@
 // Licensed under GPLv2 or any later version
 // Refer to the license.txt file included.
 
+alert('this doesn\'t work right now')
+
 const url = new URL(location.href)
 
 if (url.searchParams.has('code')) {
   fetch(
-    'https://vvctre-plugin-maker-oauth-server.falt.cf/oauth/github/get-access-token',
+    'https://vvctre-plugin-maker-oauth-server./oauth/github/get-access-token',
     {
       headers: {
         'Content-Type': 'text/plain'
