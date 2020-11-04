@@ -2,6 +2,8 @@
 // Licensed under GPLv2 or any later version
 // Refer to the license.txt file included.
 
+alert('This doesn\'t work currently')
+
 const url = new URL(location.href)
 
 if (url.searchParams.has('code')) {
