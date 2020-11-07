@@ -120,7 +120,7 @@ Creator: [vvanelslande](https://github.com/vvanelslande)
 
 #### vvctre-plugin-default-layout-settings-file
 
-Loads Layout, Swap Screens, and Upright Screens from default-layout-settings.json when vvctre starts. Doesn't load custom layout settings, window size, and window position.
+Loads Layout, Swap Screens, and Upright Screens from default-layout-settings.json when vvctre starts
 
 Creator: [vvanelslande](https://github.com/vvanelslande)  
 [Source Code](https://github.com/vvanelslande/vvctre-plugin-default-layout-settings-file) | [Download Windows Build](https://github.com/vvanelslande/vvctre-plugin-default-layout-settings-file/releases/download/1.0.0/vvctre-plugin-default-layout-settings-file-1.0.0-Windows.7z) | [Download Linux Build](https://github.com/vvanelslande/vvctre-plugin-default-layout-settings-file/releases/download/1.0.0/vvctre-plugin-default-layout-settings-file-1.0.0-Linux.7z)
@@ -155,7 +155,7 @@ Creator: [vvanelslande](https://github.com/vvanelslande)
 
 #### Patreon hotkeys
 
-Download: [https://www.patreon.com/posts/patreon-hotkeys-42884191](https://www.patreon.com/posts/patreon-hotkeys-42884191)
+[Download](https://www.patreon.com/posts/patreon-hotkeys-42884191)
 
 Hotkeys:
 - Load File (F1, Can't be changed)
@@ -167,11 +167,11 @@ Hotkeys:
 
 #### Light theme
 
-Download: [https://www.patreon.com/posts/light-theme-2-0-37869489](https://www.patreon.com/posts/light-theme-2-0-37869489)
+[Download](https://www.patreon.com/posts/light-theme-2-0-37869489)
 
 #### Dear ImGui classic theme
 
-Download: [https://www.patreon.com/posts/dear-imgui-theme-37870192](https://www.patreon.com/posts/dear-imgui-theme-37870192)
+[Download](https://www.patreon.com/posts/dear-imgui-theme-37870192)
 
 ## Developer information
 
