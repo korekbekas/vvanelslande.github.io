@@ -102,7 +102,7 @@ Creator: [vvanelslande](https://github.com/vvanelslande)
 Server that returns JPEGs from a MJPEG stream and a vvctre plugin that changes the camera settings and reloads the camera images every frame
 
 Creator: [vvanelslande](https://github.com/vvanelslande)  
-[Source Code](https://github.com/vvanelslande/vvctre-mjpeg-camera) | [Download Windows Build](https://github.com/vvanelslande/vvctre-mjpeg-camera/releases/download/1.0.2/vvctre-mjpeg-camera-1.0.2-Windows.7z) | [Download Linux Build](https://github.com/vvanelslande/vvctre-mjpeg-camera/releases/download/1.0.2/vvctre-mjpeg-camera-1.0.2-Linux.7z)
+[Source Code](https://github.com/vvanelslande/vvctre-mjpeg-camera)
 
 #### vvctre-plugin-default-enabled-lle-modules-file
 
