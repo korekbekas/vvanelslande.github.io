@@ -2967,31 +2967,31 @@ Returns Hacks -> Priority Boost
 
 #### `void vvctre_settings_set_multiplayer_ip(const char* value)`
 
-Sets Multiplayer -> IP
+Sets the multiplayer IP
 
 #### `const char* vvctre_settings_get_multiplayer_ip()`
 
-Returns Multiplayer -> IP
+Returns the multiplayer IP
 
 #### `void vvctre_settings_set_multiplayer_port(u16 value)`
 
-Sets Multiplayer -> Port
+Sets the multiplayer port
 
 #### `u16 vvctre_settings_get_multiplayer_port()`
 
-Returns Multiplayer -> Port
+Returns the multiplayer port
 
 #### `void vvctre_settings_set_nickname(const char* value)`
 
-Sets Multiplayer -> Nickname
+Sets the multiplayer nickname
 
 #### `const char* vvctre_settings_get_nickname()`
 
-Returns Multiplayer -> Nickname
+Returns the multiplayer 
 
 #### `void vvctre_settings_set_multiplayer_password(const char* value)`
 
-Sets Multiplayer -> Password
+Sets the multiplayer password
 
 #### `const char* vvctre_settings_get_multiplayer_password()`
 
@@ -2999,7 +2999,9 @@ Returns Multiplayer -> Password
 
 #### `void vvctre_multiplayer_join(void* core)`
 
-Joins the room
+Connects to the IP:Port in the settings  
+The MAC address is random  
+Uses the password in the settings/Connect To Citra Room
 
 #### `void vvctre_multiplayer_leave(void* core)`
 
@@ -3007,12 +3009,11 @@ Leaves the room
 
 #### `u8 vvctre_multiplayer_get_state(void* core)`
 
-Return the state
+Return the multiplayer state
 
 #### `void vvctre_multiplayer_send_message(void* core, const char* message)`
 
-Sends a message  
-Can't be used in callbacks
+Sends a message
 
 #### `void vvctre_multiplayer_set_game(void* core, const char* name, u64 id)`
 
